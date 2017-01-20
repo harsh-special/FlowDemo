@@ -7,5 +7,5 @@ target 'FlowApp' do
 
   # Pods for FlowApp
 pod 'SwiftyJSON'
-
+pod 'SimplePDF'
 end

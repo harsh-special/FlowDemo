@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SimplePDF.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D49C1225C4D56F704C487BF9B7E9D0BF</key>
+		<key>388AE6887E3781E5DCBA379F83ABD8CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8ECC74358BD0E05604293B2E7D80DB4</key>
+		<key>C3BE1C0A1C4F1BE76B7D364262C990EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC435257DD38D89E99C206CC4506ADB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
