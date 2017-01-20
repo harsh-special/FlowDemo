@@ -1,0 +1,26 @@
+{
+    "Start" : {
+        "text": "Welcome to the application",
+        "toPoint" : "D1"
+    },
+    "D1" : {
+        "text" : "This is D1?",
+        "options" : ["Yes", "No"],
+        "Yes": {
+            "toPoint" : "D3"
+        },
+        "No": {
+            "toPoint" : "Mode 3",
+        }
+    },
+    "D3" : {
+        "text" : "This is D3?",
+        "options" : ["Yes", "No"],
+        "Yes": {
+            "toPoint" : "D4"
+        },
+        "No": {
+            "toPoint" : "D2",
+        }
+    }
+}
