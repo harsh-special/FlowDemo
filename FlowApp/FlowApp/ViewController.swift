@@ -28,8 +28,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getContentsFromJsonFile()
         SideMenuManager.menuFadeStatusBar = false
+        getContentsFromJsonFile()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +49,11 @@ class ViewController: UIViewController {
             goToNextPointOnNo(toPoint: toPoint)
             saveDataForPdf(key: IBlblQuestions.text!, value: "NO")
         }
+    }
+    
+    @IBAction func IBbtnResetTap(_ sender: UIButton) {
+        arrSavedStateDict.removeAll()
+        getContentsFromJsonFile()
     }
 }
 
