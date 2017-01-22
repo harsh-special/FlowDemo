@@ -22,5 +22,25 @@
         "No": {
             "toPoint" : "D2",
         }
+    },
+    "D4" : {
+        "text" : "This is D4?",
+        "options" : ["Yes", "No"],
+        "Yes": {
+            "toPoint" : "Mode 1"
+        },
+        "No": {
+            "toPoint" : "D5",
+        }
+    },
+    "D5" : {
+        "text" : "This is D5?",
+        "options" : ["Yes", "No"],
+        "Yes": {
+            "toPoint" : "OV0"
+        },
+        "No": {
+            "toPoint" : "D2",
+        }
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 import SwiftyJSON
 import MessageUI
 import SimplePDF
+import SideMenu
 
 class ViewController: UIViewController {
 
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getContentsFromJsonFile()
+        SideMenuManager.menuFadeStatusBar = false
     }
 
     override func didReceiveMemoryWarning() {
