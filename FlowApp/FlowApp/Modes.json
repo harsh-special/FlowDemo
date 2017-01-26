@@ -1,392 +1,346 @@
-/*{
-    "Start" : {
-        "text": "Welcome to the application",
-        "toPoint" : "D1"
-    },
-    "D1" : {
-        "text" : "This is D1?",
-        "options" : ["Yes", "No"],
-        "Yes": {
-            "toPoint" : "D3"
-        },
-        "No": {
-            "toPoint" : "Mode 3",
-        }
-    },
-    "D3" : {
-        "text" : "This is D3?",
-        "options" : ["Yes", "No"],
-        "Yes": {
-            "toPoint" : "D4"
-        },
-        "No": {
-            "toPoint" : "D2",
-        }
-    },
-    "D4" : {
-        "text" : "This is D4?",
-        "options" : ["Yes", "No"],
-        "Yes": {
-            "toPoint" : "Mode 1"
-        },
-        "No": {
-            "toPoint" : "D5",
-        }
-    },
-    "D5" : {
-        "text" : "This is D5?",
-        "options" : ["Yes", "No"],
-        "Yes": {
-            "toPoint" : "OV0"
-        },
-        "No": {
-            "toPoint" : "D1",
-        }
-    }
-}*/
-
-
 {
-    "start": {
-        "title": "Welcome",
-        "toPoint": "D1"
-    },
-    "D1": {
-        "id": "d1",
-        "type": "diamond",
-        "title": "This is D1",
-        "options": [
-                    "yes",
-                    "no"
-                    ],
-        "yes": {
-            "toPoint": "D3"
+    "Mode2": {
+        "start": {
+            "title": "Welcome",
+            "toPoint": "D1"
         },
-        "no": {
-            "toPoint": "Mode3"
-        }
-    },
-    "D2": {
-        "id": "d2",
-        "type": "redRectangle",
-        "title": "Quesionnaire",
-        "options": [
-                    {
-                    "PP1": "Option1"
-                    },
-                    {
-                    "PP2": "Option2"
-                    },
-                    {
-                    "PP3": "Option3"
-                    },
-                    {
-                    "PP4": "Option4"
-                    },
-                    {
-                    "PP5": "None of above"
-                    }
-                    ]
-    },
-    "D3": {
-        "id": "d3",
-        "type": "diamond",
-        "title": "This is D3",
-        "options": [
-                    "yes",
-                    "no"
-                    ],
-        "yes": {
-            "toPoint": "D4"
+        "D1": {
+            "id": "d1",
+            "type": "10001",
+            "title": "This is D1",
+            "options": [
+                        "yes",
+                        "no"
+                        ],
+            "yes": {
+                "toPoint": "D3"
+            },
+            "no": {
+                "toPoint": "Mode3"
+            }
         },
-        "no": {
-            "toPoint": "D2"
-        }
-    },
-    "D4": {
-        "id": "d4",
-        "type": "diamond",
-        "title": "This is D4",
-        "options": [
-                    "yes",
-                    "no"
-                    ],
-        "yes": {
-            "toPoint": "Mode1"
+        "D2": {
+            "id": "d2",
+            "type": "20001",
+            "title": "Quesionnaire",
+            "options": [
+                        {
+                        "PP1": "Option1"
+                        },
+                        {
+                        "PP2": "Option2"
+                        },
+                        {
+                        "PP3": "Option3"
+                        },
+                        {
+                        "PP4": "Option4"
+                        },
+                        {
+                        "PP5": "None of above"
+                        }
+                        ]
         },
-        "no": {
-            "toPoint": "D5"
-        }
-    },
-    "D5": {
-        "id": "d5",
-        "type": "diamond",
-        "title": "This is D5",
-        "options": [
-                    "yes",
-                    "no"
-                    ],
-        "yes": {
-            "toPoint": "OV0"
+        "D3": {
+            "id": "d3",
+            "type": "10001",
+            "title": "This is D3",
+            "options": [
+                        "yes",
+                        "no"
+                        ],
+            "yes": {
+                "toPoint": "D4"
+            },
+            "no": {
+                "toPoint": "D2"
+            }
         },
-        "no": {
-            "toPoint": "D2"
-        }
-    },
-    "D6": {
-        "id": "d6",
-        "title": "D6 title",
-        "type": "diamond",
-        "options": "yes, no",
-        "yes": {
-            "toPoint": "OV5"
+        "D4": {
+            "id": "d4",
+            "type": "10001",
+            "title": "This is D4",
+            "options": [
+                        "yes",
+                        "no"
+                        ],
+            "yes": {
+                "toPoint": "Mode1"
+            },
+            "no": {
+                "toPoint": "D5"
+            }
         },
-        "no": {
-            "toPoint": "OV6"
-        }
-    },
-    "D8": {
-        "id": "d8",
-        "title": "D8 title here",
-        "options": [
-                    {
-                    "optionA": "yes"
-                    },
-                    {
-                    "optionB": "no"
-                    }
-                    ],
-        "optionA_D3": {
-            "toPoint": "OV1"
+        "D5": {
+            "id": "d5",
+            "type": "10001",
+            "title": "This is D5",
+            "options": [
+                        "yes",
+                        "no"
+                        ],
+            "yes": {
+                "toPoint": "OV0"
+            },
+            "no": {
+                "toPoint": "D2"
+            }
         },
-        "optionA_!D3_D2": {
-            "toPoint": "OV3"
+        "D6": {
+            "id": "d6",
+            "title": "D6 title",
+            "type": "10001",
+            "options": "yes, no",
+            "yes": {
+                "toPoint": "OV5"
+            },
+            "no": {
+                "toPoint": "OV6"
+            }
         },
-        "optionA_!D3_!D2": {
-            "toPoint": "OV8"
-        }
-    },
-    "D9": {
-        "id": "d9",
-        "title": "D9 title",
-        "type": "diaomond",
-        "options": [
-                    {
-                    "optionA": "yes"
-                    },
-                    {
-                    "optionB": "no"
-                    }
-                    ],
-        "": {},
-        "optionA_!D3_!D2": {
-            "toPoint": "OV8"
+        "D8": {
+            "id": "d8",
+            "title": "D8 title here",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
+                        ],
+            "optionA_D3": {
+                "toPoint": "OV1"
+            },
+            "optionA_!D3_D2": {
+                "toPoint": "OV3"
+            },
+            "optionA_!D3_!D2": {
+                "toPoint": "OV8"
+            }
         },
-        "optionA_D3_!D2": {
-            "toPoint": "D10"
+        "D9": {
+            "id": "d9",
+            "title": "D9 title",
+            "type": "10001",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
+                        ],
+            "": {},
+            "optionA_!D3_!D2": {
+                "toPoint": "OV8"
+            },
+            "optionA_D3_!D2": {
+                "toPoint": "D10"
+            },
+            "optionA_D2": {
+                "toPoint": "OV2"
+            },
+            "optionB": {
+                "toPoint": "EA"
+            }
         },
-        "optionA_D2": {
-            "toPoint": "OV2"
+        "D10": {
+            "id": "d10",
+            "title": "D10 title here",
+            "type": "10001",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
+                        ],
+            "optionA": {
+                "toPoint": "H6"
+            },
+            "optionB": {
+                "toPoint": "OV8"
+            },
+            "": {}
         },
-        "optionB": {
-            "toPoint": "EA"
-        }
-    },
-    "D10": {
-        "id": "d10",
-        "title": "D10 title here",
-        "type": "diaomond",
-        "options": [
-                    {
-                    "optionA": "yes"
-                    },
-                    {
-                    "optionB": "no"
-                    }
-                    ],
-        "optionA": {
-            "toPoint": "H6"
+        "Mode1": {},
+        "H1": {
+            "id": "h1",
+            "title": "Choose from following options",
+            "options": [
+                        {
+                        "optionA": "option A here"
+                        },
+                        {
+                        "optionB": "option B here"
+                        }
+                        ],
+            "optionA_D3_!D2": {
+                "toPoint": "D6"
+            },
+            "optionA_!D3_!D2": {
+                "toPoint": "OV6"
+            },
+            "optionB_!D3_D2": {
+                "toPoint": "OV3"
+            },
+            "optionB_!D3_!D2": {
+                "toPoint": "OV6"
+            },
+            "optionA_D2": {
+                "toPoint": "OV2"
+            },
+            "optionB_D3": {
+                "toPoint": "OV1"
+            }
         },
-        "optionB": {
-            "toPoint": "OV8"
+        "H5": {
+            "id": "h5",
+            "title": "Choose from th following options",
+            "options": [
+                        {
+                        "optionA": "option A here"
+                        },
+                        {
+                        "optionB": "option B here"
+                        }
+                        ],
+            "optionA": {
+                "toPoint": "D9"
+            },
+            "optionB": {
+                "toPoint": "D8"
+            }
         },
-        "": {}
-    },
-    "Mode1": {},
-    "H1": {
-        "id": "h1",
-        "title": "Choose from following options",
-        "options": [
-                    {
-                    "optionA": "option A here"
-                    },
-                    {
-                    "optionB": "option B here"
-                    }
-                    ],
-        "optionA_D3_!D2": {
-            "toPoint": "D6"
-        },
-        "optionA_!D3_!D2": {
-            "toPoint": "OV6"
-        },
-        "optionB_!D3_D2": {
-            "toPoint": "OV3"
-        },
-        "optionB_!D3_!D2": {
-            "toPoint": "OV6"
-        },
-        "optionA_D2": {
-            "toPoint": "OV2"
-        },
-        "optionB_D3": {
-            "toPoint": "OV1"
-        }
-    },
-    "H5": {
-        "id": "h5",
-        "title": "Choose from th following options",
-        "options": [
-                    {
-                    "optionA": "option A here"
-                    },
-                    {
-                    "optionB": "option B here"
-                    }
-                    ],
-        "optionA": {
-            "toPoint": "D9"
-        },
-        "optionB": {
+        "H6": {
+            "id": "h6",
             "toPoint": "D8"
-        }
-    },
-    "H6": {
-        "id": "h6",
-        "toPoint": "D8"
-    },
-    "PP1": {
-        "id": "OC1",
-        "title": "Choose from one:",
-        "options": [
-                    {
-                    "optionA": "\"A option here\""
-                    },
-                    {
-                    "optionB": "\"B option here\""
-                    },
-                    {
-                    "optionC": "\"C option here\""
-                    }
-                    ],
-        "optionAD2": {
-            "toPoint": "OV3"
         },
-        "optionANotD2": {
-            "toPoint": "OV6"
+        "PP1": {
+            "id": "OC1",
+            "title": "Choose from one:",
+            "options": [
+                        {
+                        "optionA": "\"A option here\""
+                        },
+                        {
+                        "optionB": "\"B option here\""
+                        },
+                        {
+                        "optionC": "\"C option here\""
+                        }
+                        ],
+            "optionAD2": {
+                "toPoint": "OV3"
+            },
+            "optionANotD2": {
+                "toPoint": "OV6"
+            },
+            "optionAD3": {
+                "toPoint": "OV1"
+            },
+            "optionANotD3": {
+                "toPoint": "PAGE4-2"
+            },
+            "optionB": {
+                "toPoint": "H1"
+            },
+            "optionC": {
+                "toPoint": "PAGE4-2"
+            },
+            "": {}
         },
-        "optionAD3": {
-            "toPoint": "OV1"
+        "PP2": {
+            "id": "OC2",
+            "title": "Choose from one:",
+            "options": [
+                        {
+                        "optionA": "A option here"
+                        },
+                        {
+                        "optionB": "B option here"
+                        },
+                        {
+                        "optionC": "C option here"
+                        },
+                        {
+                        "optionD": "D option here"
+                        }
+                        ],
+            "optionA_D3": {
+                "toPoint": "OV1"
+            },
+            "optionA_!D3_D2": {
+                "toPoint": "OV3"
+            },
+            "optionA_!D3_!D2": {
+                "toPoint": "OV7"
+            },
+            "optionC": {
+                "toPoint": "H4"
+            },
+            "optionB": {
+                "toPoint": "H3"
+            },
+            "optionD": {
+                "toPoint": "H2"
+            }
         },
-        "optionANotD3": {
-            "toPoint": "PAGE4-2"
+        "PP3": {
+            "id": "OC3",
+            "title": "Choose from one:",
+            "options": [
+                        {
+                        "optionA": "option A here"
+                        },
+                        {
+                        "optionB": "option B here"
+                        },
+                        {
+                        "optionC": "option C here"
+                        }
+                        ],
+            "optionA_D3": {
+                "toPoint": "OV1"
+            },
+            "optionA_!D3_D2": {
+                "toPoint": "OV3"
+            },
+            "optionA_!D3_!D2": {
+                "toPoint": "OV8"
+            },
+            "optionC": {
+                "toPoint": "PAGE6-2"
+            },
+            "optionB": {
+                "toPoint": "H5"
+            }
         },
-        "optionB": {
-            "toPoint": "H1"
+        "PP4": {
+            "id": "h8",
+            "title": "H8 title",
+            "toPoint_D2": "OV4",
+            "toPoint_!D2": "OV9",
+            "": {}
         },
-        "optionC": {
-            "toPoint": "PAGE4-2"
+        "PP5": {
+            "id": "PAGE52"
         },
-        "": {}
-    },
-    "PP2": {
-        "id": "OC2",
-        "title": "Choose from one:",
-        "options": [
-                    {
-                    "optionA": "A option here"
-                    },
-                    {
-                    "optionB": "B option here"
-                    },
-                    {
-                    "optionC": "C option here"
-                    },
-                    {
-                    "optionD": "D option here"
-                    }
-                    ],
-        "optionA_D3": {
-            "toPoint": "OV1"
+        "OV1": {},
+        "OV2": {},
+        "OV3": {},
+        "OV5": {
+            "id": "ov5",
+            "title": "OV5 title"
         },
-        "optionA_!D3_D2": {
-            "toPoint": "OV3"
+        "OV6": {
+            "id": "ov6",
+            "title": "ov6 title",
+            "type": "exit",
+            "": {}
         },
-        "optionA_!D3_!D2": {
-            "toPoint": "OV7"
-        },
-        "optionC": {
-            "toPoint": "H4"
-        },
-        "optionB": {
-            "toPoint": "H3"
-        },
-        "optionD": {
-            "toPoint": "H2"
-        }
-    },
-    "PP3": {
-        "id": "OC3",
-        "title": "Choose from one:",
-        "options": [
-                    {
-                    "optionA": "option A here"
-                    },
-                    {
-                    "optionB": "option B here"
-                    },
-                    {
-                    "optionC": "option C here"
-                    }
-                    ],
-        "optionA_D3": {
-            "toPoint": "OV1"
-        },
-        "optionA_!D3_D2": {
-            "toPoint": "OV3"
-        },
-        "optionA_!D3_!D2": {
-            "toPoint": "OV8"
-        },
-        "optionC": {
-            "toPoint": "PAGE6-2"
-        },
-        "optionB": {
-            "toPoint": "H5"
-        }
-    },
-    "PP4": {
-        "id": "h8",
-        "title": "H8 title",
-        "toPoint_D2": "OV4",
-        "toPoint_!D2": "OV9",
-        "": {}
-    },
-    "PP5": {
-        "id": "PAGE52"
-    },
-    "OV1": {},
-    "OV2": {},
-    "OV3": {},
-    "OV5": {
-        "id": "ov5",
-        "title": "OV5 title"
-    },
-    "OV6": {
-        "id": "ov6",
-        "title": "ov6 title",
-        "type": "exit",
-        "": {}
-    },
-    "OV8": {}
+        "OV8": {}
+    }
 }

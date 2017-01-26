@@ -11,6 +11,7 @@ import SwiftyJSON
 import MessageUI
 import SimplePDF
 import SideMenu
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -18,13 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBbtnYes: UIButton!
     @IBOutlet weak var IBbtnNo: UIButton!
     
+    var troubleShootParser = GCGModesParser()
     var arrSavedStateDict = [[String: String]]()
-    var modesJson: JSON?
-    var nextPoint: String? {
-        didSet {
-            IBlblQuestions.text = modesJson![nextPoint!]["text"].stringValue
-        }
-    }
+    lazy var dicMode = [String:Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,21 +31,16 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func IBbtnYesTap(_ sender: UIButton) {
-        if let toPoint = nextPoint {
-            goToNextPointOnYes(toPoint: toPoint)
-            saveDataForPdf(key: IBlblQuestions.text!, value: "YES")
-        }
+        troubleShootParser.moveToStepYes()
+        setDataToView()
     }
     
     @IBAction func IBbtnNoTap(_ sender: UIButton) {
-        if let toPoint = nextPoint {
-            goToNextPointOnNo(toPoint: toPoint)
-            saveDataForPdf(key: IBlblQuestions.text!, value: "NO")
-        }
+        troubleShootParser.moveToStepNo()
+        setDataToView()
     }
     
     @IBAction func IBbtnResetTap(_ sender: UIButton) {
@@ -58,16 +50,23 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
+    
+    // Parser Methods
+    func loadParser() {
+        troubleShootParser.SetData(data: (dicMode["Mode2"] as! [String : Any]))
+    }
+}
+
+extension ViewController {
 
     //Read Json File
     func getContentsFromJsonFile() {
         let path = Bundle.main.path(forResource: "Modes", ofType: "json")
         let jsonData = try! Data(contentsOf: URL(fileURLWithPath: path!), options: Data.ReadingOptions.dataReadingMapped)
-        modesJson = JSON(data: jsonData)
-        if modesJson != nil {
-            print(modesJson!)
-            setDataToView()
-        }
+       // modesJson = JSON(data: jsonData)
+        dicMode = try! JSONSerialization.jsonObject(with: jsonData, options: []) as! [String: Any]
+        loadParser()
+        setDataToView()
     }
 }
 
@@ -75,16 +74,7 @@ extension ViewController {
     
     //Set Json Data to View and save data
     func setDataToView() {
-        IBlblQuestions.text = modesJson!["Start"]["text"].stringValue
-        nextPoint = modesJson!["Start"]["toPoint"].stringValue
-    }
-    
-    func goToNextPointOnYes(toPoint: String) {
-        nextPoint = modesJson![toPoint]["Yes"]["toPoint"].stringValue
-    }
-    
-    func goToNextPointOnNo(toPoint: String) {
-        nextPoint = modesJson![toPoint]["No"]["toPoint"].stringValue
+        IBlblQuestions.text = troubleShootParser.currentStepText
     }
     
     func saveDataForPdf(key: String, value: String) {
