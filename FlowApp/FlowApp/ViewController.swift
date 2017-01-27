@@ -12,13 +12,24 @@ import MessageUI
 import SimplePDF
 import SideMenu
 import Foundation
+import M13Checkbox
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var IBlblQuestions: UILabel!
     @IBOutlet weak var IBbtnYes: UIButton!
     @IBOutlet weak var IBbtnNo: UIButton!
+    @IBOutlet weak var IBtxtQuestions: UITextView!
+    @IBOutlet weak var IBviewDecision: UIView!
     
+    @IBOutlet weak var IBviewQuestionaire: UIView!
+    @IBOutlet weak var IBtxtQuestTitle: UITextView!
+    @IBOutlet weak var IBQCheckBox1: M13Checkbox!
+    @IBOutlet weak var IBQCheckBox2: M13Checkbox!
+    @IBOutlet weak var IBQCheckBox3: M13Checkbox!
+    @IBOutlet weak var IBQCheckBox4: M13Checkbox!
+    @IBOutlet weak var IBQCheckBox5: M13Checkbox!
+
+    var arrSelectedAnswer = [String]()
     var troubleShootParser = GCGModesParser()
     var arrSavedStateDict = [[String: String]]()
     lazy var dicMode = [String:Any]()
@@ -33,6 +44,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    // MARK: - Global Methods -
+    
+    @IBAction func IBbtnResetTap(_ sender: UIButton) {
+        arrSavedStateDict.removeAll()
+        getContentsFromJsonFile()
+    }
+    
+    // MARK: - Decision Methods -
+    
     @IBAction func IBbtnYesTap(_ sender: UIButton) {
         troubleShootParser.moveToStepYes()
         setDataToView()
@@ -42,20 +62,38 @@ class ViewController: UIViewController {
         troubleShootParser.moveToStepNo()
         setDataToView()
     }
-    
-    @IBAction func IBbtnResetTap(_ sender: UIButton) {
-        arrSavedStateDict.removeAll()
-        getContentsFromJsonFile()
+ 
+    // MARK: - Questionaire Methods -
+    @IBAction func IBbtnNextTap(_ sender: UIButton) {
+        arrSelectedAnswer.removeAll()
+        print(IBQCheckBox1.checkState)
+        print(IBQCheckBox2.checkState)
+        print(IBQCheckBox3.checkState)
+        print(IBQCheckBox4.checkState)
+        print(IBQCheckBox5.checkState)
+        if IBQCheckBox1.checkState == .checked {
+            arrSelectedAnswer.append("PP1")
+        }
+        if IBQCheckBox2.checkState == .checked {
+            arrSelectedAnswer.append("PP2")
+        }
+        if IBQCheckBox3.checkState == .checked {
+            arrSelectedAnswer.append("PP3")
+        }
+        if IBQCheckBox4.checkState == .checked {
+            arrSelectedAnswer.append("PP4")
+        }
+        if IBQCheckBox5.checkState == .checked {
+            arrSelectedAnswer.append("PP5")
+        }
+        print(arrSelectedAnswer)
+        troubleShootParser.moveToStepNo()
+        setDataToView()
     }
+    
 }
 
-extension ViewController {
-    
-    // Parser Methods
-    func loadParser() {
-        troubleShootParser.SetData(data: (dicMode["Mode2"] as! [String : Any]))
-    }
-}
+
 
 extension ViewController {
 
@@ -72,9 +110,33 @@ extension ViewController {
 
 extension ViewController {
     
+    // Parser Methods
+    func loadParser() {
+        troubleShootParser.SetData(data: (dicMode["Mode2"] as! [String : Any]))
+    }
+}
+
+extension ViewController {
+    
     //Set Json Data to View and save data
     func setDataToView() {
-        IBlblQuestions.text = troubleShootParser.currentStepText
+        if troubleShootParser.currentStepType == "diamond" {
+            IBtxtQuestions.text = troubleShootParser.currentStepText
+            showHideViews(showViews: [IBviewDecision], hideViews: [IBviewQuestionaire])
+            IBtxtQuestions.text = troubleShootParser.currentStepText
+        } else if troubleShootParser.currentStepType == "redRectangle" {
+            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision])
+            IBtxtQuestTitle.text = troubleShootParser.currentStepText
+        }
+    }
+    
+    func showHideViews(showViews: [UIView], hideViews: [UIView]) {
+        for showView in showViews {
+            showView.isHidden = false
+        }
+        for hideView in hideViews {
+            hideView.isHidden = true
+        }
     }
     
     func saveDataForPdf(key: String, value: String) {

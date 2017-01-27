@@ -1,18 +1,21 @@
 PODS:
+  - M13Checkbox (3.1.3)
   - SideMenu (2.1.5)
   - SimplePDF (2.0.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - M13Checkbox
   - SideMenu
   - SimplePDF
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  M13Checkbox: c132a7e0eb964731855eff67b883a0b21b7c0977
   SideMenu: bcd2d7b7d4395af088e213cebd11c3ac7d958f5a
   SimplePDF: 9004c9ad4aa30a9ccec6032f4f12b76bc053ec55
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: e2c520c402d7d76e7b7d05394f6c2d8f4ac4d1f7
+PODFILE CHECKSUM: afad8de5bc27ec73a275240dcd6e287ce681decc
 
 COCOAPODS: 1.1.1

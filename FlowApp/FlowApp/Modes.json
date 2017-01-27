@@ -6,22 +6,26 @@
         },
         "D1": {
             "id": "d1",
-            "type": "10001",
+            "type": "diamond",
             "title": "This is D1",
             "options": [
-                        "yes",
-                        "no"
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
                         ],
-            "yes": {
+            "optionA": {
                 "toPoint": "D3"
             },
-            "no": {
+            "optionB": {
                 "toPoint": "Mode3"
             }
         },
         "D2": {
             "id": "d2",
-            "type": "20001",
+            "type": "redRectangle",
             "title": "Quesionnaire",
             "options": [
                         {
@@ -43,58 +47,77 @@
         },
         "D3": {
             "id": "d3",
-            "type": "10001",
+            "type": "diamond",
             "title": "This is D3",
             "options": [
-                        "yes",
-                        "no"
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
                         ],
-            "yes": {
+            "optionA": {
                 "toPoint": "D4"
             },
-            "no": {
+            "optionB": {
                 "toPoint": "D2"
             }
         },
         "D4": {
             "id": "d4",
-            "type": "10001",
+            "type": "diamond",
             "title": "This is D4",
             "options": [
-                        "yes",
-                        "no"
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
                         ],
-            "yes": {
+            "optionA": {
                 "toPoint": "Mode1"
             },
-            "no": {
+            "optionB": {
                 "toPoint": "D5"
             }
         },
         "D5": {
             "id": "d5",
-            "type": "10001",
+            "type": "diamond",
             "title": "This is D5",
             "options": [
-                        "yes",
-                        "no"
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
                         ],
-            "yes": {
+            "optionA": {
                 "toPoint": "OV0"
             },
-            "no": {
+            "optionB": {
                 "toPoint": "D2"
             }
         },
         "D6": {
             "id": "d6",
             "title": "D6 title",
-            "type": "10001",
-            "options": "yes, no",
-            "yes": {
+            "type": "diamond",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
+                        ],
+            "optionA": {
                 "toPoint": "OV5"
             },
-            "no": {
+            "optionB": {
                 "toPoint": "OV6"
             }
         },
@@ -109,20 +132,46 @@
                         "optionB": "no"
                         }
                         ],
-            "optionA_D3": {
-                "toPoint": "OV1"
-            },
-            "optionA_!D3_D2": {
-                "toPoint": "OV3"
-            },
-            "optionA_!D3_!D2": {
-                "toPoint": "OV8"
-            }
+            "optionA": [
+                        {
+                        "positive": [
+                                     "D3"
+                                     ],
+                        "negative": "",
+                        "toPoint": "OV1"
+                        },
+                        {
+                        "positive": [
+                                     "D2"
+                                     ],
+                        "negative": [
+                                     "D3"
+                                     ],
+                        "toPoint": "OV3"
+                        },
+                        {
+                        "positive": [
+                                     "D2"
+                                     ],
+                        "negative": [
+                                     "D3"
+                                     ],
+                        "toPoint": "OV3"
+                        },
+                        {
+                        "positive": "",
+                        "negative": [
+                                     "D2",
+                                     "D3"
+                                     ],
+                        "toPoint": "OV8"
+                        }
+                        ]
         },
         "D9": {
             "id": "d9",
             "title": "D9 title",
-            "type": "10001",
+            "type": "diaomond",
             "options": [
                         {
                         "optionA": "yes"
@@ -131,16 +180,32 @@
                         "optionB": "no"
                         }
                         ],
-            "": {},
-            "optionA_!D3_!D2": {
-                "toPoint": "OV8"
-            },
-            "optionA_D3_!D2": {
-                "toPoint": "D10"
-            },
-            "optionA_D2": {
-                "toPoint": "OV2"
-            },
+            "optionA": [
+                        {
+                        "positive": "",
+                        "negative": [
+                                     "D2",
+                                     "D3"
+                                     ],
+                        "toPoint": "OV8"
+                        },
+                        {
+                        "positive": [
+                                     "D3"
+                                     ],
+                        "negative": [
+                                     "D2"
+                                     ],
+                        "toPoint": "D10"
+                        },
+                        {
+                        "positive": [
+                                     "D2"
+                                     ],
+                        "negative": "",
+                        "toPoint": "OV2"
+                        }
+                        ],
             "optionB": {
                 "toPoint": "EA"
             }
@@ -148,7 +213,7 @@
         "D10": {
             "id": "d10",
             "title": "D10 title here",
-            "type": "10001",
+            "type": "diaomond",
             "options": [
                         {
                         "optionA": "yes"
@@ -177,24 +242,40 @@
                         "optionB": "option B here"
                         }
                         ],
-            "optionA_D3_!D2": {
-                "toPoint": "D6"
-            },
-            "optionA_!D3_!D2": {
-                "toPoint": "OV6"
-            },
-            "optionB_!D3_D2": {
-                "toPoint": "OV3"
-            },
-            "optionB_!D3_!D2": {
-                "toPoint": "OV6"
-            },
-            "optionA_D2": {
-                "toPoint": "OV2"
-            },
-            "optionB_D3": {
-                "toPoint": "OV1"
-            }
+            "optionA": [
+                        {
+                        "positive": "D3",
+                        "negative": "D2",
+                        "toPoint": "D6"
+                        },
+                        {
+                        "positive": "",
+                        "negative": "[D2, D3]",
+                        "toPoint": "OV6"
+                        },
+                        {
+                        "positive": "D2",
+                        "negative": "",
+                        "toPoint": "OV2"
+                        }
+                        ],
+            "optionB": [
+                        {
+                        "positive": "D2",
+                        "negative": "D3",
+                        "toPoint": "OV3"
+                        },
+                        {
+                        "positive": "",
+                        "negative": "[D2, D3]",
+                        "toPoint": "OV3"
+                        },
+                        {
+                        "positive": "D3",
+                        "negative": "",
+                        "toPoint": "OV1"
+                        }
+                        ]
         },
         "H5": {
             "id": "h5",
@@ -232,18 +313,36 @@
                         "optionC": "\"C option here\""
                         }
                         ],
-            "optionAD2": {
-                "toPoint": "OV3"
-            },
-            "optionANotD2": {
-                "toPoint": "OV6"
-            },
-            "optionAD3": {
-                "toPoint": "OV1"
-            },
-            "optionANotD3": {
-                "toPoint": "PAGE4-2"
-            },
+            "optionA": [
+                        {
+                        "positive": [
+                                     "D2"
+                                     ],
+                        "negative": "",
+                        "toPoint": "OV3"
+                        },
+                        {
+                        "positive": "",
+                        "negative": [
+                                     "D2"
+                                     ],
+                        "toPoint": "OV6"
+                        },
+                        {
+                        "positive": [
+                                     "D3"
+                                     ],
+                        "negative": "",
+                        "toPoint": "OV1"
+                        },
+                        {
+                        "positive": "",
+                        "negative": [
+                                     "D3"
+                                     ],
+                        "toPoint": "PAGE4-2"
+                        }
+                        ],
             "optionB": {
                 "toPoint": "H1"
             },
@@ -269,14 +368,13 @@
                         "optionD": "D option here"
                         }
                         ],
-            "optionA_D3": {
+            "": {},
+            "optionA": {
+                "positive": [
+                             "D3"
+                             ],
+                "negative": "",
                 "toPoint": "OV1"
-            },
-            "optionA_!D3_D2": {
-                "toPoint": "OV3"
-            },
-            "optionA_!D3_!D2": {
-                "toPoint": "OV7"
             },
             "optionC": {
                 "toPoint": "H4"
@@ -302,14 +400,12 @@
                         "optionC": "option C here"
                         }
                         ],
-            "optionA_D3": {
+            "optionA": {
+                "positive": [
+                             "D3"
+                             ],
+                "negative": "",
                 "toPoint": "OV1"
-            },
-            "optionA_!D3_D2": {
-                "toPoint": "OV3"
-            },
-            "optionA_!D3_!D2": {
-                "toPoint": "OV8"
             },
             "optionC": {
                 "toPoint": "PAGE6-2"

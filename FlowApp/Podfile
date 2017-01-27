@@ -9,4 +9,5 @@ target 'FlowApp' do
 pod 'SwiftyJSON'
 pod 'SimplePDF'
 pod 'SideMenu'
+pod 'M13Checkbox'
 end

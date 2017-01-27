@@ -14,8 +14,8 @@ struct GCGModesParser {
     static let options	    = "options"
     static let title		= "title"
     static let type  		= "type"
-    static let optionYes	= "yes"
-    static let optionNo		= "no"
+    static let optionA	    = "optionA"
+    static let optionB		= "optionB"
     static let end			= "end"
     
     var onSuccessfulEnd : (()->())?
@@ -43,15 +43,15 @@ struct GCGModesParser {
         return (dicCurrentState[GCGModesParser.type] ?? "") as! String
     }
     
-    mutating func SetData(data:[String:Any]) {
+    mutating func SetData(data:[String : Any]) {
         dicMain = data
-        dicCurrentState = dicMain["D1"]! as! [String:Any]	
+        dicCurrentState = dicMain["D1"]! as! [String : Any]
     }
     
     
     mutating func moveToStepNo() {
         checkForStepEnd()
-        if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionNo] as? [String:String] {
+        if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionB] as? [String : String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
                 dicCurrentState = safeDicCurrentState
@@ -60,7 +60,7 @@ struct GCGModesParser {
     }
     
     mutating func moveToStepYes() {
-        if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionYes] as? [String:String] {
+        if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionA] as? [String:String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
                 dicCurrentState = safeDicCurrentState
