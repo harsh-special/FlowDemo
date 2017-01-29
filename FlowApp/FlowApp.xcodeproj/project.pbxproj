@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8DD60A1FA1156316316D4A65 /* Pods_FlowApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9500427F868B995B94FB48 /* Pods_FlowApp.framework */; };
 		D51EECFD1E39E1A800096864 /* GCGModesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EECFC1E39E1A800096864 /* GCGModesParser.swift */; };
+		D53592B31E3CB18700E6030C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53592B21E3CB18700E6030C /* Constants.swift */; };
 		D53B286E1E34DC2400D04EFA /* FlowSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B286D1E34DC2400D04EFA /* FlowSideMenuViewController.swift */; };
 		D53B28701E34DF0700D04EFA /* AboutUSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B286F1E34DF0700D04EFA /* AboutUSViewController.swift */; };
 		D5A8A42F1DFBF29E002D090A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A8A42E1DFBF29E002D090A /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		B227AAE5E5BC6280CA6F9DF6 /* Pods-FlowApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlowApp/Pods-FlowApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE9500427F868B995B94FB48 /* Pods_FlowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51EECFC1E39E1A800096864 /* GCGModesParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCGModesParser.swift; sourceTree = "<group>"; };
+		D53592B21E3CB18700E6030C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D53B286D1E34DC2400D04EFA /* FlowSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowSideMenuViewController.swift; sourceTree = "<group>"; };
 		D53B286F1E34DF0700D04EFA /* AboutUSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUSViewController.swift; sourceTree = "<group>"; };
 		D5A8A42B1DFBF29E002D090A /* FlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				D5A8A4421DFBF5FB002D090A /* Modes.json */,
 				D5A8A42E1DFBF29E002D090A /* AppDelegate.swift */,
 				D5A8A4301DFBF29E002D090A /* ViewController.swift */,
+				D53592B21E3CB18700E6030C /* Constants.swift */,
 				D53B286F1E34DF0700D04EFA /* AboutUSViewController.swift */,
 				D51EECFC1E39E1A800096864 /* GCGModesParser.swift */,
 				D53B286D1E34DC2400D04EFA /* FlowSideMenuViewController.swift */,
@@ -230,6 +233,7 @@
 				D53B286E1E34DC2400D04EFA /* FlowSideMenuViewController.swift in Sources */,
 				D5A8A4311DFBF29E002D090A /* ViewController.swift in Sources */,
 				D5A8A42F1DFBF29E002D090A /* AppDelegate.swift in Sources */,
+				D53592B31E3CB18700E6030C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

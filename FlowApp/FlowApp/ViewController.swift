@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBQCheckBox3: M13Checkbox!
     @IBOutlet weak var IBQCheckBox4: M13Checkbox!
     @IBOutlet weak var IBQCheckBox5: M13Checkbox!
+    
+    @IBOutlet weak var IBviewInformative: UIView!
+    @IBOutlet weak var IBtxtInfoTitle: UITextView!
+    
 
     var arrSelectedAnswer = [String]()
     var troubleShootParser = GCGModesParser()
@@ -64,6 +68,7 @@ class ViewController: UIViewController {
     }
  
     // MARK: - Questionaire Methods -
+    
     @IBAction func IBbtnNextTap(_ sender: UIButton) {
         arrSelectedAnswer.removeAll()
         print(IBQCheckBox1.checkState)
@@ -87,17 +92,23 @@ class ViewController: UIViewController {
             arrSelectedAnswer.append("PP5")
         }
         print(arrSelectedAnswer)
-        troubleShootParser.moveToStepNo()
+        troubleShootParser.moveToStepChoice(choiceText: arrSelectedAnswer.first!)
+        troubleShootParser.moveToStepYes()
         setDataToView()
     }
     
+    // MARK: - Informative Methods -
+
+    @IBAction func IBbtnOkTap(_ sender: UIButton) {
+        setDataToView()
+    }
 }
 
 
 
 extension ViewController {
 
-    //Read Json File
+    //Read Json File and Parse
     func getContentsFromJsonFile() {
         let path = Bundle.main.path(forResource: "Modes", ofType: "json")
         let jsonData = try! Data(contentsOf: URL(fileURLWithPath: path!), options: Data.ReadingOptions.dataReadingMapped)
@@ -106,11 +117,7 @@ extension ViewController {
         loadParser()
         setDataToView()
     }
-}
-
-extension ViewController {
     
-    // Parser Methods
     func loadParser() {
         troubleShootParser.SetData(data: (dicMode["Mode2"] as! [String : Any]))
     }
@@ -119,6 +126,11 @@ extension ViewController {
 extension ViewController {
     
     //Set Json Data to View and save data
+    func getActualTextForJson(title: String) -> String {
+        let actualString = Constants().value(forKey: title) as! String
+        return actualString
+    }
+    
     func setDataToView() {
         if troubleShootParser.currentStepType == "diamond" {
             IBtxtQuestions.text = troubleShootParser.currentStepText
@@ -127,6 +139,11 @@ extension ViewController {
         } else if troubleShootParser.currentStepType == "redRectangle" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
+        } else if troubleShootParser.currentStepType == "oval" {
+            showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision,IBviewQuestionaire])
+            IBtxtInfoTitle.text = troubleShootParser.currentStepText
+        } else if troubleShootParser.currentStepType == "" {
+            
         }
     }
     

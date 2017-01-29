@@ -25,8 +25,27 @@
         },
         "D2": {
             "id": "d2",
+            "type": "diamond",
+            "title": "This is D2",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        },
+                        {
+                        "optionB": "no"
+                        }
+                        ],
+            "optionA": {
+                "toPoint": "QUES1"
+            },
+            "optionB": {
+                "toPoint": "QUES1"
+            }
+        },
+        "QUES1": {
+            "id": "ques1",
             "type": "redRectangle",
-            "title": "Quesionnaire",
+            "title": "Quesionnaire Your Questions",
             "options": [
                         {
                         "PP1": "Option1"
@@ -43,7 +62,22 @@
                         {
                         "PP5": "None of above"
                         }
-                        ]
+                        ],
+            "PP1": {
+                "toPoint": "PP1"
+            },
+            "PP2": {
+                "toPoint": "PP2"
+            },
+            "PP3": {
+                "toPoint": "PP3"
+            },
+            "PP4": {
+                "toPoint": "H8"
+            },
+            "PP5": {
+                "toPoint": "QUES1"
+            }
         },
         "D3": {
             "id": "d3",
@@ -99,6 +133,19 @@
                 "toPoint": "OV0"
             },
             "optionB": {
+                "toPoint": "D2"
+            }
+        },
+        "OV0": {
+            "id": "ov0",
+            "type": "oval",
+            "title": "This is OV0",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        }
+                        ],
+            "optionA": {
                 "toPoint": "D2"
             }
         },
@@ -301,6 +348,7 @@
         },
         "PP1": {
             "id": "OC1",
+            "type": "redRectangle",
             "title": "Choose from one:",
             "options": [
                         {

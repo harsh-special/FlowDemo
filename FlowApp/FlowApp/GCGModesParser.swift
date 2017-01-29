@@ -17,6 +17,12 @@ struct GCGModesParser {
     static let optionA	    = "optionA"
     static let optionB		= "optionB"
     static let end			= "end"
+    static let MCQues1      = "PP1"
+    static let MCQues2      = "PP2"
+    static let MCQues3      = "PP3"
+    static let MCQues4      = "PP4"
+    static let MCQues5      = "PP5"
+
     
     var onSuccessfulEnd : (()->())?
     var dicMain : [String : Any] =  [:]
@@ -109,30 +115,30 @@ struct GCGModesParser {
         }
     }
     
-    mutating func moveToStepPrevious() {
-        if let safeDicCurrentState = dicCurrentState[GCGModesParser.fromPoint] as? String {
-            dicCurrentState = dicMain[safeDicCurrentState]! as! [String : Any]
-        } else if let __text  = dicCurrentState[GCGModesParser.title] as? String , !__text.isEmpty {
-            if let prevStepText = dicCurrentState[GCGModesParser.fromPoint] as? String,
-                let fromStep = dicMain[prevStepText] as? [String:Any] {
-                dicCurrentState = fromStep
-            } else {
-                checkForStepEnd()
-            }
-        } else {
-            checkForStepEnd()
-        }
-        
-        if let __text = dicCurrentState[GCGModesParser.title] as? String , !__text.isEmpty  {
-            
-        } else {
-            checkForStepEnd()
-        }
-    }
+//    mutating func moveToStepPrevious() {
+//        if let safeDicCurrentState = dicCurrentState[GCGModesParser.fromPoint] as? String {
+//            dicCurrentState = dicMain[safeDicCurrentState]! as! [String : Any]
+//        } else if let __text  = dicCurrentState[GCGModesParser.title] as? String , !__text.isEmpty {
+//            if let prevStepText = dicCurrentState[GCGModesParser.fromPoint] as? String,
+//                let fromStep = dicMain[prevStepText] as? [String:Any] {
+//                dicCurrentState = fromStep
+//            } else {
+//                checkForStepEnd()
+//            }
+//        } else {
+//            checkForStepEnd()
+//        }
+//        
+//        if let __text = dicCurrentState[GCGModesParser.title] as? String , !__text.isEmpty  {
+//            
+//        } else {
+//            checkForStepEnd()
+//        }
+//    }
     
-    mutating func reloadTroubleShoot() {
-        dicCurrentState = dicMain[GCGModesParser.title]! as! [String : Any]
-    }
+//    mutating func reloadTroubleShoot() {
+//        dicCurrentState = dicMain[GCGModesParser.title]! as! [String : Any]
+//    }
     
     func checkForStepEnd()   {
         if let isEnd = dicCurrentState[GCGModesParser.end] as? Int {
