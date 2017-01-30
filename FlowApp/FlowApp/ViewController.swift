@@ -76,13 +76,13 @@ class ViewController: UIViewController {
             arrSelectedAnswer.append((troubleShootParser.choices.first?.keys.first)!)
         }
         if IBQCheckBox2.checkState == .checked {
-            arrSelectedAnswer.append("PP2")
+            arrSelectedAnswer.append(troubleShootParser.choices[1].keys.first!)
         }
         if IBQCheckBox3.checkState == .checked {
-            arrSelectedAnswer.append("PP3")
+            arrSelectedAnswer.append(troubleShootParser.choices[2].keys.first!)
         }
         if IBQCheckBox4.checkState == .checked {
-            arrSelectedAnswer.append("PP4")
+            arrSelectedAnswer.append(troubleShootParser.choices[3].keys.first!)
         }
         if IBQCheckBox5.checkState == .checked {
             arrSelectedAnswer.append("PP5")
@@ -95,6 +95,7 @@ class ViewController: UIViewController {
     // MARK: - Informative Methods -
 
     @IBAction func IBbtnOkTap(_ sender: UIButton) {
+        troubleShootParser.moveToStepOK()
         setDataToView()
     }
 }
@@ -129,17 +130,27 @@ extension ViewController {
     func setDataToView() {
         if troubleShootParser.currentStepType == "diamond" {
             IBtxtQuestions.text = troubleShootParser.currentStepText
-            showHideViews(showViews: [IBviewDecision], hideViews: [IBviewQuestionaire])
+            showHideViews(showViews: [IBviewDecision], hideViews: [IBviewQuestionaire, IBviewInformative])
             IBtxtQuestions.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "redRectangle" {
-            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision])
+            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
+            IBQCheckBox1.checkState = .unchecked
+            IBQCheckBox2.checkState = .unchecked
+            IBQCheckBox3.checkState = .unchecked
+            IBQCheckBox4.checkState = .unchecked
+            IBQCheckBox5.checkState = .unchecked
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "oval" {
-            showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision,IBviewQuestionaire])
+            showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
             IBtxtInfoTitle.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "yellowHexa" {
-            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision])
+            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
+            IBQCheckBox1.checkState = .unchecked
+            IBQCheckBox2.checkState = .unchecked
+            IBQCheckBox3.checkState = .unchecked
+            IBQCheckBox4.checkState = .unchecked
+            IBQCheckBox5.checkState = .unchecked
         }
     }
     

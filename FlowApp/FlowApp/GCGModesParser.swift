@@ -81,6 +81,16 @@ struct GCGModesParser {
         checkForStepEnd()
     }
     
+    mutating func moveToStepOK() {
+        if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionA] as? [String : String] {
+            if let toPoint = safeDicCurrentState[GCGModesParser.toPoint] {
+                if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                    dicCurrentState = safeDicCurrentState
+                }
+            }
+            
+        }
+    }
     
     mutating func moveToStepChoice(choiceText:String) {
         if let safeDicCurrentState = dicCurrentState[choiceText] as? [String: String] {
