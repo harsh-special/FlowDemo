@@ -8,6 +8,12 @@
 
 import Foundation
 
+struct stateValues {
+    static var D1 = true
+    static var D2 = true
+    static var D3 = true
+}
+
 struct GCGModesParser {
     static let fromPoint	= "fromPoint"
     static let toPoint		= "toPoint"
@@ -33,10 +39,10 @@ struct GCGModesParser {
     }
     
     
-    var choices:[String] {
+    var choices:[[String : Any]] {
         if isStepWithOption {
-            let choices = dicCurrentState[GCGModesParser.options] as! [String]
-            return (choices.count > 5) ? Array(choices[0..<5]) : choices
+            let choices = dicCurrentState[GCGModesParser.options] as! [[String : Any]]
+            return (choices.count > 5) ? Array(choices[0..<5]) : choices 
         }
         return []
     }
@@ -89,9 +95,25 @@ struct GCGModesParser {
             } else {
                 checkForStepEnd()
             }
-        } else {
+        } else if let currentChoices = dicCurrentState[choiceText] as? [[String: Any]] {
+            let toPoint = getToPointFromOptions(currentOptions: currentChoices)
+            
+            if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                dicCurrentState = safeDicCurrentState
+            }
+            
+            print(currentChoices)
+            
+        }
+        else {
             checkForStepEnd()
         }
+    }
+    
+    func getToPointFromOptions(currentOptions: [[String : Any]]) -> String {
+//        let positive = currentOption
+        return currentOptions.first![GCGModesParser.toPoint] as! String
+
     }
     
     mutating func moveToStepNext() {

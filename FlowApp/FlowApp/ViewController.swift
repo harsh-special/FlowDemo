@@ -71,13 +71,9 @@ class ViewController: UIViewController {
     
     @IBAction func IBbtnNextTap(_ sender: UIButton) {
         arrSelectedAnswer.removeAll()
-        print(IBQCheckBox1.checkState)
-        print(IBQCheckBox2.checkState)
-        print(IBQCheckBox3.checkState)
-        print(IBQCheckBox4.checkState)
-        print(IBQCheckBox5.checkState)
         if IBQCheckBox1.checkState == .checked {
-            arrSelectedAnswer.append("PP1")
+            print("troubleShootParser.choices.first \(troubleShootParser.choices.first)")
+            arrSelectedAnswer.append((troubleShootParser.choices.first?.keys.first)!)
         }
         if IBQCheckBox2.checkState == .checked {
             arrSelectedAnswer.append("PP2")
@@ -93,7 +89,6 @@ class ViewController: UIViewController {
         }
         print(arrSelectedAnswer)
         troubleShootParser.moveToStepChoice(choiceText: arrSelectedAnswer.first!)
-        troubleShootParser.moveToStepYes()
         setDataToView()
     }
     
@@ -142,8 +137,9 @@ extension ViewController {
         } else if troubleShootParser.currentStepType == "oval" {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision,IBviewQuestionaire])
             IBtxtInfoTitle.text = troubleShootParser.currentStepText
-        } else if troubleShootParser.currentStepType == "" {
-            
+        } else if troubleShootParser.currentStepType == "yellowHexa" {
+            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision])
+            IBtxtQuestTitle.text = troubleShootParser.currentStepText
         }
     }
     

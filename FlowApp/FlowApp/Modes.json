@@ -64,13 +64,13 @@
                         }
                         ],
             "PP1": {
-                "toPoint": "PP1"
+                "toPoint": "OC1"
             },
             "PP2": {
-                "toPoint": "PP2"
+                "toPoint": "OC2"
             },
             "PP3": {
-                "toPoint": "PP3"
+                "toPoint": "OC3"
             },
             "PP4": {
                 "toPoint": "H8"
@@ -184,7 +184,7 @@
                         "positive": [
                                      "D3"
                                      ],
-                        "negative": "",
+                        "negative": [],
                         "toPoint": "OV1"
                         },
                         {
@@ -206,7 +206,7 @@
                         "toPoint": "OV3"
                         },
                         {
-                        "positive": "",
+                        "positive": [],
                         "negative": [
                                      "D2",
                                      "D3"
@@ -229,7 +229,7 @@
                         ],
             "optionA": [
                         {
-                        "positive": "",
+                        "positive": [],
                         "negative": [
                                      "D2",
                                      "D3"
@@ -249,7 +249,7 @@
                         "positive": [
                                      "D2"
                                      ],
-                        "negative": "",
+                        "negative": [],
                         "toPoint": "OV2"
                         }
                         ],
@@ -275,11 +275,12 @@
             "optionB": {
                 "toPoint": "OV8"
             },
-            "": {}
         },
+        
         "Mode1": {},
         "H1": {
             "id": "h1",
+            "type" : "yellowHexa",
             "title": "Choose from following options",
             "options": [
                         {
@@ -291,35 +292,35 @@
                         ],
             "optionA": [
                         {
-                        "positive": "D3",
-                        "negative": "D2",
+                        "positive": ["D3"],
+                        "negative": ["D2"],
                         "toPoint": "D6"
                         },
                         {
-                        "positive": "",
-                        "negative": "[D2, D3]",
+                        "positive": [],
+                        "negative": ["D2", "D3"],
                         "toPoint": "OV6"
                         },
                         {
-                        "positive": "D2",
-                        "negative": "",
+                        "positive": ["D2"],
+                        "negative": [],
                         "toPoint": "OV2"
                         }
                         ],
             "optionB": [
                         {
-                        "positive": "D2",
-                        "negative": "D3",
+                        "positive": ["D2"],
+                        "negative": ["D3"],
                         "toPoint": "OV3"
                         },
                         {
-                        "positive": "",
-                        "negative": "[D2, D3]",
+                        "positive": [],
+                        "negative": ["D2", "D3"],
                         "toPoint": "OV3"
                         },
                         {
-                        "positive": "D3",
-                        "negative": "",
+                        "positive": ["D3"],
+                        "negative": [],
                         "toPoint": "OV1"
                         }
                         ]
@@ -346,7 +347,7 @@
             "id": "h6",
             "toPoint": "D8"
         },
-        "PP1": {
+        "OC1": {
             "id": "OC1",
             "type": "redRectangle",
             "title": "Choose from one:",
@@ -366,13 +367,13 @@
                         "positive": [
                                      "D2"
                                      ],
-                        "negative": "",
+                        "negative": ["D3"],
                         "toPoint": "OV3"
                         },
                         {
-                        "positive": "",
+                        "positive": [],
                         "negative": [
-                                     "D2"
+                                     "D3","D2"
                                      ],
                         "toPoint": "OV6"
                         },
@@ -380,11 +381,11 @@
                         "positive": [
                                      "D3"
                                      ],
-                        "negative": "",
+                        "negative": [],
                         "toPoint": "OV1"
                         },
                         {
-                        "positive": "",
+                        "positive": [],
                         "negative": [
                                      "D3"
                                      ],
@@ -399,7 +400,7 @@
             },
             "": {}
         },
-        "PP2": {
+        "OC2": {
             "id": "OC2",
             "title": "Choose from one:",
             "options": [
@@ -421,7 +422,7 @@
                 "positive": [
                              "D3"
                              ],
-                "negative": "",
+                "negative": [],
                 "toPoint": "OV1"
             },
             "optionC": {
@@ -434,7 +435,7 @@
                 "toPoint": "H2"
             }
         },
-        "PP3": {
+        "OC3": {
             "id": "OC3",
             "title": "Choose from one:",
             "options": [
@@ -452,7 +453,7 @@
                 "positive": [
                              "D3"
                              ],
-                "negative": "",
+                "negative": [],
                 "toPoint": "OV1"
             },
             "optionC": {
@@ -462,26 +463,70 @@
                 "toPoint": "H5"
             }
         },
-        "PP4": {
+        
+        "H8": {
             "id": "h8",
             "title": "H8 title",
-            "toPoint_D2": "OV4",
-            "toPoint_!D2": "OV9",
-            "": {}
+            "optionA" : {
+                "positive": ["D2"],
+                "negative" : [],
+                "toPoint" : "OV4"
+            },
+            
+            "optionB" : {
+                "positive": [],
+                "negative" : ["D2"],
+                "toPoint" : "OV9"
+            }
+            
         },
+        
         "PP5": {
             "id": "PAGE52"
         },
         "OV1": {},
-        "OV2": {},
-        "OV3": {},
+        
+        "OV2": {
+        
+            "id": "OV2",
+            "type": "oval",
+            "title": "This is OV2",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        }
+                        ],
+            "optionA": {
+                "toPoint": "D12"
+            }
+
+            
+        
+        },
+
+        "OV3": {
+        
+            "id": "OV3",
+            "type": "oval",
+            "title": "This is OV3",
+            "options": [
+                        {
+                        "optionA": "yes"
+                        }
+                        ],
+            "optionA": {
+                "toPoint": "D12"
+            }
+            
+        },
+        
         "OV5": {
-            "id": "ov5",
+            "id": "OV5",
             "title": "OV5 title"
         },
         "OV6": {
-            "id": "ov6",
-            "title": "ov6 title",
+            "id": "OV6",
+            "title": "OV6 title",
             "type": "exit",
             "": {}
         },
