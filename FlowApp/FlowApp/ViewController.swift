@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     // MARK: - Global Methods -
     
     @IBAction func IBbtnResetTap(_ sender: UIButton) {
-        arrSavedStateDict.removeAll()
+        resetDataArrays()
         getContentsFromJsonFile()
     }
     
@@ -161,6 +161,12 @@ extension ViewController {
         for hideView in hideViews {
             hideView.isHidden = true
         }
+    }
+    
+    func resetDataArrays() {
+        arrSavedStateDict.removeAll()
+        arrSelectedAnswer.removeAll()
+//        arrTrackAllEvents.removeAll()
     }
     
     func saveDataForPdf(key: String, value: String) {

@@ -8,10 +8,9 @@
 
 import Foundation
 
-struct stateValues {
-    static var D1 = true
-    static var D2 = true
-    static var D3 = true
+enum modeValue : String {
+    case yes = "yes"
+    case no  = "no"
 }
 
 struct GCGModesParser {
@@ -28,8 +27,9 @@ struct GCGModesParser {
     static let MCQues3      = "PP3"
     static let MCQues4      = "PP4"
     static let MCQues5      = "PP5"
+    static let id           = "id"
 
-    
+    var dicStateMode : [String : String] = [:]
     var onSuccessfulEnd : (()->())?
     var dicMain : [String : Any] =  [:]
     var dicCurrentState : [String : Any] = [:]
@@ -47,6 +47,12 @@ struct GCGModesParser {
         return []
     }
     
+    var currentRootNode: String = ""
+    
+    var currentNodeID : String {
+        return dicCurrentState[GCGModesParser.id] as! String
+    }
+    
     var currentStepText: String {
         return (dicCurrentState[GCGModesParser.title] ?? "") as! String
     }
@@ -60,35 +66,69 @@ struct GCGModesParser {
         dicCurrentState = dicMain["D1"]! as! [String : Any]
     }
     
+    mutating func saveState(key: String, value:String) {
+        dicStateMode[key] = value
+        print("dicStateMode === \(dicStateMode)")
+    }
+    
+    func getNodeState(id:String) -> Bool {
+        return dicStateMode[id] == "yes" ? true : false
+    }
+    
+
     
     mutating func moveToStepNo() {
         checkForStepEnd()
         if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionB] as? [String : String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
+                currentRootNode = nextStep
+
+                saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.no.rawValue)
                 dicCurrentState = safeDicCurrentState
             }
         }
     }
     
+    
     mutating func moveToStepYes() {
         if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionA] as? [String:String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
+                currentRootNode = nextStep
+                
+                saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                 dicCurrentState = safeDicCurrentState
+                
             }
         }
         checkForStepEnd()
     }
     
     mutating func moveToStepOK() {
-        if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionA] as? [String : String] {
+        if let arrOptions = dicCurrentState[GCGModesParser.options] as? [[String : String]] {
+            
+            if arrOptions.count == 1 {
+                let option = arrOptions.first!
+                let toPoint = option[GCGModesParser.toPoint]!
+                
+                if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                    currentRootNode = toPoint
+                    saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
+                    dicCurrentState = safeDicCurrentState
+                }
+                
+            }
+            
+            /*
             if let toPoint = safeDicCurrentState[GCGModesParser.toPoint] {
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                    currentRootNode = toPoint
+                    saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                     dicCurrentState = safeDicCurrentState
                 }
             }
-            
+            */
         }
     }
     
@@ -120,11 +160,84 @@ struct GCGModesParser {
         }
     }
     
+    
     func getToPointFromOptions(currentOptions: [[String : Any]]) -> String {
-//        let positive = currentOption
-        return currentOptions.first![GCGModesParser.toPoint] as! String
+        var toPoint = ""
+        for option in currentOptions {
+            let arrPositive = option["positive"] as! [String]
+            let arrNegative = option["negative"] as! [String]
 
+            let arrPositiveValues = arrPositive.map{ return getNodeState(id: $0) }
+            let arrNegativeValues = arrNegative.map{ return getNodeState(id: $0) }
+
+            let isAllPositive = !arrPositiveValues.contains(false)
+            let isAllNegative = !arrNegativeValues.contains(true)
+
+            
+            if arrPositiveValues.count > 0 && arrNegativeValues.count > 0 {
+
+                print("arrPositive === \(arrPositive)")
+                print("negative === \(arrNegative)")
+
+                print("arrPositiveValues === \(arrPositiveValues)")
+                print("arrNegativeValues === \(arrNegativeValues)")
+                
+                
+                if isAllNegative && isAllPositive {
+                    toPoint = option[GCGModesParser.toPoint] as! String
+                }
+                
+                
+            } else if arrNegative.count == 0 {
+                
+
+                if isAllPositive {
+                    toPoint = option[GCGModesParser.toPoint] as! String
+                }
+                
+                
+            } else if arrPositive.count == 0 {
+                
+                if isAllNegative {
+                    toPoint = option[GCGModesParser.toPoint] as! String
+                }
+                
+            } else {
+                
+                toPoint = option[GCGModesParser.toPoint] as! String
+            }
+            
+            
+        }
+        
+        return toPoint
     }
+
+    
+    
+//    func getToPointFromOptions(currentOptions: [[String : Any]]) -> String {
+//        var toPoint = ""
+//        for option in currentOptions {
+//            let arrPositive = option["positive"] as! [String]
+//            let arrNegative = option["negative"] as! [String]
+//            
+//            
+//            let arrPositiveValues = arrPositive.map{ return getNodeState(id: $0) }
+//            let arrNegativeValues = arrNegative.map{ return getNodeState(id: $0) }
+//            
+//            let postiveResult = arrPositiveValues.contains(false)
+//            let negativeResult = arrNegativeValues.contains(true)
+//
+//            if !postiveResult && !negativeResult {
+//                
+//            } else {
+//                toPoint = option[GCGModesParser.toPoint] as! String
+//            }
+//            
+//        }
+// 
+//        return toPoint
+//    }
     
     mutating func moveToStepNext() {
         if let safeDicCurrentState = dicCurrentState[GCGModesParser.toPoint] as? String {
