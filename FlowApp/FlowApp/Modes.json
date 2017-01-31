@@ -202,7 +202,7 @@
         "D9": {
             "id": "d9",
             "title": "D9 title",
-            "type": "diaomond",
+            "type": "diamond",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -299,7 +299,7 @@
         "D13": {
             "id": "D13",
             "title": "D13 title",
-            "type": "diaomond",
+            "type": "diamond",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -319,7 +319,7 @@
         "D14": {
             "id": "D14",
             "title": "D14 title",
-            "type": "diaomond",
+            "type": "diamond",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -353,7 +353,7 @@
         "D10": {
             "id": "D10",
             "title": "D10 title here",
-            "type": "diaomond",
+            "type": "diamond",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -470,7 +470,6 @@
             "optionC": {
                 "toPoint": "PAGE4-2"
             },
-            "": {}
         },
         
         "OC2": {
@@ -614,7 +613,19 @@
             "id": "PAGE52"
         },
         
-        "OV1": {},
+        "OV1": {
+        
+            "id": "OV1",
+            "title": "OV1 title",
+            "type" : "oval",
+            "options": [
+                        {
+                        "toPoint": "D12"
+                        }
+                    ]
+
+            
+        },
         
         "OV2": {
             

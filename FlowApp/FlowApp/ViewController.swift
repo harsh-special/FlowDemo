@@ -42,6 +42,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         SideMenuManager.menuFadeStatusBar = false
         getContentsFromJsonFile()
+
+        troubleShootParser.onSuccessfulEnd = { [unowned self] in
+            self.showSendMailErrorAlert()
+        }
+
+        
     }
 
     override func didReceiveMemoryWarning() {

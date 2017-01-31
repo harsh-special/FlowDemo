@@ -21,7 +21,7 @@ struct GCGModesParser {
     static let type  		= "type"
     static let optionA	    = "optionA"
     static let optionB		= "optionB"
-    static let end			= "end"
+    static let end			= "exit"
     static let MCQues1      = "PP1"
     static let MCQues2      = "PP2"
     static let MCQues3      = "PP3"
@@ -286,7 +286,7 @@ struct GCGModesParser {
 //    }
     
     func checkForStepEnd()   {
-        if let isEnd = dicCurrentState[GCGModesParser.end] as? Int {
+        if let isEnd = dicCurrentState[GCGModesParser.toPoint] as? Int {
             if isEnd == -1 {
                 onSuccessfulEnd!()
             }
