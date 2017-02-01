@@ -13,6 +13,7 @@ import SimplePDF
 import SideMenu
 import Foundation
 import M13Checkbox
+import DLRadioButton
 
 class ViewController: UIViewController {
 
@@ -22,12 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBviewDecision: UIView!
     
     @IBOutlet weak var IBviewQuestionaire: UIView!
+    @IBOutlet weak var IBviewOptionsContainer:UIView!
     @IBOutlet weak var IBtxtQuestTitle: UITextView!
-    @IBOutlet weak var IBQCheckBox1: M13Checkbox!
-    @IBOutlet weak var IBQCheckBox2: M13Checkbox!
-    @IBOutlet weak var IBQCheckBox3: M13Checkbox!
-    @IBOutlet weak var IBQCheckBox4: M13Checkbox!
-    @IBOutlet weak var IBQCheckBox5: M13Checkbox!
     
     @IBOutlet weak var IBviewInformative: UIView!
     @IBOutlet weak var IBtxtInfoTitle: UITextView!
@@ -46,8 +43,6 @@ class ViewController: UIViewController {
         troubleShootParser.onSuccessfulEnd = { [unowned self] in
             self.showSendMailErrorAlert()
         }
-
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,23 +72,23 @@ class ViewController: UIViewController {
     
     @IBAction func IBbtnNextTap(_ sender: UIButton) {
         arrSelectedAnswer.removeAll()
-        if IBQCheckBox1.checkState == .checked {
-            print("troubleShootParser.choices.first \(troubleShootParser.choices.first)")
-            arrSelectedAnswer.append((troubleShootParser.choices.first?.keys.first)!)
-        }
-        if IBQCheckBox2.checkState == .checked {
-            arrSelectedAnswer.append(troubleShootParser.choices[1].keys.first!)
-        }
-        if IBQCheckBox3.checkState == .checked {
-            arrSelectedAnswer.append(troubleShootParser.choices[2].keys.first!)
-        }
-        if IBQCheckBox4.checkState == .checked {
-            arrSelectedAnswer.append(troubleShootParser.choices[3].keys.first!)
-        }
-        if IBQCheckBox5.checkState == .checked {
-            arrSelectedAnswer.append("PP5")
-        }
-        print(arrSelectedAnswer)
+//        if IBQCheckBox1.checkState == .checked {
+//            print("troubleShootParser.choices.first \(troubleShootParser.choices.first)")
+//            arrSelectedAnswer.append((troubleShootParser.choices.first?.keys.first)!)
+//        }
+//        if IBQCheckBox2.checkState == .checked {
+//            arrSelectedAnswer.append(troubleShootParser.choices[1].keys.first!)
+//        }
+//        if IBQCheckBox3.checkState == .checked {
+//            arrSelectedAnswer.append(troubleShootParser.choices[2].keys.first!)
+//        }
+//        if IBQCheckBox4.checkState == .checked {
+//            arrSelectedAnswer.append(troubleShootParser.choices[3].keys.first!)
+//        }
+//        if IBQCheckBox5.checkState == .checked {
+//            arrSelectedAnswer.append("PP5")
+//        }
+//        print(arrSelectedAnswer)
         troubleShootParser.moveToStepChoice(choiceText: arrSelectedAnswer.first!)
         setDataToView()
     }
@@ -140,24 +135,55 @@ extension ViewController {
             IBtxtQuestions.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "redRectangle" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
-            IBQCheckBox1.checkState = .unchecked
-            IBQCheckBox2.checkState = .unchecked
-            IBQCheckBox3.checkState = .unchecked
-            IBQCheckBox4.checkState = .unchecked
-            IBQCheckBox5.checkState = .unchecked
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
+            setupOptionsInQuestionaireView()
         } else if troubleShootParser.currentStepType == "oval" {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
             IBtxtInfoTitle.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "yellowHexa" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
-            IBQCheckBox1.checkState = .unchecked
-            IBQCheckBox2.checkState = .unchecked
-            IBQCheckBox3.checkState = .unchecked
-            IBQCheckBox4.checkState = .unchecked
-            IBQCheckBox5.checkState = .unchecked
         }
+    }
+    
+    func setupOptionsInQuestionaireView() {
+        let options = troubleShootParser.choices
+        if let firstOptionValue = troubleShootParser.choices.first as? [String : String] {
+            var otherButtons : [DLRadioButton] = []
+            let firstFrame = CGRect(x: 20, y: 8, width: UIScreen.main.bounds.width - 20, height: 44)
+            let firstRadioBtn = createRadioButton(firstFrame, title: firstOptionValue.values.first!, color: UIColor.blue);
+            for i in 1..<options.count {
+                if let optionValue = troubleShootParser.choices[i] as? [String : String] {
+                    let frame = CGRect(x: firstFrame.minX, y: (firstFrame.maxY + 6) + 50 * CGFloat(i - 1), width: firstFrame.width, height: firstFrame.height)
+                    let radioButton = createRadioButton(frame, title: optionValue.values.first!, color: UIColor.blue);
+                    otherButtons.append(radioButton)
+                }
+            }
+            firstRadioBtn.otherButtons = otherButtons
+        }
+    }
+    
+    func createRadioButton(_ frame : CGRect, title : String, color : UIColor) -> DLRadioButton {
+        let radioButton = DLRadioButton(frame: frame)
+        radioButton.titleLabel!.font = UIFont.systemFont(ofSize: 17)
+        radioButton.setTitle(title, for: UIControlState())
+        radioButton.setTitleColor(color, for: UIControlState())
+        radioButton.iconColor = color
+        radioButton.indicatorColor = color
+        radioButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left;
+        radioButton.addTarget(self, action: #selector(logSelectedButton), for: UIControlEvents.touchUpInside)
+        IBviewOptionsContainer.addSubview(radioButton)
+        return radioButton;
+    }
+    
+    func logSelectedButton(_ radioButton : DLRadioButton) {
+//        if (radioButton.isMultipleSelectionEnabled) {
+//            for button in radioButton.selectedButtons() {
+//                print(String(format: "%@ is selected.\n", button.titleLabel!.text!));
+//            }
+//        } else {
+            print(String(format: "%@ is selected.\n", radioButton.selected()!.titleLabel!.text!));
+//        }
     }
     
     func showHideViews(showViews: [UIView], hideViews: [UIView]) {
