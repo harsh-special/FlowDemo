@@ -373,15 +373,19 @@
         },
         
         "H1": {
-            "id": "h1",
+            "id": "H1",
             "type" : "yellowHexa",
             "hasChoice" : "yes",
             "title": "Choose from following options",
-            "options": [{
-                        "optionA": "option A here"
-                        }, {
-                        "optionB": "option B here"
-                        }],
+            "options": [ {
+                        "id" : "optionA",
+                        "title": "option A here"
+                        },
+                        {
+                        "id" : "optionB",
+                        "title": "\"B option here\""
+                        }
+                        ],
             "optionA": [{
                         "positive": ["D3"],
                         "negative": ["D2"],
@@ -427,10 +431,14 @@
             "type" : "yellowHexa",
             "hasChoice" : "yes",
             "title": "Choose from th following options",
-            "options": [{
-                        "optionA": "option A here"
-                        }, {
-                        "optionB": "option B here"
+            "options": [
+                        {
+                        "id" : "optionA",
+                        "title": "option A here"
+                        },
+                        {
+                        "id" : "optionB",
+                        "title": "option B here"
                         }],
             "optionA": {
                 "toPoint": "D9"
@@ -541,13 +549,17 @@
         
         "OC3": {
             "id": "OC3",
+            "type" : "octagon",
             "title": "Choose from one:",
             "options": [{
-                        "optionA": "option A here"
+                        "id" : "optionA",
+                        "title": "option A here"
                         }, {
-                        "optionB": "option B here"
+                        "id" : "optionB",
+                        "title": "option B here"
                         }, {
-                        "optionC": "option C here"
+                        "id" : "optionC",
+                        "title": "option C here"
                         }],
             "optionA": {
                 "positive": [
