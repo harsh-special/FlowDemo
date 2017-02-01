@@ -73,13 +73,13 @@ class ViewController: UIViewController {
         if troubleShootParser.currentStepType == "redRectangle" {
             let result = troubleShootParser.validateQustionnaire()
             if result.success {
-                troubleShootParser.moveToStepChoice(choiceText: result.title)
+                troubleShootParser.moveToStepChoice(choiceText: result.optionID!)
                 setDataToView()
             } else {
-                showAlert(title: "", message: result.title)
+                showAlert(title: "", message: result.title!)
             }
         } else {
-            troubleShootParser.moveToStepChoice(choiceText: (troubleShootParser.choices.first?.keys.first)!)
+            troubleShootParser.moveToStepChoice(choiceText: (troubleShootParser.arrOctagonSelected.first)!)
             setDataToView()
         }
         
@@ -133,8 +133,17 @@ extension ViewController {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
             IBtxtInfoTitle.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "yellowHexa" {
-            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
-            IBtxtQuestTitle.text = troubleShootParser.currentStepText
+            
+            if troubleShootParser.dicCurrentState["hasChoice"] as! String == "yes" {
+                showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
+                IBtxtQuestTitle.text = troubleShootParser.currentStepText
+                setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
+            } else {
+                showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
+                IBtxtInfoTitle.text = troubleShootParser.currentStepText
+                
+            }
+            
         } else if troubleShootParser.currentStepType == "octagon" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
@@ -174,8 +183,8 @@ extension ViewController {
     func createRadioButton(_ frame : CGRect, buttonObject : [String : String], color : UIColor) -> OptionsButton {
         let radioButton = OptionsButton(frame: frame)
         radioButton.titleLabel!.font = UIFont.systemFont(ofSize: 17)
-        radioButton.buttonOptionID = buttonObject["id"] ?? ""
-        radioButton.setTitle(buttonObject["title"] ?? "NO Text", for: UIControlState())
+        radioButton.buttonOptionID = buttonObject["id"]!
+        radioButton.setTitle(buttonObject["title"]!, for: UIControlState())
         radioButton.setTitleColor(color, for: UIControlState())
         radioButton.iconColor = color
         radioButton.indicatorColor = color
@@ -193,6 +202,10 @@ extension ViewController {
                 print(String(format: "%@ is selected.\n", button.titleLabel!.text!));
             }
         } else {
+            
+            troubleShootParser.arrOctagonSelected.removeAll()
+            troubleShootParser.arrOctagonSelected.append(radioButton.buttonOptionID)
+            
             print(String(format: "%@ is selected.\n", radioButton.selected()!.titleLabel!.text!));
         }
     }

@@ -62,38 +62,33 @@
             "title": "Quesionnaire Your Questions",
             "options": [{
                         "id" : "Option1",
-                        "PP1": "Option1",
                         "title": "Option1"
                         }, {
                         "id" : "Option2",
-                        "PP2": "Option2",
                         "title": "Option2"
                         }, {
                         "id" : "Option3",
-                        "PP3": "Option3",
                         "title": "Option3"
                         }, {
                         "id" : "Option4",
-                        "PP4": "Option4",
                         "title": "Option4"
                         }, {
                         "id" : "Option5",
-                        "PP5": "None of above",
                         "title": "None of above"
                         }],
-            "PP1": {
+            "Option1": {
                 "toPoint": "OC1"
             },
-            "PP2": {
+            "Option2": {
                 "toPoint": "OC2"
             },
-            "PP3": {
+            "Option3": {
                 "toPoint": "OC3"
             },
-            "PP4": {
+            "Option4": {
                 "toPoint": "H8"
             },
-            "PP5": {
+            "Option5": {
                 "toPoint": "QUES1"
             }
         },
@@ -379,6 +374,8 @@
         
         "H1": {
             "id": "h1",
+            "type" : "yellowHexa",
+            "hasChoice" : "yes",
             "title": "Choose from following options",
             "options": [{
                         "optionA": "option A here"
@@ -415,16 +412,20 @@
         
         "H2": {
             "id": "h2",
+            "type" : "yellowHexa",
             "title": "Choose from th following options",
-            "options": {
+            "hasChoice" : "no",
+            "options": [{
                 "toPoint": "D12"
-            }
+            }]
             
         },
         
         
         "H5": {
             "id": "h5",
+            "type" : "yellowHexa",
+            "hasChoice" : "yes",
             "title": "Choose from th following options",
             "options": [{
                         "optionA": "option A here"
@@ -440,6 +441,8 @@
         },
         "H6": {
             "id": "h6",
+            "hasChoice" : "no",
+            "type" : "yellowHexa",
             "toPoint": "D8"
         },
         
@@ -448,11 +451,14 @@
             "type": "octagon",
             "title": "Choose from one:",
             "options": [{
-                        "optionA": "\"A option here\""
+                        "id" : "optionA",
+                        "title": "\"A option here\""
                         }, {
-                        "optionB": "\"B option here\""
+                        "id" : "optionB",
+                        "title": "\"B option here\""
                         }, {
-                        "optionC": "\"C option here\""
+                        "id" : "optionC",
+                        "title": "\"C option here\""
                         }],
             "optionA": [{
                         "positive": [
@@ -484,23 +490,44 @@
         
         "OC2": {
             "id": "OC2",
+            "type": "octagon",
             "title": "Choose from one:",
             "options": [{
-                        "optionA": "A option here"
+                        "id" : "optionA",
+                        "title": "A option here"
                         }, {
-                        "optionB": "B option here"
+                        "id" : "optionB",
+                        "title": "B option here"
                         }, {
-                        "optionC": "C option here"
+                        "id" : "optionC",
+                        "title": "C option here"
                         }, {
-                        "optionD": "D option here"
+                        "id" : "optionD",
+                        "title": "D option here"
                         }],
-            "optionA": {
+            "optionA": [
+                        {
                 "positive": [
                              "D3"
                              ],
                 "negative": [],
                 "toPoint": "OV1"
-            },
+                },
+                        {
+                        "positive": [
+                                     "D2"
+                                     ],
+                        "negative": ["D3"],
+                        "toPoint": "OV3"
+                        },
+
+                        {
+                        "positive": [],
+                        "negative": ["D3", "D2"],
+                        "toPoint": "OV6"
+                        },
+                        
+                        ],
             "optionC": {
                 "toPoint": "H4"
             },
@@ -539,7 +566,9 @@
         
         
         "H4": {
-            "id": "h4",
+            "id": "H4",
+            "type" : "yellowHexa",
+            "hasChoice" : "no",
             "title": "H4 title",
             "options": [{
                         "positive": ["D3"],

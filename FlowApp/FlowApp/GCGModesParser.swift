@@ -34,6 +34,7 @@ struct GCGModesParser {
     var dicMain : [String : Any] =  [:]
     var dicCurrentState : [String : Any] = [:]
     var arrQuestionaireSelected : [String] = []
+    var arrOctagonSelected : [String] = []
     
     var isStepWithOption : Bool {
         return (dicCurrentState[GCGModesParser.options] != nil) ? true : false
@@ -130,7 +131,17 @@ struct GCGModesParser {
                 }
             }
             */
+        }  else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
+            let toPoint = getToPointFromOptions(currentOptions: currentChoices)
+            
+            if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                dicCurrentState = safeDicCurrentState
+            }
+            
+            print(currentChoices)
+            
         }
+
     }
     
     mutating func moveToStepChoice(choiceText:String) {
@@ -156,22 +167,22 @@ struct GCGModesParser {
             print(currentChoices)
             
         }
-        else {
+         else {
             checkForStepEnd()
         }
     }
     
-    func validateQustionnaire() -> (success:Bool, title:String) {
+    func validateQustionnaire() -> (success:Bool, title:String?, optionID:String?) {
         
         if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option3") {
-            return (false, "It is not possible for options 1 and 3 to both be true. Please try again")
+            return (false, "It is not possible for options 1 and 3 to both be true. Please try again", nil)
         } else if arrQuestionaireSelected.contains("Option5") && arrQuestionaireSelected.count > 1 {
-            return (false, "It is not possible for options 1 and 5 to both be true. Please try again")
+            return (false, "It is not possible for options 1 and 5 to both be true. Please try again", nil)
         } else if arrQuestionaireSelected.contains("Option5") {
-            return (false, "Please select any of the above options to continue")
+            return (false, "Please select any of the above options to continue", nil)
         }
         
-        return (true, "PP1")
+        return (true, nil, arrQuestionaireSelected.first)
         
     }
     
