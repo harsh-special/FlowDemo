@@ -1,21 +1,24 @@
 PODS:
+  - DLRadioButton (1.4.9)
   - M13Checkbox (3.1.3)
   - SideMenu (2.1.5)
   - SimplePDF (2.0.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - DLRadioButton
   - M13Checkbox
   - SideMenu
   - SimplePDF
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
   M13Checkbox: c132a7e0eb964731855eff67b883a0b21b7c0977
   SideMenu: bcd2d7b7d4395af088e213cebd11c3ac7d958f5a
   SimplePDF: 9004c9ad4aa30a9ccec6032f4f12b76bc053ec55
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: afad8de5bc27ec73a275240dcd6e287ce681decc
+PODFILE CHECKSUM: fe3ccbc13a6d371471cd80db724430c858946490
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.1.0.rc.2
