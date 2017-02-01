@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBtxtInfoTitle: UITextView!
     
 
-    var arrSelectedAnswer = [String]()
     var troubleShootParser = GCGModesParser()
     var arrSavedStateDict = [[String: String]]()
     lazy var dicMode = [String:Any]()
@@ -71,26 +70,19 @@ class ViewController: UIViewController {
     // MARK: - Questionaire Methods -
     
     @IBAction func IBbtnNextTap(_ sender: UIButton) {
-        arrSelectedAnswer.removeAll()
-//        if IBQCheckBox1.checkState == .checked {
-//            print("troubleShootParser.choices.first \(troubleShootParser.choices.first)")
-//            arrSelectedAnswer.append((troubleShootParser.choices.first?.keys.first)!)
-//        }
-//        if IBQCheckBox2.checkState == .checked {
-//            arrSelectedAnswer.append(troubleShootParser.choices[1].keys.first!)
-//        }
-//        if IBQCheckBox3.checkState == .checked {
-//            arrSelectedAnswer.append(troubleShootParser.choices[2].keys.first!)
-//        }
-//        if IBQCheckBox4.checkState == .checked {
-//            arrSelectedAnswer.append(troubleShootParser.choices[3].keys.first!)
-//        }
-//        if IBQCheckBox5.checkState == .checked {
-//            arrSelectedAnswer.append("PP5")
-//        }
-//        print(arrSelectedAnswer)
-        troubleShootParser.moveToStepChoice(choiceText: arrSelectedAnswer.first!)
-        setDataToView()
+        if troubleShootParser.currentStepType == "redRectangle" {
+            let result = troubleShootParser.validateQustionnaire()
+            if result.success {
+                troubleShootParser.moveToStepChoice(choiceText: result.title)
+                setDataToView()
+            } else {
+                showAlert(title: "", message: result.title)
+            }
+        } else {
+            troubleShootParser.moveToStepChoice(choiceText: (troubleShootParser.choices.first?.keys.first)!)
+            setDataToView()
+        }
+        
     }
     
     // MARK: - Informative Methods -
@@ -136,37 +128,54 @@ extension ViewController {
         } else if troubleShootParser.currentStepType == "redRectangle" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
-            setupOptionsInQuestionaireView()
+            setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         } else if troubleShootParser.currentStepType == "oval" {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
             IBtxtInfoTitle.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "yellowHexa" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
+        } else if troubleShootParser.currentStepType == "octagon" {
+            showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
+            IBtxtQuestTitle.text = troubleShootParser.currentStepText
+            setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         }
     }
     
-    func setupOptionsInQuestionaireView() {
+    func setupOptionsInQuestionaireView(type: String) {
+        for subView in IBviewOptionsContainer.subviews {
+            subView.removeFromSuperview()
+        }
         let options = troubleShootParser.choices
         if let firstOptionValue = troubleShootParser.choices.first as? [String : String] {
-            var otherButtons : [DLRadioButton] = []
+            var otherButtons : [OptionsButton] = []
             let firstFrame = CGRect(x: 20, y: 8, width: UIScreen.main.bounds.width - 20, height: 44)
-            let firstRadioBtn = createRadioButton(firstFrame, title: firstOptionValue.values.first!, color: UIColor.blue);
+            let firstRadioBtn = createRadioButton(firstFrame, buttonObject: firstOptionValue, color: UIColor.blue);
             for i in 1..<options.count {
                 if let optionValue = troubleShootParser.choices[i] as? [String : String] {
                     let frame = CGRect(x: firstFrame.minX, y: (firstFrame.maxY + 6) + 50 * CGFloat(i - 1), width: firstFrame.width, height: firstFrame.height)
-                    let radioButton = createRadioButton(frame, title: optionValue.values.first!, color: UIColor.blue);
+                    let radioButton = createRadioButton(frame, buttonObject: optionValue, color: UIColor.blue);
                     otherButtons.append(radioButton)
                 }
             }
             firstRadioBtn.otherButtons = otherButtons
+            if type == "redRectangle" {
+                firstRadioBtn.isMultipleSelectionEnabled = true
+                firstRadioBtn.isIconSquare = true
+                for button in otherButtons {
+                    button.isMultipleSelectionEnabled = true
+                    button.isIconSquare = true
+                }
+            }
+
         }
     }
     
-    func createRadioButton(_ frame : CGRect, title : String, color : UIColor) -> DLRadioButton {
-        let radioButton = DLRadioButton(frame: frame)
+    func createRadioButton(_ frame : CGRect, buttonObject : [String : String], color : UIColor) -> OptionsButton {
+        let radioButton = OptionsButton(frame: frame)
         radioButton.titleLabel!.font = UIFont.systemFont(ofSize: 17)
-        radioButton.setTitle(title, for: UIControlState())
+        radioButton.buttonOptionID = buttonObject["id"] ?? ""
+        radioButton.setTitle(buttonObject["title"] ?? "NO Text", for: UIControlState())
         radioButton.setTitleColor(color, for: UIControlState())
         radioButton.iconColor = color
         radioButton.indicatorColor = color
@@ -176,14 +185,16 @@ extension ViewController {
         return radioButton;
     }
     
-    func logSelectedButton(_ radioButton : DLRadioButton) {
-//        if (radioButton.isMultipleSelectionEnabled) {
-//            for button in radioButton.selectedButtons() {
-//                print(String(format: "%@ is selected.\n", button.titleLabel!.text!));
-//            }
-//        } else {
+    func logSelectedButton(_ radioButton : OptionsButton) {
+        if (radioButton.isMultipleSelectionEnabled) {
+            troubleShootParser.arrQuestionaireSelected.removeAll()
+            for button in radioButton.selectedButtons() as! [OptionsButton] {
+                troubleShootParser.arrQuestionaireSelected.append(button.buttonOptionID)
+                print(String(format: "%@ is selected.\n", button.titleLabel!.text!));
+            }
+        } else {
             print(String(format: "%@ is selected.\n", radioButton.selected()!.titleLabel!.text!));
-//        }
+        }
     }
     
     func showHideViews(showViews: [UIView], hideViews: [UIView]) {
@@ -197,7 +208,6 @@ extension ViewController {
     
     func resetDataArrays() {
         arrSavedStateDict.removeAll()
-        arrSelectedAnswer.removeAll()
 //        arrTrackAllEvents.removeAll()
     }
     
@@ -205,6 +215,14 @@ extension ViewController {
         let dataDict = [key: value]
         arrSavedStateDict.append(dataDict)
 //        createPDFWithData(dataArr: arrSavedStateDict)
+    }
+    
+    func showAlert(title : String, message : String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(okButton)
+        present(alert, animated: true, completion: nil)
     }
 }
 
@@ -244,8 +262,9 @@ extension ViewController {
     }
 }
 
+
 extension ViewController: MFMailComposeViewControllerDelegate {
-    
+
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
@@ -261,7 +280,7 @@ extension ViewController: MFMailComposeViewControllerDelegate {
     }
     
     func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        let sendMailErrorAlert = UIAlertView(title: "EXIT", message: "", delegate: self, cancelButtonTitle: "OK")
         sendMailErrorAlert.show()
     }
     

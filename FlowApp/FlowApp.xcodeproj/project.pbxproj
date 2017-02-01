@@ -18,6 +18,7 @@
 		D5A8A4361DFBF29E002D090A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A8A4351DFBF29E002D090A /* Assets.xcassets */; };
 		D5A8A4391DFBF29E002D090A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A8A4371DFBF29E002D090A /* LaunchScreen.storyboard */; };
 		D5A8A4431DFBF5FB002D090A /* Modes.json in Resources */ = {isa = PBXBuildFile; fileRef = D5A8A4421DFBF5FB002D090A /* Modes.json */; };
+		D5B4DA6D1E423E7B007A80F5 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4DA6C1E423E7B007A80F5 /* OptionsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D5A8A4381DFBF29E002D090A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5A8A43A1DFBF29E002D090A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A8A4421DFBF5FB002D090A /* Modes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Modes.json; sourceTree = "<group>"; };
+		D5B4DA6C1E423E7B007A80F5 /* OptionsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsButton.swift; sourceTree = "<group>"; };
 		FB97397DDE50DEC3AB477404 /* Pods-FlowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlowApp/Pods-FlowApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				D5A8A4421DFBF5FB002D090A /* Modes.json */,
 				D5A8A42E1DFBF29E002D090A /* AppDelegate.swift */,
 				D5A8A4301DFBF29E002D090A /* ViewController.swift */,
+				D5B4DA6C1E423E7B007A80F5 /* OptionsButton.swift */,
 				D53592B21E3CB18700E6030C /* Constants.swift */,
 				D53B286F1E34DF0700D04EFA /* AboutUSViewController.swift */,
 				D51EECFC1E39E1A800096864 /* GCGModesParser.swift */,
@@ -234,6 +237,7 @@
 				D5A8A4311DFBF29E002D090A /* ViewController.swift in Sources */,
 				D5A8A42F1DFBF29E002D090A /* AppDelegate.swift in Sources */,
 				D53592B31E3CB18700E6030C /* Constants.swift in Sources */,
+				D5B4DA6D1E423E7B007A80F5 /* OptionsButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

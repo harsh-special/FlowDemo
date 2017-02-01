@@ -61,15 +61,25 @@
             "type": "redRectangle",
             "title": "Quesionnaire Your Questions",
             "options": [{
-                        "PP1": "Option1"
+                        "id" : "Option1",
+                        "PP1": "Option1",
+                        "title": "Option1"
                         }, {
-                        "PP2": "Option2"
+                        "id" : "Option2",
+                        "PP2": "Option2",
+                        "title": "Option2"
                         }, {
-                        "PP3": "Option3"
+                        "id" : "Option3",
+                        "PP3": "Option3",
+                        "title": "Option3"
                         }, {
-                        "PP4": "Option4"
+                        "id" : "Option4",
+                        "PP4": "Option4",
+                        "title": "Option4"
                         }, {
-                        "PP5": "None of above"
+                        "id" : "Option5",
+                        "PP5": "None of above",
+                        "title": "None of above"
                         }],
             "PP1": {
                 "toPoint": "OC1"
@@ -435,7 +445,7 @@
         
         "OC1": {
             "id": "OC1",
-            "type": "redRectangle",
+            "type": "octagon",
             "title": "Choose from one:",
             "options": [{
                         "optionA": "\"A option here\""

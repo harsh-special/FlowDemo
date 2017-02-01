@@ -33,6 +33,7 @@ struct GCGModesParser {
     var onSuccessfulEnd : (()->())?
     var dicMain : [String : Any] =  [:]
     var dicCurrentState : [String : Any] = [:]
+    var arrQuestionaireSelected : [String] = []
     
     var isStepWithOption : Bool {
         return (dicCurrentState[GCGModesParser.options] != nil) ? true : false
@@ -160,6 +161,19 @@ struct GCGModesParser {
         }
     }
     
+    func validateQustionnaire() -> (success:Bool, title:String) {
+        
+        if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option3") {
+            return (false, "It is not possible for options 1 and 3 to both be true. Please try again")
+        } else if arrQuestionaireSelected.contains("Option5") && arrQuestionaireSelected.count > 1 {
+            return (false, "It is not possible for options 1 and 5 to both be true. Please try again")
+        } else if arrQuestionaireSelected.contains("Option5") {
+            return (false, "Please select any of the above options to continue")
+        }
+        
+        return (true, "PP1")
+        
+    }
     
     func getToPointFromOptions(currentOptions: [[String : Any]]) -> String {
         var toPoint = ""
