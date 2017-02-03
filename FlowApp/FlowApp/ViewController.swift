@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SideMenuManager.menuFadeStatusBar = false
+        
         getContentsFromJsonFile()
 
         troubleShootParser.onSuccessfulEnd = { [unowned self] in

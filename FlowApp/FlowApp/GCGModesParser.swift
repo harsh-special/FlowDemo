@@ -103,6 +103,15 @@ struct GCGModesParser {
                 dicCurrentState = safeDicCurrentState
                 
             }
+        } else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
+            let toPoint = getToPointFromOptions(currentOptions: dicCurrentState[GCGModesParser.optionA] as! [[String: Any]])
+            
+            if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                dicCurrentState = safeDicCurrentState
+            }
+            
+            print(currentChoices)
+            
         }
         checkForStepEnd()
     }

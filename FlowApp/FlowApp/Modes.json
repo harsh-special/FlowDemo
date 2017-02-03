@@ -166,6 +166,7 @@
         },
         "D8": {
             "id": "d8",
+            "type": "diamond",
             "title": "D8 title here",
             "options": [{
                         "optionA": "yes"
@@ -376,7 +377,7 @@
             "id": "H1",
             "type": "yellowHexa",
             "hasChoice": "yes",
-            "title": "Choose from following options",
+            "title": "H1 : Choose from following options",
             "options": [{
                         "id": "optionA",
                         "title": "option A here"
@@ -415,7 +416,7 @@
         "H2": {
             "id": "h2",
             "type": "yellowHexa",
-            "title": "Choose from th following options",
+            "title": "H2 : Choose from th following options",
             "hasChoice": "no",
             "options": [{
                         "toPoint": "D12"
@@ -428,7 +429,7 @@
             "id": "h5",
             "type": "yellowHexa",
             "hasChoice": "yes",
-            "title": "Choose from th following options",
+            "title": "H5: Choose from th following options",
             "options": [{
                         "id": "optionA",
                         "title": "option A here"
@@ -447,6 +448,7 @@
             "id": "h6",
             "hasChoice": "no",
             "type": "yellowHexa",
+            "title": "H6: Choose from th following options",
             "options": [{
                         "toPoint": "D8"
                         }]
@@ -455,7 +457,7 @@
         "OC1": {
             "id": "OC1",
             "type": "octagon",
-            "title": "Choose from one:",
+            "title": "OC1: Choose from one:",
             "options": [{
                         "id": "optionA",
                         "title": "\"A option here\""
@@ -496,7 +498,7 @@
         "OC2": {
             "id": "OC2",
             "type": "octagon",
-            "title": "Choose from one:",
+            "title": "OC2:Choose from one:",
             "options": [{
                         "id": "optionA",
                         "title": "A option here"
@@ -545,7 +547,7 @@
         "OC3": {
             "id": "OC3",
             "type": "octagon",
-            "title": "Choose from one:",
+            "title": "OC3:Choose from one:",
             "options": [{
                         "id": "optionA",
                         "title": "option A here"
@@ -714,8 +716,8 @@
         },
         
         "H7": {
-            "id": "h7",
-            "title": "Choose from following options",
+            "id": "H7",
+            "title": "H7: Choose from following options",
             "type": "yellowHexa",
             "hasChoice": "no",
             "options": [{
