@@ -708,6 +708,7 @@
         "OV4": {
             "id": "OV4",
             "title": "OV4 title",
+            "type" : "oval"
             "options": [{
                         "fromPoint": "H7",
                         "toPoint": "PP3"
@@ -724,7 +725,8 @@
         "H7": {
             "id": "h7",
             "title": "Choose from following options",
-            
+            "type" : "yellowHexa",
+            "hasChoice" : "no",
             "options": [{
                         "positive": ["D2"],
                         "negative": [""],
@@ -739,7 +741,8 @@
         
         "OV5": {
             "id": "OV5",
-            "title": "OV5 title"
+            "title": "OV5 title",
+            "type" : "oval"
         },
         
         "OV6": {
