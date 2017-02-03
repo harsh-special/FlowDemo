@@ -177,13 +177,34 @@ struct GCGModesParser {
         if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option3") {
             return (false, "It is not possible for options 1 and 3 to both be true. Please try again", nil)
         } else if arrQuestionaireSelected.contains("Option5") && arrQuestionaireSelected.count > 1 {
-            return (false, "It is not possible for options 1 and 5 to both be true. Please try again", nil)
-        } else if arrQuestionaireSelected.contains("Option5") {
-            return (false, "Please select any of the above options to continue", nil)
+            return (false, "It is not possible for 'None of the above' and another option to both be true. Please try again", nil)
+        } else if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.count == 1 {
+            return (true, nil, "Option1")
+        } else if arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.count == 1 {
+            return (true, nil, "Option2")
+        } else if arrQuestionaireSelected.contains("Option3") && arrQuestionaireSelected.count == 1 {
+            return (true, nil, "Option3")
+        } else if arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 1 {
+            return (true, nil, "Option4")
+        } else if arrQuestionaireSelected.contains("Option5") && arrQuestionaireSelected.count == 1 {
+            return (true, nil, "Option5")
+        } else if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.count == 2 {
+            return (true, nil, "Option1")
+        } else if arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.contains("Option3") && arrQuestionaireSelected.count == 2 {
+            return (true, nil, "Option2")
+        } else if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 2 {
+            return (true, nil, "Option1")
+        } else if arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 2 {
+            return (true, nil, "Option2")
+        } else if arrQuestionaireSelected.contains("Option3") && arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 2 {
+            return (true, nil, "Option3")
+        } else if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.contains("Option4")  && arrQuestionaireSelected.count == 3 {
+            return (true, nil, "Option1")
+        } else if arrQuestionaireSelected.contains("Option3") && arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 3 {
+            return (true, nil, "Option2")
+        } else {
+            return (true, "Something went wrong", nil)
         }
-        
-        return (true, nil, arrQuestionaireSelected.first)
-        
     }
     
     func getToPointFromOptions(currentOptions: [[String : Any]]) -> String {
