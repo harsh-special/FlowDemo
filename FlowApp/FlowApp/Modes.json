@@ -451,7 +451,9 @@
             "id": "h6",
             "hasChoice" : "no",
             "type" : "yellowHexa",
-            "toPoint": "D8"
+            "options": [{
+                        "toPoint": "D8"
+                        }]
         },
         
         "OC1": {
@@ -606,6 +608,7 @@
             "id": "h3",
             "type" : "yellowHexa",
             "title": "H3 title",
+            "hasChoice" : "no"
             "options": [{
                         "positive": ["D3"],
                         "negative": [],
@@ -647,6 +650,8 @@
         
         "H8": {
             "id": "h8",
+            "type" : "yellowHexa",
+            "hasChoice" : "no",
             "title": "H8 title",
             "optionA": {
                 "positive": ["D2"],
@@ -740,9 +745,19 @@
         "OV6": {
             "id": "OV6",
             "title": "OV6 title",
-            "type": "exit"
+            "type" : "oval",
+            "options": [{
+                        "toPoint": "D12"
+                        }]
         },
         
-        "OV8": {}
+        "OV8": {
+            "id": "OV8",
+            "title": "OV8 title",
+            "type" : "oval",
+            "options": [{
+                        "toPoint": "D12"
+                        }]
+        }
     }
 }
