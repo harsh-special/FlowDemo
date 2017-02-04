@@ -558,13 +558,23 @@
                         "id": "optionC",
                         "title": "option C here"
                         }],
-            "optionA": {
-                "positive": [
-                             "D3"
-                             ],
-                "negative": [],
-                "toPoint": "OV1"
-            },
+            "optionA": [{
+                        "positive": [
+                                     "D3"
+                                     ],
+                        "negative": [],
+                        "toPoint": "OV1"
+                        },
+                        {
+                        "positive": ["D2"],
+                        "negative": ["D3"],
+                        "toPoint": "OV3"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["D3","D2"],
+                        "toPoint": "OV8"
+                        }],
             "optionC": {
                 "toPoint": "PAGE6-2"
             },
