@@ -22,13 +22,9 @@ struct GCGModesParser {
     static let optionA	    = "optionA"
     static let optionB		= "optionB"
     static let end			= "exit"
-    static let MCQues1      = "PP1"
-    static let MCQues2      = "PP2"
-    static let MCQues3      = "PP3"
-    static let MCQues4      = "PP4"
-    static let MCQues5      = "PP5"
     static let id           = "id"
 
+    var arrDicForPdf : [[String : String]] = []
     var dicStateMode : [String : String] = [:]
     var onSuccessfulEnd : (()->())?
     var dicMain : [String : Any] =  [:]
@@ -63,6 +59,13 @@ struct GCGModesParser {
         return (dicCurrentState[GCGModesParser.type] ?? "") as! String
     }
     
+    mutating func resetAllArrays() {
+        arrDicForPdf.removeAll()
+        dicStateMode.removeAll()
+        arrQuestionaireSelected.removeAll()
+        arrOctagonSelected.removeAll()
+    }
+    
     mutating func SetData(data:[String : Any]) {
         dicMain = data
         dicCurrentState = dicMain["D1"]! as! [String : Any]
@@ -71,6 +74,11 @@ struct GCGModesParser {
     mutating func saveState(key: String, value:String) {
         dicStateMode[key] = value
         print("dicStateMode === \(dicStateMode)")
+    }
+    
+    mutating func saveDataForPdf(key: String, value: String) {
+        arrDicForPdf.append([key : value])
+        print("arrDicForPdf === \(arrDicForPdf)")
     }
     
     func getNodeState(id:String) -> Bool {
@@ -85,7 +93,7 @@ struct GCGModesParser {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
                 currentRootNode = nextStep
-
+                saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.no.rawValue)
                 saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.no.rawValue)
                 dicCurrentState = safeDicCurrentState
             }
@@ -98,39 +106,35 @@ struct GCGModesParser {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
                 currentRootNode = nextStep
-                
+                saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
                 saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                 dicCurrentState = safeDicCurrentState
                 
             }
         } else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
             let toPoint = getToPointFromOptions(currentOptions: dicCurrentState[GCGModesParser.optionA] as! [[String: Any]])
-            
             if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
+                saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                 dicCurrentState = safeDicCurrentState
             }
-            
             print(currentChoices)
-            
         }
         checkForStepEnd()
     }
     
     mutating func moveToStepOK() {
         if let arrOptions = dicCurrentState[GCGModesParser.options] as? [[String : String]] {
-            
             if arrOptions.count == 1 {
                 let option = arrOptions.first!
                 let toPoint = option[GCGModesParser.toPoint]!
-                
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                     currentRootNode = toPoint
+                    saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
                     saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                     dicCurrentState = safeDicCurrentState
                 }
-                
             }
-            
             /*
             if let toPoint = safeDicCurrentState[GCGModesParser.toPoint] {
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
@@ -144,6 +148,8 @@ struct GCGModesParser {
             let toPoint = getToPointFromOptions(currentOptions: currentChoices)
             
             if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
+                saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                 dicCurrentState = safeDicCurrentState
             }
             

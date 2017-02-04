@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     
 
     var troubleShootParser = GCGModesParser()
-    var arrSavedStateDict = [[String: String]]()
     lazy var dicMode = [String:Any]()
     
     override func viewDidLoad() {
@@ -52,7 +51,7 @@ class ViewController: UIViewController {
     // MARK: - Global Methods -
     
     @IBAction func IBbtnResetTap(_ sender: UIButton) {
-        resetDataArrays()
+        troubleShootParser.resetAllArrays()
         getContentsFromJsonFile()
     }
     
@@ -219,18 +218,7 @@ extension ViewController {
             hideView.isHidden = true
         }
     }
-    
-    func resetDataArrays() {
-        arrSavedStateDict.removeAll()
-//        arrTrackAllEvents.removeAll()
-    }
-    
-    func saveDataForPdf(key: String, value: String) {
-        let dataDict = [key: value]
-        arrSavedStateDict.append(dataDict)
-//        createPDFWithData(dataArr: arrSavedStateDict)
-    }
-    
+        
     func showAlert(title : String, message : String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         

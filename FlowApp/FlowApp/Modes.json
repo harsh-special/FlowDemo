@@ -405,7 +405,7 @@
                         }, {
                         "positive": [],
                         "negative": ["D2", "D3"],
-                        "toPoint": "OV3"
+                        "toPoint": "OV6"
                         }, {
                         "positive": ["D3"],
                         "negative": [],
