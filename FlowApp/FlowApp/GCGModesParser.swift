@@ -212,7 +212,7 @@ struct GCGModesParser {
         } else if arrQuestionaireSelected.contains("Option3") && arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 3 {
             return (true, nil, "Option2")
         } else {
-            return (true, "Something went wrong", nil)
+            return (false, "Something went wrong", nil)
         }
     }
     
