@@ -53,7 +53,7 @@
             }
         },
         "QUES1": {
-            "id": "ques1",
+            "id": "QUES1",
             "type": "redRectangle",
             "title": "Quesionnaire Your Questions",
             "options": [{
@@ -137,7 +137,7 @@
             }
         },
         "OV0": {
-            "id": "ov0",
+            "id": "OV0",
             "type": "oval",
             "title": "This is OV0",
             "options": [{
@@ -145,7 +145,7 @@
                         }]
         },
         "D6": {
-            "id": "d6",
+            "id": "D6",
             "title": "D6 title",
             "type": "diamond",
             "options": [{
@@ -161,7 +161,7 @@
             }
         },
         "D8": {
-            "id": "d8",
+            "id": "D8",
             "type": "diamond",
             "title": "D8 title here",
             "options": [{
@@ -187,7 +187,7 @@
             }
         },
         "D9": {
-            "id": "d9",
+            "id": "D9",
             "title": "D9 title",
             "type": "diamond",
             "options": [{
@@ -373,7 +373,7 @@
                         }]
         },
         "H2": {
-            "id": "h2",
+            "id": "H2",
             "type": "yellowHexa",
             "title": "H2 : Choose from th following options",
             "hasChoice": "no",
@@ -383,7 +383,7 @@
             
         },
         "H5": {
-            "id": "h5",
+            "id": "H5",
             "type": "yellowHexa",
             "hasChoice": "yes",
             "title": "H5: Choose from th following options",
@@ -402,7 +402,7 @@
             }
         },
         "H6": {
-            "id": "h6",
+            "id": "H6",
             "hasChoice": "no",
             "type": "yellowHexa",
             "title": "H6: Choose from th following options",
@@ -544,7 +544,7 @@
                         }]
         },
         "H3": {
-            "id": "h3",
+            "id": "H3",
             "type": "yellowHexa",
             "title": "H3 title",
             "hasChoice": "no",
@@ -568,7 +568,7 @@
                         ]
         },
         "H9": {
-            "id": "h9",
+            "id": "H9",
             "type": "yellowHexa",
             "title": "H9 title",
             "hasChoice": "no",
@@ -577,7 +577,7 @@
                         }]
         },
         "H8": {
-            "id": "h8",
+            "id": "H8",
             "type": "yellowHexa",
             "hasChoice": "no",
             "title": "H8 title",
