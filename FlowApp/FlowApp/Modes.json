@@ -663,11 +663,22 @@
         "OV5": {
             "id": "OV5",
             "title": "OV5 title",
-            "type": "oval"
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12"
+                        }]
         },
         "OV6": {
             "id": "OV6",
             "title": "OV6 title",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12"
+                        }]
+        },
+        "OV7": {
+            "id": "OV7",
+            "title": "OV7 title",
             "type": "oval",
             "options": [{
                         "toPoint": "D12"

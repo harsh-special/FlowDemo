@@ -267,8 +267,7 @@ struct GCGModesParser {
                 
                 toPoint = option[GCGModesParser.toPoint] as! String
             }
-            
-            
+    
         }
         
         return toPoint
