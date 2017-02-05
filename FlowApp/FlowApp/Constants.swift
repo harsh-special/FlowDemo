@@ -12,3 +12,4 @@ class Constants: NSObject {
     let Welcome = "This is the actual string to display PARTH WORKS"
 }
 
+let ConstantsDict = ["This is D1" : "This is D1 ConstantsDict Text"]

@@ -133,7 +133,6 @@ extension ViewController {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
             IBtxtInfoTitle.text = troubleShootParser.currentStepText
         } else if troubleShootParser.currentStepType == "yellowHexa" {
-            
             if troubleShootParser.dicCurrentState["hasChoice"] as! String == "yes" {
                 showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
                 IBtxtQuestTitle.text = troubleShootParser.currentStepText
@@ -141,9 +140,7 @@ extension ViewController {
             } else {
                 showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
                 IBtxtInfoTitle.text = troubleShootParser.currentStepText
-                
             }
-            
         } else if troubleShootParser.currentStepType == "octagon" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = troubleShootParser.currentStepText
@@ -236,7 +233,7 @@ extension ViewController {
         let pdf = SimplePDF(pageSize: A4paperSize)
         for text in dataArr {
             for (key,value) in text {
-                let question = key
+                let question = ConstantsDict[key]
                 let answer = value
                 pdf.addText("\(question)")
                 pdf.addText(" \(answer)")

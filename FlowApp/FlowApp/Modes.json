@@ -20,7 +20,6 @@
                 "toPoint": "Mode3"
             }
         },
-        
         "D2": {
             "id": "D2",
             "type": "diamond",
@@ -37,7 +36,6 @@
                 "toPoint": "QUES1"
             }
         },
-        
         "D11": {
             "id": "D11",
             "type": "diamond",
@@ -54,8 +52,6 @@
                 "toPoint": "D12"
             }
         },
-        
-        
         "QUES1": {
             "id": "ques1",
             "type": "redRectangle",
@@ -86,10 +82,10 @@
                 "toPoint": "OC3"
             },
             "Option4": {
-                "toPoint": "H8"
+                "toPoint": "Page 5-2"
             },
             "Option5": {
-                "toPoint": "QUES1"
+                "toPoint": "Page 5-2"
             }
         },
         "D3": {
@@ -174,37 +170,22 @@
                         "optionB": "no"
                         }],
             "optionA": [{
-                        "positive": [
-                                     "D3"
-                                     ],
+                        "positive": ["D3"],
                         "negative": [],
                         "toPoint": "OV1"
                         }, {
-                        "positive": [
-                                     "D2"
-                                     ],
-                        "negative": [
-                                     "D3"
-                                     ],
+                        "positive": ["D2"],
+                        "negative": ["D3"],
                         "toPoint": "OV3"
-                        }, {
-                        "positive": [
-                                     "D2"
-                                     ],
-                        "negative": [
-                                     "D3"
-                                     ],
-                        "toPoint": "OV3"
-                        }, {
+                        },{
                         "positive": [],
-                        "negative": [
-                                     "D2",
-                                     "D3"
-                                     ],
+                        "negative": ["D2","D3"],
                         "toPoint": "OV8"
-                        }]
+                        }],
+            "optionB": {
+                "toPoint": "F1 Page 5-2"
+            }
         },
-        
         "D9": {
             "id": "d9",
             "title": "D9 title",
@@ -216,23 +197,14 @@
                         }],
             "optionA": [{
                         "positive": [],
-                        "negative": [
-                                     "D2",
-                                     "D3"
-                                     ],
+                        "negative": ["D2","D3"],
                         "toPoint": "OV8"
                         }, {
-                        "positive": [
-                                     "D3"
-                                     ],
-                        "negative": [
-                                     "D2"
-                                     ],
+                        "positive": ["D3"],
+                        "negative": ["D2"],
                         "toPoint": "D10"
                         }, {
-                        "positive": [
-                                     "D2"
-                                     ],
+                        "positive": ["D2"],
                         "negative": [],
                         "toPoint": "OV2"
                         }],
@@ -240,8 +212,6 @@
                 "toPoint": "H9"
             }
         },
-        
-        
         "D12": {
             "id": "D12",
             "title": "D12 title",
@@ -301,7 +271,6 @@
                 "toPoint": "D13"
             }
         },
-        
         "D13": {
             "id": "D13",
             "title": "D13 title",
@@ -320,8 +289,6 @@
                 "toPoint": "-1"
             }
         },
-        
-        
         "D14": {
             "id": "D14",
             "title": "D14 title",
@@ -350,12 +317,6 @@
                 "toPoint": "F2B"
             }
         },
-        
-        
-        
-        
-        
-        
         "D10": {
             "id": "D10",
             "title": "D10 title here",
@@ -372,7 +333,6 @@
                 "toPoint": "OV8"
             }
         },
-        
         "H1": {
             "id": "H1",
             "type": "yellowHexa",
@@ -412,7 +372,6 @@
                         "toPoint": "OV1"
                         }]
         },
-        
         "H2": {
             "id": "h2",
             "type": "yellowHexa",
@@ -423,8 +382,6 @@
                         }]
             
         },
-        
-        
         "H5": {
             "id": "h5",
             "type": "yellowHexa",
@@ -453,7 +410,6 @@
                         "toPoint": "D8"
                         }]
         },
-        
         "OC1": {
             "id": "OC1",
             "type": "octagon",
@@ -469,21 +425,15 @@
                         "title": "\"C option here\""
                         }],
             "optionA": [{
-                        "positive": [
-                                     "D2"
-                                     ],
+                        "positive": ["D2"],
                         "negative": ["D3"],
                         "toPoint": "OV3"
                         }, {
                         "positive": [],
-                        "negative": [
-                                     "D3", "D2"
-                                     ],
+                        "negative": ["D3", "D2"],
                         "toPoint": "OV6"
                         }, {
-                        "positive": [
-                                     "D3"
-                                     ],
+                        "positive": ["D3"],
                         "negative": [],
                         "toPoint": "OV1"
                         }],
@@ -494,7 +444,6 @@
                 "toPoint": "PAGE4-2"
             }
         },
-        
         "OC2": {
             "id": "OC2",
             "type": "octagon",
@@ -513,15 +462,11 @@
                         "title": "D option here"
                         }],
             "optionA": [{
-                        "positive": [
-                                     "D3"
-                                     ],
+                        "positive": ["D3"],
                         "negative": [],
                         "toPoint": "OV1"
                         }, {
-                        "positive": [
-                                     "D2"
-                                     ],
+                        "positive": ["D2"],
                         "negative": ["D3"],
                         "toPoint": "OV3"
                         },
@@ -529,7 +474,7 @@
                         {
                         "positive": [],
                         "negative": ["D3", "D2"],
-                        "toPoint": "OV6"
+                        "toPoint": "OV7"
                         }
                         
                         ],
@@ -543,7 +488,6 @@
                 "toPoint": "H2"
             }
         },
-        
         "OC3": {
             "id": "OC3",
             "type": "octagon",
@@ -559,9 +503,7 @@
                         "title": "option C here"
                         }],
             "optionA": [{
-                        "positive": [
-                                     "D3"
-                                     ],
+                        "positive": ["D3"],
                         "negative": [],
                         "toPoint": "OV1"
                         },
@@ -582,8 +524,6 @@
                 "toPoint": "H5"
             }
         },
-        
-        
         "H4": {
             "id": "H4",
             "type": "yellowHexa",
@@ -601,14 +541,8 @@
                         "positive": [],
                         "negative": ["D2", "D3"],
                         "toPoint": "OV7"
-                        }
-                        
-                        ]
-            
+                        }]
         },
-        
-        
-        
         "H3": {
             "id": "h3",
             "type": "yellowHexa",
@@ -632,10 +566,7 @@
                         "toPoint": "OV3"
                         }
                         ]
-            
         },
-        
-        
         "H9": {
             "id": "h9",
             "type": "yellowHexa",
@@ -645,49 +576,31 @@
                         "toPoint": "D14"
                         }]
         },
-        
-        
-        
-        
-        
-        
-        
-        
         "H8": {
             "id": "h8",
             "type": "yellowHexa",
             "hasChoice": "no",
             "title": "H8 title",
-            "optionA": {
-                "positive": ["D2"],
-                "negative": [],
-                "toPoint": "OV4"
-            },
-            
-            "optionB": {
-                "positive": [],
-                "negative": ["D2"],
-                "toPoint": "OV9"
-            }
-            
+            "options": [{
+                        "positive": ["D2"],
+                        "negative": [],
+                        "toPoint": "OV4"
+                        },
+                        
+                        {
+                        "positive": [],
+                        "negative": ["D2"],
+                        "toPoint": "OV9"
+                        }]
         },
-        
-        "PP5": {
-            "id": "PAGE52"
-        },
-        
         "OV1": {
-            
             "id": "OV1",
             "title": "OV1 title",
             "type": "oval",
             "options": [{
                         "toPoint": "D12"
                         }]
-            
-            
         },
-        
         "OV2": {
             
             "id": "OV2",
@@ -697,7 +610,6 @@
                         "toPoint": "D12"
                         }]
         },
-        
         "OV3": {
             "id": "OV3",
             "title": "OV3 title",
@@ -707,7 +619,6 @@
                         }]
             
         },
-        
         "OV4": {
             "id": "OV4",
             "title": "OV4 title",
@@ -724,7 +635,6 @@
                         
                         ]
         },
-        
         "H7": {
             "id": "H7",
             "title": "H7: Choose from following options",
@@ -740,14 +650,11 @@
                         "toPoint": "OV9"
                         }]
         },
-        
-        
         "OV5": {
             "id": "OV5",
             "title": "OV5 title",
             "type": "oval"
         },
-        
         "OV6": {
             "id": "OV6",
             "title": "OV6 title",
@@ -756,7 +663,6 @@
                         "toPoint": "D12"
                         }]
         },
-        
         "OV8": {
             "id": "OV8",
             "title": "OV8 title",
