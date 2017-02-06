@@ -196,6 +196,7 @@ extension ViewController {
             troubleShootParser.arrQuestionaireSelected.removeAll()
             for button in radioButton.selectedButtons() as! [OptionsButton] {
                 troubleShootParser.arrQuestionaireSelected.append(button.buttonOptionID)
+                troubleShootParser.dicStateMode[button.buttonOptionID] = "yes"
                 print(String(format: "%@ is selected.\n", button.titleLabel!.text!));
             }
         } else {

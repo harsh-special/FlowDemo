@@ -222,50 +222,32 @@
                         "optionB": "no"
                         }],
             "optionA": [{
-                        "fromPoint": "PP1",
-                        "negative": [
-                                     "D2",
-                                     "D3"
-                                     ],
-                        "toPoint": "OV8"
+                        "positive": ["Option2","PP1"],
+                        "negative": [],
+                        "toPoint": "OC2"
                         },
-                        
                         {
-                        "fromPoint": "PP1",
-                        "negative": [
-                                     "D2",
-                                     "D3"
-                                     ],
-                        "toPoint": "OV8"
+                        "positive": ["PP1"],
+                        "negative": ["Option2"],
+                        "toPoint": "Page 5-2"
                         }, {
-                        "fromPoint": "PP2",
-                        "negative": [
-                                     "D2",
-                                     "D3"
-                                     ],
-                        "toPoint": "OV8"
+                        "positive": ["Option3","PP2"],
+                        "negative": [],
+                        "toPoint": "OC3"
                         }, {
-                        "fromPoint": "PP2",
-                        "negative": [
-                                     "D2"
-                                     ],
-                        "toPoint": "D10"
+                        "positive": ["PP2"],
+                        "negative": ["Option3"],
+                        "toPoint": "Page 5-2"
                         }, {
-                        "fromPoint": "PP3",
-                        "negative": [
-                                     "D2"
-                                     ],
-                        "toPoint": "D10"
+                        "positive": ["Option4","PP3"],
+                        "negative": [],
+                        "toPoint": "H8"
                         },
-                        
                         {
-                        "fromPoint": "PP3",
-                        "negative": [
-                                     "D2"
-                                     ],
-                        "toPoint": "D10"
+                        "positive": ["PP3"],
+                        "negative": ["Option4"],
+                        "toPoint": "D13"
                         }
-                        
                         ],
             "optionB": {
                 "toPoint": "D13"
@@ -599,29 +581,47 @@
             "type": "oval",
             "options": [{
                         "fromPoint": "OC1",
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP1"
                         },
                         {
                         "fromPoint": "OC2",
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP2"
                         },
                         {
                         "fromPoint": "H3",
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP2"
                         },
                         {
                         "fromPoint": "H4",
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP2"
+                        },
+                        {
+                        "fromPoint": "D8",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
                         }
                         ]
         },
         "OV2": {
-            
             "id": "OV2",
             "title": "OV2 title",
             "type": "oval",
             "options": [{
-                        "toPoint": "D12"
+                        "fromPoint": "H1",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
+                        },{
+                        "fromPoint": "D9",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "D14",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
                         }]
         },
         "OV3": {
@@ -629,9 +629,34 @@
             "title": "OV3 title",
             "type": "oval",
             "options": [{
-                        "toPoint": "D12"
+                        "fromPoint": "OC2",
+                        "toPoint": "D12",
+                        "exitType": "PP2"
+                        },{
+                        "fromPoint": "H3",
+                        "toPoint": "D12",
+                        "exitType": "PP2"
+                        },{
+                        "fromPoint": "H4",
+                        "toPoint": "D12",
+                        "exitType": "PP2"
+                        },{
+                        "fromPoint": "OC3",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "D8",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "H1",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
+                        },{
+                        "fromPoint": "OC1",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
                         }]
-            
         },
         "OV4": {
             "id": "OV4",
@@ -639,11 +664,13 @@
             "type": "oval",
             "options": [{
                         "fromPoint": "H7",
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP3"
                         },
                         {
                         "fromPoint": "H8",
-                        "toPoint": "D13"
+                        "toPoint": "D13",
+                        "exitType": "PP4"
                         }]
         },
         "OV9": {
@@ -652,11 +679,13 @@
             "type": "oval",
             "options": [{
                         "fromPoint": "H7",
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP3"
                         },
                         {
                         "fromPoint": "H8",
-                        "toPoint": "D13"
+                        "toPoint": "D13",
+                        "exitType": "PP4"
                         }]
         },
         "H7": {
@@ -679,7 +708,9 @@
             "title": "OV5 title",
             "type": "oval",
             "options": [{
-                        "toPoint": "D12"
+                        "fromPoint": "D6",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
                         }]
         },
         "OV6": {
@@ -687,7 +718,17 @@
             "title": "OV6 title",
             "type": "oval",
             "options": [{
-                        "toPoint": "D12"
+                        "fromPoint": "D6",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
+                        },{
+                        "fromPoint": "H1",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
+                        },{
+                        "fromPoint": "OC1",
+                        "toPoint": "D12",
+                        "exitType": "PP1"
                         }]
         },
         "OV7": {
@@ -695,7 +736,17 @@
             "title": "OV7 title",
             "type": "oval",
             "options": [{
-                        "toPoint": "D12"
+                        "fromPoint": "OC2",
+                        "toPoint": "D12",
+                        "exitType": "PP2"
+                        },{
+                        "fromPoint": "H3",
+                        "toPoint": "D12",
+                        "exitType": "PP2"
+                        },{
+                        "fromPoint": "H4",
+                        "toPoint": "D12",
+                        "exitType": "PP2"
                         }]
         },
         "OV8": {
@@ -703,7 +754,25 @@
             "title": "OV8 title",
             "type": "oval",
             "options": [{
-                        "toPoint": "D12"
+                        "fromPoint": "OC3",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "D8",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "D9",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "D10",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        },{
+                        "fromPoint": "D14",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
                         }]
         }
     }

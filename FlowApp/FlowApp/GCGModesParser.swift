@@ -23,6 +23,7 @@ struct GCGModesParser {
     static let optionB		= "optionB"
     static let end			= "exit"
     static let id           = "id"
+    static let exitType     = "exitType"
 
     var arrDicForPdf : [[String : String]] = []
     var dicStateMode : [String : String] = [:]
@@ -128,6 +129,13 @@ struct GCGModesParser {
             if arrOptions.count == 1 {
                 let option = arrOptions.first!
                 let toPoint = option[GCGModesParser.toPoint]!
+                if let exitType = option[GCGModesParser.exitType]  {
+                    dicStateMode["PP1"] = nil
+                    dicStateMode["PP2"] = nil
+                    dicStateMode["PP3"] = nil
+                    dicStateMode["PP4"] = nil
+                    saveState(key: exitType, value: modeValue.yes.rawValue)
+                }
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                     currentRootNode = toPoint
                     saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
@@ -233,7 +241,7 @@ struct GCGModesParser {
         }
     }
     
-    func getToPointFromOptionsCheckingFromPoint(currentOptions: [[String : Any]]) -> String {
+    mutating func getToPointFromOptionsCheckingFromPoint(currentOptions: [[String : Any]]) -> String {
         var toPoint = ""
         for option in currentOptions {
             print("OPTIONSSSS===\(option)")
@@ -242,6 +250,13 @@ struct GCGModesParser {
             let nodeState = getNodeState(id: fromPoint)
             if nodeState {
                 toPoint = option[GCGModesParser.toPoint] as! String
+                if let exitType = option[GCGModesParser.exitType] as? String  {
+                    dicStateMode["PP1"] = nil
+                    dicStateMode["PP2"] = nil
+                    dicStateMode["PP3"] = nil
+                    dicStateMode["PP4"] = nil
+                    saveState(key: exitType, value: modeValue.yes.rawValue)
+                }
             }
         }
         return toPoint
