@@ -124,16 +124,20 @@ struct GCGModesParser {
         checkForStepEnd()
     }
     
+    mutating func removeValueForPPKey() {
+        dicStateMode.removeValue(forKey: "PP1")
+        dicStateMode.removeValue(forKey: "PP2")
+        dicStateMode.removeValue(forKey: "PP3")
+        dicStateMode.removeValue(forKey: "PP4")
+    }
+    
     mutating func moveToStepOK() {
         if let arrOptions = dicCurrentState[GCGModesParser.options] as? [[String : String]] {
             if arrOptions.count == 1 {
                 let option = arrOptions.first!
                 let toPoint = option[GCGModesParser.toPoint]!
                 if let exitType = option[GCGModesParser.exitType]  {
-                    dicStateMode["PP1"] = nil
-                    dicStateMode["PP2"] = nil
-                    dicStateMode["PP3"] = nil
-                    dicStateMode["PP4"] = nil
+                    removeValueForPPKey()
                     saveState(key: exitType, value: modeValue.yes.rawValue)
                 }
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
@@ -251,10 +255,7 @@ struct GCGModesParser {
             if nodeState {
                 toPoint = option[GCGModesParser.toPoint] as! String
                 if let exitType = option[GCGModesParser.exitType] as? String  {
-                    dicStateMode["PP1"] = nil
-                    dicStateMode["PP2"] = nil
-                    dicStateMode["PP3"] = nil
-                    dicStateMode["PP4"] = nil
+                    removeValueForPPKey()
                     saveState(key: exitType, value: modeValue.yes.rawValue)
                 }
             }

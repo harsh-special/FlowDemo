@@ -194,6 +194,11 @@ extension ViewController {
     func logSelectedButton(_ radioButton : OptionsButton) {
         if (radioButton.isMultipleSelectionEnabled) {
             troubleShootParser.arrQuestionaireSelected.removeAll()
+            troubleShootParser.dicStateMode.removeValue(forKey: "Option1")
+            troubleShootParser.dicStateMode.removeValue(forKey: "Option2")
+            troubleShootParser.dicStateMode.removeValue(forKey: "Option3")
+            troubleShootParser.dicStateMode.removeValue(forKey: "Option4")
+            troubleShootParser.dicStateMode.removeValue(forKey: "Option5")
             for button in radioButton.selectedButtons() as! [OptionsButton] {
                 troubleShootParser.arrQuestionaireSelected.append(button.buttonOptionID)
                 troubleShootParser.dicStateMode[button.buttonOptionID] = "yes"
