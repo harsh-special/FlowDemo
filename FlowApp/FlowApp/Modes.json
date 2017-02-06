@@ -598,8 +598,22 @@
             "title": "OV1 title",
             "type": "oval",
             "options": [{
+                        "fromPoint": "OC1",
                         "toPoint": "D12"
-                        }]
+                        },
+                        {
+                        "fromPoint": "OC2",
+                        "toPoint": "D12"
+                        },
+                        {
+                        "fromPoint": "H3",
+                        "toPoint": "D12"
+                        },
+                        {
+                        "fromPoint": "H4",
+                        "toPoint": "D12"
+                        }
+                        ]
         },
         "OV2": {
             
