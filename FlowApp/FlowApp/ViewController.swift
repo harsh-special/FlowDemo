@@ -107,6 +107,7 @@ extension ViewController {
         setDataToView()
     }
     
+    //Initialize Parser with data
     func loadParser() {
         troubleShootParser.SetData(data: (dicMode["Mode2"] as! [String : Any]))
     }
@@ -120,6 +121,7 @@ extension ViewController {
         return actualString
     }
     
+    // Every time we go to next flow we call to set the data from new toPoint
     func setDataToView() {
         if troubleShootParser.currentStepType == "diamond" {
             IBtxtQuestions.text = troubleShootParser.currentStepText
@@ -191,6 +193,7 @@ extension ViewController {
         return radioButton;
     }
     
+    // Call everytime when a radio or checkbox is selected
     func logSelectedButton(_ radioButton : OptionsButton) {
         if (radioButton.isMultipleSelectionEnabled) {
             troubleShootParser.arrQuestionaireSelected.removeAll()

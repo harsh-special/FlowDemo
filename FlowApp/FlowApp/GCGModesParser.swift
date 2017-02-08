@@ -86,10 +86,12 @@ struct GCGModesParser {
         return dicStateMode[id] == "yes" ? true : false
     }
     
+    // MARK: - When no button is tapped on diamond
 
-    
     mutating func moveToStepNo() {
         checkForStepEnd()
+        
+        // IF direct dictionary of toPoint
         if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionB] as? [String : String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
@@ -99,10 +101,24 @@ struct GCGModesParser {
                 dicCurrentState = safeDicCurrentState
             }
         }
+            
+        // IF Array of options then get toPoint which is true
+        else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
+            let toPoint = getToPointFromOptions(currentOptions: dicCurrentState[GCGModesParser.optionB] as! [[String: Any]])
+            if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
+                saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.no.rawValue)
+                saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.no.rawValue)
+                dicCurrentState = safeDicCurrentState
+            }
+            print(currentChoices)
+        }
     }
     
-    
+    // MARK: - When yes button is tapped on diamond
+
     mutating func moveToStepYes() {
+
+        // IF direct dictionary of toPoint
         if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionA] as? [String:String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
@@ -112,7 +128,10 @@ struct GCGModesParser {
                 dicCurrentState = safeDicCurrentState
                 
             }
-        } else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
+        }
+        
+        // IF Array of options then get toPoint which is true
+        else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
             let toPoint = getToPointFromOptions(currentOptions: dicCurrentState[GCGModesParser.optionA] as! [[String: Any]])
             if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                 saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
@@ -124,29 +143,34 @@ struct GCGModesParser {
         checkForStepEnd()
     }
     
-    mutating func removeValueForPPKey() {
-        dicStateMode.removeValue(forKey: "PP1")
-        dicStateMode.removeValue(forKey: "PP2")
-        dicStateMode.removeValue(forKey: "PP3")
-        dicStateMode.removeValue(forKey: "PP4")
-    }
-    
+    // MARK: - When OK button is tapped on OVAL, HEXAGON
+
     mutating func moveToStepOK() {
+        
+        // IF Array of options then get toPoint which is true
         if let arrOptions = dicCurrentState[GCGModesParser.options] as? [[String : String]] {
+           
+            // IF only one value then take first toPoint
             if arrOptions.count == 1 {
                 let option = arrOptions.first!
                 let toPoint = option[GCGModesParser.toPoint]!
+               
+                // Store exit type but clear all others before.
                 if let exitType = option[GCGModesParser.exitType]  {
                     removeValueForPPKey()
                     saveState(key: exitType, value: modeValue.yes.rawValue)
                 }
+                
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                     currentRootNode = toPoint
                     saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
                     saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                     dicCurrentState = safeDicCurrentState
                 }
-            } else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
+            }
+            
+            // If more than one element then check condition which is true and takes its ToPoint
+            else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
                 let toPoint = getToPointFromOptionsCheckingFromPoint(currentOptions: currentChoices)
                 if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                     saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
@@ -163,22 +187,25 @@ struct GCGModesParser {
                 }
             }
             */
-        }  else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
+        }
+        
+        // IF Array of options but with positive and negative then get toPoint which is true
+        else if let currentChoices = dicCurrentState[GCGModesParser.options] as? [[String: Any]] {
             let toPoint = getToPointFromOptions(currentOptions: currentChoices)
-            
             if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                 saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
                 saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                 dicCurrentState = safeDicCurrentState
             }
-            
             print(currentChoices)
-            
         }
-
     }
     
+    // MARK: - When Next button is tapped on redRectangle, yellowHexa
+    
     mutating func moveToStepChoice(choiceText:String) {
+        
+        // If dictionary
         if let safeDicCurrentState = dicCurrentState[choiceText] as? [String: String] {
             let nextStep = safeDicCurrentState[GCGModesParser.toPoint]!
             if let safeDicCurrentState = dicMain[nextStep] as? [String:Any] {
@@ -193,23 +220,40 @@ struct GCGModesParser {
             } else {
                 checkForStepEnd()
             }
-        } else if let currentChoices = dicCurrentState[choiceText] as? [[String: Any]] {
+        }
+        
+        // If Array
+        else if let currentChoices = dicCurrentState[choiceText] as? [[String: Any]] {
             let toPoint = getToPointFromOptions(currentOptions: currentChoices)
-            
             if let safeDicCurrentState = dicMain[toPoint] as? [String:Any] {
                 saveDataForPdf(key: dicCurrentState[GCGModesParser.title] as! String, value: modeValue.yes.rawValue)
                 saveState(key: dicCurrentState[GCGModesParser.id] as! String, value: modeValue.yes.rawValue)
                 dicCurrentState = safeDicCurrentState
             }
-            
             print(currentChoices)
-            
         }
          else {
             checkForStepEnd()
         }
     }
     
+    // MARK: - Helper Methods
+    
+    mutating func removeValueForPPKey() {
+        dicStateMode.removeValue(forKey: "PP1")
+        dicStateMode.removeValue(forKey: "PP2")
+        dicStateMode.removeValue(forKey: "PP3")
+        dicStateMode.removeValue(forKey: "PP4")
+        dicStateMode.removeValue(forKey: "M1_PP1")
+        dicStateMode.removeValue(forKey: "M1_PP2")
+        dicStateMode.removeValue(forKey: "M1_PP3")
+        dicStateMode.removeValue(forKey: "M1_PP4")
+        dicStateMode.removeValue(forKey: "M3_PP1")
+        dicStateMode.removeValue(forKey: "M3_PP2")
+        dicStateMode.removeValue(forKey: "M3_PP3")
+        dicStateMode.removeValue(forKey: "M3_PP4")
+    }
+
     func validateQustionnaire() -> (success:Bool, title:String?, optionID:String?) {
         
         if arrQuestionaireSelected.contains("Option1") && arrQuestionaireSelected.contains("Option3") {
@@ -340,27 +384,27 @@ struct GCGModesParser {
 //        return toPoint
 //    }
     
-    mutating func moveToStepNext() {
-        if let safeDicCurrentState = dicCurrentState[GCGModesParser.toPoint] as? String {
-            dicCurrentState = dicMain[safeDicCurrentState]! as! [String : Any]
-        } else if let __text = dicCurrentState[GCGModesParser.title] as? String, !__text.isEmpty  {
-            if let nextStepText = dicCurrentState[GCGModesParser.toPoint] as? String,
-                let toStep = dicMain[nextStepText] as? [String:Any] {
-                dicCurrentState = toStep
-            } else {
-                checkForStepEnd()
-            }
-        } else {
-            checkForStepEnd()
-        }
-        
-        if let __text = dicCurrentState[GCGModesParser.title] as? String , !__text.isEmpty  {
-            
-        } else {
-            checkForStepEnd()
-        }
-    }
-    
+//    mutating func moveToStepNext() {
+//        if let safeDicCurrentState = dicCurrentState[GCGModesParser.toPoint] as? String {
+//            dicCurrentState = dicMain[safeDicCurrentState]! as! [String : Any]
+//        } else if let __text = dicCurrentState[GCGModesParser.title] as? String, !__text.isEmpty  {
+//            if let nextStepText = dicCurrentState[GCGModesParser.toPoint] as? String,
+//                let toStep = dicMain[nextStepText] as? [String:Any] {
+//                dicCurrentState = toStep
+//            } else {
+//                checkForStepEnd()
+//            }
+//        } else {
+//            checkForStepEnd()
+//        }
+//        
+//        if let __text = dicCurrentState[GCGModesParser.title] as? String , !__text.isEmpty  {
+//            
+//        } else {
+//            checkForStepEnd()
+//        }
+//    }
+//    
 //    mutating func moveToStepPrevious() {
 //        if let safeDicCurrentState = dicCurrentState[GCGModesParser.fromPoint] as? String {
 //            dicCurrentState = dicMain[safeDicCurrentState]! as! [String : Any]
