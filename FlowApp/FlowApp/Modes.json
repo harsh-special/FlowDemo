@@ -361,7 +361,8 @@
             "title": "H2 : Choose from th following options",
             "hasChoice": "no",
             "options": [{
-                        "toPoint": "D12"
+                        "toPoint": "D12",
+                        "exitType": "PP2"
                         }]
             
         },
@@ -1239,7 +1240,8 @@
             "title": "M1_H2 : Choose from th following options",
             "hasChoice": "no",
             "options": [{
-                        "toPoint": "M1_D10"
+                        "toPoint": "M1_D10",
+                        "exitType": "M1_PP2"
                         }]
             
         },
@@ -1961,7 +1963,7 @@
                         },
                         {
                         "fromPoint": "M3_H8",
-                        "toPoint": "M3_D5",
+                        "toPoint": "M3_D6",
                         "exitType": "M3_PP4"
                         }]
         }
