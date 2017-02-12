@@ -330,20 +330,7 @@ struct GCGModesParser {
     }
     
     func isArrStateSavedFor(keys: [String]) -> Bool {
-        //        for key in keys {
-        //            if dicStateMode[key] != nil {
-        //                return true
-        //            } else {
-        //                return false
-        //            }
-        //        }
-        //        return true
-        //
-        
         let result = keys.reduce(true, { $0 ? ([String] (dicStateMode.keys)).contains($1) : $0 })
-        
-        print("result --- \(result)")
-        
         return result
     }
     

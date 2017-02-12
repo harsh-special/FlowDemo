@@ -1870,19 +1870,9 @@
                         "optionB": "no"
                         }],
             
-            "optionA": [{
-                        "positive": ["M3_PP3"],
-                        "negative": [],
-                        "toPoint": "M3_AP_PATH"
-                        },
-                        
-                        {
-                        "positive": ["M3_PP4"],
-                        "negative": [],
-                        "toPoint": "ASYLUM_PATH"
-                        }
-                        
-                        ],
+            "optionA": {
+                "toPoint": "M3_AP_PATH"
+            },
             
             "optionB": {
                 "toPoint": "-1"
