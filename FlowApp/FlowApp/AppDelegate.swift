@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  FlowApp
-//
-//  Created by Parth Adroja on 10/12/16.
-//  Copyright © 2016 Parth Adroja. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

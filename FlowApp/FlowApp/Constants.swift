@@ -1,14 +1,6 @@
-//
-//  Constants.swift
-//  FlowApp
-//
-//  Created by Parth Adroja on 28/01/17.
-//  Copyright © 2017 Parth Adroja. All rights reserved.
-//
-
 import UIKit
 
-let ConstantsDict = ["D1_TITLE" : "This is D1 ConstantsDict Text",
+let ConstantsDict = ["D1_TITLE" : "This is D1 Constant",
                     "D2_TITLE":"",
                     "D11_TITLE":"",
                     "QUES_TITLE":"",
@@ -101,8 +93,4 @@ let ConstantsDict = ["D1_TITLE" : "This is D1 ConstantsDict Text",
                     "M3_OV2_TITLE":"",
                     "M3_OV3_TITLE":"",
                     "M3_OV4_TITLE":""
-
-
-
-                    
                     ]

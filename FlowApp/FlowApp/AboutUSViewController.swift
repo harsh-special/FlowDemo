@@ -1,11 +1,3 @@
-//
-//  AboutUSViewController.swift
-//  FlowApp
-//
-//  Created by Parth Adroja on 22/01/17.
-//  Copyright © 2017 Parth Adroja. All rights reserved.
-//
-
 import UIKit
 
 class AboutUSViewController: UIViewController {

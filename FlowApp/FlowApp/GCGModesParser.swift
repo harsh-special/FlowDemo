@@ -1,11 +1,3 @@
-//
-//  GCGModesParser.swift
-//  FlowApp
-//
-//  Created by Parth Adroja on 26/01/17.
-//  Copyright © 2017 Parth Adroja. All rights reserved.
-//
-
 import Foundation
 
 enum modeValue : String {

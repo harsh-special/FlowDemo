@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  FlowApp
-//
-//  Created by Parth Adroja on 10/12/16.
-//  Copyright © 2016 Parth Adroja. All rights reserved.
-//
-
 import UIKit
 import SwiftyJSON
 import MessageUI
@@ -36,9 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SideMenuManager.menuFadeStatusBar = false
-        
         getContentsFromJsonFile()
-
         troubleShootParser.onSuccessfulEnd = { [unowned self] in
             self.showSendMailErrorAlert()
         }
