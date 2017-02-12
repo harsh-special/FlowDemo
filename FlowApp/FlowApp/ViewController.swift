@@ -117,35 +117,37 @@ extension ViewController {
     
     //Set Json Data to View and save data
     func getActualTextForJson(title: String) -> String {
-        let actualString = Constants().value(forKey: title) as! String
+        var actualString = ConstantsDict[title] ?? "DATA NOT AVAILABLE"
+        if actualString == "" {
+            actualString = title
+        }
         return actualString
     }
     
     // Every time we go to next flow we call to set the data from new toPoint
     func setDataToView() {
         if troubleShootParser.currentStepType == "diamond" {
-            IBtxtQuestions.text = troubleShootParser.currentStepText
             showHideViews(showViews: [IBviewDecision], hideViews: [IBviewQuestionaire, IBviewInformative])
-            IBtxtQuestions.text = troubleShootParser.currentStepText
+            IBtxtQuestions.text = getActualTextForJson(title: troubleShootParser.currentStepText)
         } else if troubleShootParser.currentStepType == "redRectangle" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
-            IBtxtQuestTitle.text = troubleShootParser.currentStepText
+            IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
             setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         } else if troubleShootParser.currentStepType == "oval" {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
-            IBtxtInfoTitle.text = troubleShootParser.currentStepText
+            IBtxtInfoTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
         } else if troubleShootParser.currentStepType == "yellowHexa" {
             if troubleShootParser.dicCurrentState["hasChoice"] as! String == "yes" {
                 showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
-                IBtxtQuestTitle.text = troubleShootParser.currentStepText
+                IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
                 setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
             } else {
                 showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
-                IBtxtInfoTitle.text = troubleShootParser.currentStepText
+                IBtxtInfoTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
             }
         } else if troubleShootParser.currentStepType == "octagon" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
-            IBtxtQuestTitle.text = troubleShootParser.currentStepText
+            IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
             setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         }
     }
