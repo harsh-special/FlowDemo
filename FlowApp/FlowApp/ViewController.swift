@@ -69,8 +69,10 @@ class ViewController: UIViewController {
                 showAlert(title: "", message: result.title!)
             }
         } else {
-            troubleShootParser.moveToStepChoice(choiceText: (troubleShootParser.arrOctagonSelected.first)!)
-            setDataToView()
+            if let optionSelected = troubleShootParser.arrOctagonSelected.first {
+                troubleShootParser.moveToStepChoice(choiceText: optionSelected)
+                setDataToView()
+            }
         }
         
     }

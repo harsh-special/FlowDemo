@@ -1667,7 +1667,8 @@
             "title": "M3_H2_TITLE",
             "hasChoice": "no",
             "options": [{
-                        "toPoint": "M3_D5"
+                        "toPoint": "M3_D5",
+                        "exitType": "M3_PP2"
                         }]
             
         },
