@@ -952,7 +952,6 @@
                         "negative": ["M1_D2"],
                         "toPoint": "M1_D8"
                         },
-                        
                         {
                         "positive": ["M1_D2","M1_D6"],
                         "negative": [],
@@ -969,16 +968,6 @@
                         "toPoint": "M1_OV8"
                         },
                         {
-                        "positive": ["M1_D12"],
-                        "negative": ["M1_D2"],
-                        "toPoint": "M1_OV6"
-                        },
-                        {
-                        "positive": ["M1_D12","M1_H9"],
-                        "negative": [],
-                        "toPoint": "M1_OV5"
-                        },
-                        {
                         "positive": ["M1_D2","M1_H8"],
                         "negative": [],
                         "toPoint": "M1_OV8"
@@ -987,11 +976,31 @@
                         "positive": ["M1_H8"],
                         "negative": ["M1_D2"],
                         "toPoint": "M1_OV7"
+                        },
+                        {
+                        "positive": ["M1_D12","M1_H9"],
+                        "negative": ["M1_D2"],
+                        "toPoint": "M1_OV6"
+                        },
+                        {
+                        "positive": ["M1_D12","M1_H9","M1_D2"],
+                        "negative": [],
+                        "toPoint": "M1_OV5"
                         }
                         ],
             
             "optionA": [{
+                        "positive": ["M1_D6"],
+                        "negative": [],
+                        "toPoint": "M1_OV4"
+                        },
+                        {
                         "positive": ["M1_H7"],
+                        "negative": [],
+                        "toPoint": "M1_OV9"
+                        },
+                        {
+                        "positive": ["M1_H8"],
                         "negative": [],
                         "toPoint": "M1_OV9"
                         },
@@ -999,16 +1008,6 @@
                         "positive": ["M1_D12"],
                         "negative": [],
                         "toPoint": "M1_OV4"
-                        },
-                        {
-                        "positive": ["M1_D6"],
-                        "negative": [],
-                        "toPoint": "M1_OV4"
-                        },
-                        {
-                        "positive": ["M1_H8"],
-                        "negative": [],
-                        "toPoint": "M1_OV9"
                         }]
         },
         
