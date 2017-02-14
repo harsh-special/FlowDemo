@@ -1958,6 +1958,253 @@
                         "toPoint": "M3_D6",
                         "exitType": "M3_PP4"
                         }]
+        },
+        
+        
+        "M41_D1": {
+            "id": "M41_D1",
+            "type": "diamond",
+            "title": "M41_D1_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_OC1"
+            },
+            "optionB": {
+                "toPoint": "M41_D5"
+            }
+        },
+        "M41_D2": {
+            "id": "M41_D2",
+            "type": "diamond",
+            "title": "M41_D2_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_OV1"
+            },
+            "optionB": [{
+                        "positive": [],
+                        "negative": ["M1_D2"],
+                        "toPoint": "M41_OV3"
+                        },
+                        
+                        {
+                        "positive": ["M1_D2"],
+                        "negative": [],
+                        "toPoint": "M41_OV2"
+                        }
+                        
+                        ],
+        },
+        "M41_D3": {
+            "id": "M41_D3",
+            "type": "diamond",
+            "title": "M41_D3_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_H3"
+            },
+            "optionB": {
+                "toPoint": "M41_H1"
+            }
+        },
+        "M41_D4A": {
+            "id": "M41_D4A",
+            "type": "diamond",
+            "title": "M41_D4_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_H4"
+            },
+            "optionB": {
+                "toPoint": "M41_D3"
+            }
+        },"M41_D4B": {
+            "id": "M41_D4B",
+            "type": "diamond",
+            "title": "M41_D4_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_D6"
+            },
+            "optionB": {
+                "toPoint": "M41_H2"
+            }
+        },
+        "M41_D5": {
+            "id": "M41_D5",
+            "type": "diamond",
+            "title": "M41_D5_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_H6"
+            },
+            "optionB": {
+                "toPoint": "M41_H5"
+            }
+        },
+        "M41_D6": {
+            "id": "M41_D6",
+            "type": "diamond",
+            "title": "M41_D6_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M41_H2"
+            },
+            "optionB": {
+                "toPoint": "M41_H4"
+            }
+        },
+        "M41_OC1": {
+            "id": "OC2",
+            "type": "octagon",
+            "title": "OC2_TITLE",
+            "options": [{
+                        "id": "optionA",
+                        "title": "A option here"
+                        }, {
+                        "id": "optionB",
+                        "title": "B option here"
+                        }, {
+                        "id": "optionC",
+                        "title": "C option here"
+                        }, {
+                        "id": "optionD",
+                        "title": "D option here"
+                        }],
+            "optionA": {
+                "toPoint": "M41_D4A"
+            },
+            "optionC": {
+                "toPoint": "M41_H4"
+            },
+            "optionB": {
+                "toPoint": "M41_D4B"
+            },
+            "optionD": {
+                "toPoint": "M41_D2"
+            }
+        }
+        
+        "M41_H1": {
+            "id": "M41_H1",
+            "type": "yellowHexa",
+            "title": "M41_H1_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M41_D5"
+                        }]
+        },
+        "M41_H2": {
+            "id": "M41_H2",
+            "type": "yellowHexa",
+            "title": "M41_H2_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["M41_D4"],
+                        "negative": [],
+                        "toPoint": "M41_H6"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["M41_D4"],
+                        "toPoint": "M41_D5"
+                        }]
+        },
+        "M41_H3": {
+            "id": "M41_H3",
+            "type": "yellowHexa",
+            "title": "M41_H3_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M41_H4"
+                        }]
+        },
+        "M41_H4": {
+            "id": "M41_H4",
+            "type": "yellowHexa",
+            "title": "M41_H4_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M41_D2"
+                        }]
+        },
+        "M41_H5": {
+            "id": "M41_H5",
+            "type": "yellowHexa",
+            "title": "M41_H5_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["Option2"],
+                        "negative": [],
+                        "toPoint": "M1_OC2"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["Option2"],
+                        "toPoint": "Page 5-1"
+                        }]
+        },
+        "M41_H6": {
+            "id": "M41_H6",
+            "type": "yellowHexa",
+            "title": "M41_H6_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M41_D2"
+                        }]
+        },
+        
+        "M41_OV1": {
+            "id": "M41_OV1",
+            "title": "M41_OV1_TITLE",
+            "type": "oval",
+            "options": {
+                "toPoint": "M1_D10"
+            }
+        },
+        "M41_OV2": {
+            "id": "M41_OV2",
+            "title": "M41_OV2_TITLE",
+            "type": "oval",
+            "options": {
+                "toPoint": "M1_D10"
+            }
+        },
+        "M41_OV3": {
+            "id": "M41_OV3",
+            "title": "M41_OV3_TITLE",
+            "type": "oval",
+            "options": {
+                "toPoint": "M1_D10"
+            }
         }
     }
 }
