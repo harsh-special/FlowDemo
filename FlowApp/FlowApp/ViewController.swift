@@ -109,7 +109,7 @@ extension ViewController {
     
     //Set Json Data to View and save data
     func getActualTextForJson(title: String) -> String {
-        var actualString = ConstantsDict[title] ?? "DATA NOT AVAILABLE"
+        var actualString = ConstantsDict[title] ?? title
         if actualString == "" {
             actualString = title
         }
