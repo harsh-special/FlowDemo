@@ -3578,5 +3578,129 @@
                 "exitType": "PP3"
             }
         },
+        
+        "M52_OC1": {
+            "id": "M52_OC1",
+            "type": "octagon",
+            "title": "M52_OC1_TITLE",
+            "options": [{
+                        "id": "M52_OC1_OPTIONA",
+                        "title": "A option here"
+                        }, {
+                        "id": "M52_OC1_OPTIONB",
+                        "title": "B option here"
+                        }, {
+                        "id": "M52_OC1_OPTIONC",
+                        "title": "C option here"
+                        }, {
+                        "id": "M52_OC1_OPTIOND",
+                        "title": "D option here"
+                        }, {
+                        "id": "M52_OC1_OPTIONE",
+                        "title": "E option here"
+                        }],
+            "M52_OC1_OPTIONA": {
+                "toPoint": "M52_D2A"
+            },
+            "M52_OC1_OPTIONC": [{
+                                "positive": [],
+                                "negative": ["Option1"],
+                                "toPoint": "M52_H7"
+                                },
+                                {
+                                "positive": ["Option1"],
+                                "negative": [],
+                                "toPoint": "M52_H5"
+                                }
+                                ],
+            "M52_OC1_OPTIONB": {
+                "toPoint": "M52_D2B"
+            },
+            "M52_OC1_OPTIOND": [{
+                                "positive": [],
+                                "negative": ["Option1"],
+                                "toPoint": "M52_H9"
+                                },
+                                {
+                                "positive": ["Option1"],
+                                "negative": [],
+                                "toPoint": "M52_H7"
+                                }
+                                ],
+            "M52_OC1_OPTIONE": {
+                "toPoint": "M52_H7"
+            }
+        },
+        
+        "M52_H1": {
+            "id": "M52_H1",
+            "type": "yellowHexa",
+            "title": "M52_H1_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["M52_D2"],
+                        "negative": [],
+                        "toPoint": "M52_H4"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["M52_D2"],
+                        "toPoint": "M52_D7"
+                        }]
+        },
+        "M52_H2": {
+            "id": "M52_H2",
+            "type": "yellowHexa",
+            "title": "M52_H2_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_D7"
+                        }]
+        },
+        "M52_H3": {
+            "id": "M52_H3",
+            "type": "yellowHexa",
+            "title": "M52_H3_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_H5"
+                        }]
+        },
+        "M52_H4": {
+            "id": "M52_H4",
+            "type": "yellowHexa",
+            "title": "M52_H4_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_H7"
+                        }]
+        },
+        "M52_H5": {
+            "id": "M52_H5",
+            "type": "yellowHexa",
+            "title": "M52_H5_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_H7"
+                        }]
+        },
+        "M52_H6": {
+            "id": "M52_H6",
+            "type": "yellowHexa",
+            "title": "M52_H6_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_H7"
+                        }]
+        },
+        "M52_H9": {
+            "id": "M52_H9",
+            "type": "yellowHexa",
+            "title": "M52_H9_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_H7"
+                        }]
+        },
     }
 }
