@@ -3142,7 +3142,7 @@
             "options": [{
                         "positive": ["Option1"],
                         "negative": [],
-                        "exitType": "M1_PP3"
+                        "exitType": "M1_PP3",
                         "toPoint": "M1_D10"
                         },
                         {
@@ -3289,6 +3289,6 @@
                         "negative": []
                         }
                         ]
-        },
+        }
     }
 }
