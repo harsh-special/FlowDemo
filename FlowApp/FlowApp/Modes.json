@@ -2792,7 +2792,47 @@
                 "toPoint": "M51_H2"
             }
         },
-        "M51_D6": {},
+        "M51_D6": {
+            "id": "M51_D6",
+            "title": "M51_D6_TITLE",
+            "type": "diamond",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            
+            "optionB": [{
+                        "positive": [],
+                        "negative": ["M1_D2"],
+                        "toPoint": "M51_OV7"
+                        },
+                        {
+                        "positive": ["M1_D2"],
+                        "negative": [],
+                        "toPoint": "M51_OV6"
+                        },
+                        {
+                        "positive": ["M51_D10","M1_D2"],
+                        "negative": [],
+                        "toPoint": "M51_OV3"
+                        },
+                        {
+                        "positive": ["M51_D10"],
+                        "negative": ["M1_D2"],
+                        "toPoint": "M51_OV4"
+                        }],
+            "optionA": [{
+                        "positive": ["M51_D6"],
+                        "negative": [],
+                        "toPoint": "M51_OV5"
+                        },
+                        {
+                        "positive": ["M51_D6","M51_D10"],
+                        "negative": [],
+                        "toPoint": "M51_OV2"
+                        }]
+        },
         "M51_D7": {
             "id": "M51_D7",
             "type": "diamond",
@@ -3216,7 +3256,7 @@
                         "toPoint": "M51_D14"
                         },
                         {
-                        "toPoint": "M1_D13",
+                        "toPoint": "M51_D13",
                         "positive": [],
                         "negative": []
                         }
@@ -3250,7 +3290,7 @@
                         "toPoint": "M51_D14"
                         },
                         {
-                        "toPoint": "M1_D13",
+                        "toPoint": "M51_D13",
                         "positive": [],
                         "negative": []
                         }
@@ -3284,7 +3324,7 @@
                         "toPoint": "M51_D14"
                         },
                         {
-                        "toPoint": "M1_D13",
+                        "toPoint": "M51_D13",
                         "positive": [],
                         "negative": []
                         }
