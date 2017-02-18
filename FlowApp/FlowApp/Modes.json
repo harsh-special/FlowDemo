@@ -2966,7 +2966,7 @@
                 "toPoint": "PAGE 6-1"
             },
             "optionB":  [{
-                         "positive": ["OptionE"],
+                         "positive": ["M51_OC1_OPTIONE"],
                          "negative": [],
                          "exitType":"M1_PP3",
                          "toPoint": "M1_D10"
@@ -3522,6 +3522,61 @@
                          "negative": ["M52_D7"],
                          "toPoint": "M52_H13"
                          }]
+        },
+        "M52_D10": {
+            "id": "M52_D10",
+            "type": "diamond",
+            "title": "M52_D10_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "PAGE 6-2"
+            },
+            "optionB":  [{
+                         "positive": ["M52_OC1_OPTIONE"],
+                         "negative": [],
+                         "exitType":"PP3",
+                         "toPoint": "D12"
+                         },
+                         
+                         {
+                         "positive": ["M52_D7"],
+                         "negative": [],
+                         "exitType":"PP3",
+                         "toPoint": "D12"
+                         },
+                         {
+                         "positive": [],
+                         "negative": ["M52_D7"],
+                         "exitType":"PP3",
+                         "toPoint": "D12"
+                         },
+                         {
+                         "positive": [],
+                         "negative": [],
+                         "toPoint": "M52_D11"
+                         }
+                         ]
+        },
+        "M52_D11": {
+            "id": "M52_D11",
+            "type": "diamond",
+            "title": "M52_D11_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "D11"
+            },
+            "optionB": {
+                "toPoint": "D12",
+                "exitType": "PP3"
+            }
         },
     }
 }
