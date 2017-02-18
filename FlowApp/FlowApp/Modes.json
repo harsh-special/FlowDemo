@@ -3292,7 +3292,7 @@
                         {
                         "toPoint": "M1_D10",
                         "exitType": "M1_PP3",
-                        "positive": ["OptionE"],
+                        "positive": ["M51_OC1_OPTIONE"],
                         "negative": []
                         },
                         {
@@ -3326,7 +3326,7 @@
                         {
                         "toPoint": "M1_D10",
                         "exitType": "M1_PP3",
-                        "positive": ["OptionE"],
+                        "positive": ["M51_OC1_OPTIONE"],
                         "negative": []
                         },
                         {
@@ -3725,6 +3725,27 @@
                         "toPoint": "M52_OV6"
                         }]
         },
+        "M52_H8": {
+            "id": "M52_H8",
+            "type": "yellowHexa",
+            "title": "M52_H8_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["D3"],
+                        "negative": [],
+                        "toPoint": "M52_OV1"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["D3","D2"],
+                        "toPoint": "M52_OV3"
+                        },
+                        {
+                        "positive": ["D2"],
+                        "negative": ["D3"],
+                        "toPoint": "M52_OV2"
+                        }]
+        },
         "M52_H9": {
             "id": "M52_H9",
             "type": "yellowHexa",
@@ -3734,5 +3755,177 @@
                         "toPoint": "M52_H7"
                         }]
         },
+        "M52_H10": {
+            "id": "M52_H10",
+            "type": "yellowHexa",
+            "title": "M52_H10_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "M52_D6"
+                        }]
+        },
+        "M52_H11": {
+            "id": "M52_H11",
+            "type": "yellowHexa",
+            "title": "M52_H11_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["D2"],
+                        "negative": [],
+                        "toPoint": "M52_OV6"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["D2"],
+                        "toPoint": "M52_OV7"
+                        }]
+        },
+        "M52_H12": {
+            "id": "M52_H12",
+            "type": "yellowHexa",
+            "title": "M52_H12_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["D2"],
+                        "negative": [],
+                        "toPoint": "M52_OV6"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["D2"],
+                        "toPoint": "M52_OV7"
+                        }]
+        },
+        "M52_H13": {
+            "id": "M52_H13",
+            "type": "yellowHexa",
+            "title": "M52_H13_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["Option1"],
+                        "negative": [],
+                        "toPoint": "D12",
+                        "exitType":"PP3"
+                        },
+                        {
+                        "positive": [],
+                        "negative": [],
+                        "toPoint": "M52_D10"
+                        }]
+        },
+        
+        "M52_OV1": {
+            "id": "M52_OV1",
+            "title": "M51_OV2_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        }]
+        },
+        "M52_OV2": {
+            "id": "M52_OV2",
+            "title": "M52_OV2_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        }]
+        },
+        "M52_OV3": {
+            "id": "M52_OV3",
+            "title": "M52_OV3_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        }]
+        },
+        "M52_OV4": {
+            "id": "M52_OV4",
+            "title": "M52_OV4_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        }]
+        },
+        "M52_OV5": {
+            "id": "M52_OV5",
+            "title": "M52_OV5_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3"
+                        }]
+        },
+        "M52_OV6": {
+            "id": "M52_OV6",
+            "title": "M52_OV6_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3",
+                        "positive": ["Option1","M52_D7"],
+                        "negative": []
+                        },
+                        {
+                        "toPoint": "D12",
+                        "exitType": "PP3",
+                        "positive": ["Option1"],
+                        "negative": ["M52_D7"]
+                        },
+                        {
+                        "toPoint": "D12",
+                        "exitType": "PP3",
+                        "positive": ["M52_OC1_OPTIONE"],
+                        "negative": []
+                        },
+                        {
+                        "positive": ["Option1"],
+                        "negative": [],
+                        "toPoint": "M52_D11"
+                        },
+                        {
+                        "toPoint": "M52_D10",
+                        "positive": [],
+                        "negative": []
+                        }
+                        ]
+        },
+        "M52_OV7": {
+            "id": "M52_OV7",
+            "title": "M52_OV7_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "D12",
+                        "exitType": "PP3",
+                        "positive": ["Option1","M52_D7"],
+                        "negative": []
+                        },
+                        {
+                        "toPoint": "D12",
+                        "exitType": "PP3",
+                        "positive": ["Option1"],
+                        "negative": ["M52_D7"]
+                        },
+                        {
+                        "toPoint": "D12",
+                        "exitType": "PP3",
+                        "positive": ["M52_OC1_OPTIONE"],
+                        "negative": []
+                        },
+                        {
+                        "positive": ["Option1"],
+                        "negative": [],
+                        "toPoint": "M52_D11"
+                        },
+                        {
+                        "toPoint": "M52_D10",
+                        "positive": [],
+                        "negative": []
+                        }
+                        ]
+        }
     }
 }
