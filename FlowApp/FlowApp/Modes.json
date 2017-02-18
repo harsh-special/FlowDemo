@@ -3067,15 +3067,26 @@
             "title": "M51_H1_TITLE",
             "hasChoice": "no",
             "options": [{
-                        "positive": ["M51_D2"],
+                        "positive": [],
+                        "negative": ["M51_D2B"],
+                        "toPoint": "M51_D7"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["M51_D2A"],
+                        "toPoint": "M51_D7"
+                        },
+                        {
+                        "positive": ["M51_D2A"],
                         "negative": [],
                         "toPoint": "M51_H4"
                         },
                         {
-                        "positive": [],
-                        "negative": ["M51_D2"],
-                        "toPoint": "M51_D7"
-                        }]
+                        "positive": ["M51_D2B"],
+                        "negative": [],
+                        "toPoint": "M51_H4"
+                        }
+                        ]
         },
         "M51_H2": {
             "id": "M51_H2",
@@ -3383,10 +3394,10 @@
              }]
         },
         
-        "M51_D2B": {
-            "id": "M51_D2B",
+        "M52_D2B": {
+            "id": "M52_D2B",
             "type": "diamond",
-            "title": "M51_D2_TITLE",
+            "title": "M52_D2_TITLE",
             "options": [{
                         "optionA": "yes"
                         }, {
