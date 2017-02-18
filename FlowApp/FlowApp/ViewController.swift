@@ -205,7 +205,7 @@ extension ViewController {
             
             troubleShootParser.arrOctagonSelected.removeAll()
             troubleShootParser.arrOctagonSelected.append(radioButton.buttonOptionID)
-            
+            troubleShootParser.dicStateMode[radioButton.buttonOptionID] = "yes"
             print(String(format: "%@ is selected.\n", radioButton.selected()!.titleLabel!.text!));
         }
     }
