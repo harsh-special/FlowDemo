@@ -2777,9 +2777,9 @@
             }
         },
         "M51_D5": {
-            "id": "M51_D3",
+            "id": "M51_D5",
             "type": "diamond",
-            "title": "M51_D3_TITLE",
+            "title": "M51_D5_TITLE",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -3691,6 +3691,27 @@
             "hasChoice": "no",
             "options": [{
                         "toPoint": "M52_H7"
+                        }]
+        },
+        "M52_H7": {
+            "id": "M52_H7",
+            "type": "yellowHexa",
+            "title": "M52_H7_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["M52_OC1_OPTIONA"],
+                        "negative": [],
+                        "toPoint": "M52_H10"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["M52_OC1_OPTIONA","D2"],
+                        "toPoint": "M52_OV7"
+                        },
+                        {
+                        "positive": ["D2"],
+                        "negative": ["M52_OC1_OPTIONA"],
+                        "toPoint": "M52_OV6"
                         }]
         },
         "M52_H9": {
