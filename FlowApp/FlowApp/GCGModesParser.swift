@@ -334,7 +334,7 @@ struct GCGModesParser {
         return result
     }
     
-    func getToPointFromOptions(currentOptions: [[String : Any]]) -> String? {
+    mutating func getToPointFromOptions(currentOptions: [[String : Any]]) -> String? {
         var toPoint: String?
         for option in currentOptions {
             let arrPositive = option["positive"] as! [String]
@@ -355,6 +355,11 @@ struct GCGModesParser {
             
             print("isAllPOS === \(isAllPositive)")
             print("isAllNeg === \(isAllNegative)")
+            
+            if let exitType = option[GCGModesParser.exitType] as? String {
+                removeValueForPPKey()
+                saveState(key: exitType, value: modeValue.yes.rawValue)
+            }
             
             if arrPositiveValues.count > 0 && arrNegativeValues.count > 0 {
                 

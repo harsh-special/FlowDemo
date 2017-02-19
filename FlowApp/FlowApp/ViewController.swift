@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
 
     var troubleShootParser = GCGModesParser()
+    var arrPreviousOptionSelected: [String] = []
     lazy var dicMode = [String:Any]()
     
     override func viewDidLoad() {
@@ -204,8 +205,13 @@ extension ViewController {
         } else {
             
             troubleShootParser.arrOctagonSelected.removeAll()
+            if let removePreviousElement = arrPreviousOptionSelected.first {
+                troubleShootParser.dicStateMode.removeValue(forKey: removePreviousElement)
+            }
+            arrPreviousOptionSelected.removeAll()
             troubleShootParser.arrOctagonSelected.append(radioButton.buttonOptionID)
             troubleShootParser.dicStateMode[radioButton.buttonOptionID] = "yes"
+            arrPreviousOptionSelected.append(radioButton.buttonOptionID)
             print(String(format: "%@ is selected.\n", radioButton.selected()!.titleLabel!.text!));
         }
     }
