@@ -3247,13 +3247,8 @@
                         "toPoint": "M1_D10",
                         "exitType": "M1_PP3",
                         "positive": ["Option1"],
-                        "negative": ["P51_D7"]
-                        },
-                        {
-                        "positive": ["Option1","P51_D7"],
                         "negative": [],
-                        "toPoint": "M1_D10",
-                        "exitType": "M1_PP3",
+                        "contains": ["P51_D7"]
                         },
                         {
                         "toPoint": "M1_D10",
@@ -3280,13 +3275,8 @@
                         "toPoint": "M1_D10",
                         "exitType": "M1_PP3",
                         "positive": ["Option1"],
-                        "negative": ["P51_D7"]
-                        },
-                        {
-                        "positive": ["Option1","P51_D7"],
                         "negative": [],
-                        "toPoint": "M1_D10",
-                        "exitType": "M1_PP3",
+                        "contains": ["P51_D7"]
                         },
                         {
                         "toPoint": "M1_D10",
@@ -3313,13 +3303,8 @@
                         "toPoint": "M1_D10",
                         "exitType": "M1_PP3",
                         "positive": ["Option1"],
-                        "negative": ["P51_D7"]
-                        },
-                        {
-                        "positive": ["Option1","P51_D7"],
                         "negative": [],
-                        "toPoint": "M1_D10",
-                        "exitType": "M1_PP3",
+                        "contains": ["P51_D7"]
                         },
                         {
                         "toPoint": "M1_D10",
@@ -3864,13 +3849,8 @@
                         "toPoint": "D12",
                         "exitType": "PP3",
                         "positive": ["Option1"],
-                        "negative": ["P52_D7"]
-                        },
-                        {
-                        "positive": ["Option1","P52_D7"],
                         "negative": [],
-                        "toPoint": "D12",
-                        "exitType": "PP3",
+                        "contains": ["P52_D7"]
                         },
                         {
                         "toPoint": "D12",
@@ -3897,13 +3877,8 @@
                         "toPoint": "D12",
                         "exitType": "PP3",
                         "positive": ["Option1"],
-                        "negative": ["P52_D7"]
-                        },
-                        {
-                        "positive": ["Option1","P52_D7"],
                         "negative": [],
-                        "toPoint": "D12",
-                        "exitType": "PP3",
+                        "contains": ["P52_D7"]
                         },
                         {
                         "toPoint": "D12",
@@ -4391,13 +4366,8 @@
                         "toPoint": "M3_D5",
                         "exitType": "M3_PP3",
                         "positive": ["Option1"],
-                        "negative": ["P53_D7"]
-                        },
-                        {
-                        "positive": ["Option1","P53_D7"],
                         "negative": [],
-                        "toPoint": "M3_D5",
-                        "exitType": "M3_PP3",
+                        "contains": ["P53_D7"]
                         },
                         {
                         "toPoint": "M3_D5",

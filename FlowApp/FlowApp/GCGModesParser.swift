@@ -390,6 +390,12 @@ struct GCGModesParser {
                 toPoint = option[GCGModesParser.toPoint] as? String
             }
             
+            if let checkContains = option["contains"] as? [String] {
+                if isArrStateSavedFor(keys: checkContains) {
+                    toPoint = option[GCGModesParser.toPoint] as? String
+                }
+            }
+            
         }
         print("TOPPPP === \(toPoint)")
         return toPoint
