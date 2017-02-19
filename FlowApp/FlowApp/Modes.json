@@ -3072,16 +3072,6 @@
                         "toPoint": "P51_D7"
                         },
                         {
-                        "positive": [],
-                        "negative": ["P51_D2A"],
-                        "toPoint": "P51_D7"
-                        },
-                        {
-                        "positive": ["P51_D2A"],
-                        "negative": [],
-                        "toPoint": "P51_H4"
-                        },
-                        {
                         "positive": ["P51_D2B"],
                         "negative": [],
                         "toPoint": "P51_H4"
@@ -3646,13 +3636,13 @@
             "title": "P52_H1_TITLE",
             "hasChoice": "no",
             "options": [{
-                        "positive": ["P52_D2"],
+                        "positive": ["P52_D2B"],
                         "negative": [],
                         "toPoint": "P52_H4"
                         },
                         {
                         "positive": [],
-                        "negative": ["P52_D2"],
+                        "negative": ["P52_D2B"],
                         "toPoint": "P52_D7"
                         }]
         },
@@ -3921,6 +3911,501 @@
                         "positive": ["Option1","P52_OC1_OPTIONE"],
                         "negative": []
                         }]
-        }
+        },
+        
+        
+        "P53_D1": {
+            "id": "P53_D1",
+            "type": "diamond",
+            "title": "P53_D1_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_OC1"
+            },
+            "optionB": {
+                "toPoint": "P53_D7"
+            }
+        },
+        "P53_D2A": {
+            "id": "P53_D2A",
+            "type": "diamond",
+            "title": "P53_D2_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA":[{
+                       "positive": ["Option1"],
+                       "negative": [],
+                       "toPoint": "P53_H5"
+                       },
+                       
+                       {
+                       "positive": [],
+                       "negative": ["Option1"],
+                       "toPoint": "P53_D3"
+                       }],
+            "optionB":
+            [{
+             "positive": ["Option1"],
+             "negative": [],
+             "toPoint": "P53_D5"
+             },
+             
+             {
+             "positive": [],
+             "negative": ["Option1"],
+             "toPoint": "P53_H7"
+             }]
+        },
+        
+        "P53_D2B": {
+            "id": "P53_D2B",
+            "type": "diamond",
+            "title": "P53_D2_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA":[{
+                       "positive": ["Option1"],
+                       "negative": [],
+                       "toPoint": "P53_D4"
+                       },
+                       
+                       {
+                       "positive": [],
+                       "negative": ["Option1"],
+                       "toPoint": "P53_H8"
+                       }],
+            "optionB":[{
+                       "positive": ["Option1"],
+                       "negative": [],
+                       "toPoint": "P53_H1"
+                       },
+                       
+                       {
+                       "positive": [],
+                       "negative": ["Option1"],
+                       "toPoint": "P53_H7"
+                       }]
+        },
+        "P53_D3": {
+            "id": "P53_D3",
+            "type": "diamond",
+            "title": "P53_D3_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_OV1"
+            },
+            "optionB": {
+                "toPoint": "P53_H8"
+            }
+        },
+        "P53_D4": {
+            "id": "P53_D4",
+            "type": "diamond",
+            "title": "P53_D4_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_H1"
+            },
+            "optionB": {
+                "toPoint": "P53_H5"
+            }
+        },
+        "P53_D5": {
+            "id": "P53_D5",
+            "type": "diamond",
+            "title": "P53_D5_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_H3"
+            },
+            "optionB": {
+                "toPoint": "P53_H2"
+            }
+        },
+        "P53_D6": {
+            "id": "P53_D6",
+            "type": "diamond",
+            "title": "P56_D5_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_OV2"
+            },
+            "optionB": {
+                "toPoint": "P53_H10"
+            }
+        },
+        "P53_D7": {
+            "id": "P53_D7",
+            "type": "diamond",
+            "title": "P57_D5_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_D8"
+            },
+            "optionB": {
+                "toPoint": "P53_D9"
+            }
+        },
+        "P53_D8": {
+            "id": "P53_D8",
+            "type": "diamond",
+            "title": "P58_D5_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_D9"
+            },
+            "optionB": {
+                "toPoint": "P53_H4"
+            }
+        },
+        "P53_D9": {
+            "id": "P53_D9",
+            "type": "diamond",
+            "title": "P53_D9_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "P53_H6"
+            },
+            "optionB":  [{
+                         "positive": ["P53_D7"],
+                         "negative": [],
+                         "toPoint": "P53_H4"
+                         },
+                         
+                         {
+                         "positive": [],
+                         "negative": ["P53_D7"],
+                         "toPoint": "P53_H12"
+                         }]
+        },
+        "P53_D10": {
+            "id": "P53_D10",
+            "type": "diamond",
+            "title": "P53_D10_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "Page 6-3"
+            },
+            "optionB":[{
+                       "positive": [],
+                       "negative": [],
+                       "toPoint": "P53_D11"
+                       },
+                       {
+                       "positive": ["P53_D7"],
+                       "negative": [],
+                       "exitType":"M3_PP3",
+                       "toPoint": "M3_D5"
+                       },
+                       {
+                       "positive": [],
+                       "negative": ["P53_D7"],
+                       "exitType":"M3_PP3",
+                       "toPoint": "M3_D5"
+                       },
+                       {
+                       "positive": ["P53_OC1_OPTIONE"],
+                       "negative": [],
+                       "exitType":"M3_PP3",
+                       "toPoint": "M3_D5"
+                       }
+                       ]
+        },
+        "P53_D11": {
+            "id": "P53_D11",
+            "type": "diamond",
+            "title": "P53_D11_TITLE",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
+            "optionA": {
+                "toPoint": "M3_D4"
+            },
+            "optionB": {
+                "toPoint": "M3_D5",
+                "exitType": "M3_PP3"
+            }
+        },
+        
+        "P53_OC1": {
+            "id": "P53_OC1",
+            "type": "octagon",
+            "title": "P53_OC1_TITLE",
+            "options": [{
+                        "id": "P53_OC1_OPTIONA",
+                        "title": "A option here"
+                        }, {
+                        "id": "P53_OC1_OPTIONB",
+                        "title": "B option here"
+                        }, {
+                        "id": "P53_OC1_OPTIONC",
+                        "title": "C option here"
+                        }, {
+                        "id": "P53_OC1_OPTIOND",
+                        "title": "D option here"
+                        }, {
+                        "id": "P53_OC1_OPTIONE",
+                        "title": "E option here"
+                        }],
+            "P53_OC1_OPTIONA": {
+                "toPoint": "P53_D2A"
+            },
+            "P53_OC1_OPTIONC": [{
+                                "positive": [],
+                                "negative": ["Option1"],
+                                "toPoint": "P53_H7"
+                                },
+                                {
+                                "positive": ["Option1"],
+                                "negative": [],
+                                "toPoint": "P53_H5"
+                                }
+                                ],
+            "P53_OC1_OPTIONB": {
+                "toPoint": "P53_D2B"
+            },
+            "P53_OC1_OPTIOND": [{
+                                "positive": [],
+                                "negative": ["Option1"],
+                                "toPoint": "P53_H8"
+                                },
+                                {
+                                "positive": ["Option1"],
+                                "negative": [],
+                                "toPoint": "P53_H7"
+                                }
+                                ],
+            "P53_OC1_OPTIONE": {
+                "toPoint": "P53_H7"
+            }
+        },
+
+        "P53_H1": {
+            "id": "P53_H1",
+            "type": "yellowHexa",
+            "title": "P53_H1_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["P53_D2B"],
+                        "negative": [],
+                        "toPoint": "P53_H4"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["P53_D2B"],
+                        "toPoint": "P53_D7"
+                        }]
+        },
+        "P53_H2": {
+            "id": "P53_H2",
+            "type": "yellowHexa",
+            "title": "P53_H2_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_D7"
+                        }]
+        },
+        "P53_H3": {
+            "id": "P53_H3",
+            "type": "yellowHexa",
+            "title": "P53_H3_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_H5"
+                        }]
+        },
+        "P53_H4": {
+            "id": "P53_H4",
+            "type": "yellowHexa",
+            "title": "P53_H4_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_H7"
+                        }]
+        },
+        "P53_H5": {
+            "id": "P53_H5",
+            "type": "yellowHexa",
+            "title": "P53_H5_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_H7"
+                        }]
+        },
+        "P53_H6": {
+            "id": "P53_H6",
+            "type": "yellowHexa",
+            "title": "P53_H6_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_H7"
+                        }]
+        },
+        "P53_H7": {
+            "id": "P53_H7",
+            "type": "yellowHexa",
+            "title": "P53_H7_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["P53_OC1_OPTIONA"],
+                        "negative": [],
+                        "toPoint": "P53_H9"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["P53_OC1_OPTIONA"],
+                        "toPoint": "P53_OV3"
+                        }]
+        },
+        "P53_H8": {
+            "id": "P53_H8",
+            "type": "yellowHexa",
+            "title": "P53_H8_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_H7"
+                        }]
+        },
+        "P53_H9": {
+            "id": "P53_H9",
+            "type": "yellowHexa",
+            "title": "P53_H9_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_D6"
+                        }]
+        },
+        "P53_H10": {
+            "id": "P53_H10",
+            "type": "yellowHexa",
+            "title": "P53_H10_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_OV3"
+                        }]
+        },
+        "P53_H11": {
+            "id": "P53_H9",
+            "type": "yellowHexa",
+            "title": "P53_H9_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "toPoint": "P53_OV3"
+                        }]
+        },
+        "P53_H12": {
+            "id": "P53_H12",
+            "type": "yellowHexa",
+            "title": "P53_H12_TITLE",
+            "hasChoice": "no",
+            "options": [{
+                        "positive": ["Option1"],
+                        "negative": [],
+                        "exitType": "M3_PP3",
+                        "toPoint": "M3_D5"
+                        },
+                        {
+                        "positive": [],
+                        "negative": [],
+                        "toPoint": "P53_D10"
+                        }]
+        },
+        
+        "P53_OV1": {
+            "id": "P53_OV1",
+            "title": "P53_OV1_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "M3_D5",
+                        "exitType": "M3_PP3"
+                        }]
+        },
+        "P53_OV2": {
+            "id": "P53_OV2",
+            "title": "P53_OV2_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "M3_D5",
+                        "exitType": "M3_PP3"
+                        }]
+        },
+        "P53_OV3": {
+            "id": "P53_OV3",
+            "title": "P53_OV3_TITLE",
+            "type": "oval",
+            "options": [{
+                        "toPoint": "P53_D10",
+                        "positive": [],
+                        "negative": ["Option1"]
+                        },
+                        {
+                        "toPoint": "P53_D11",
+                        "positive": ["Option1"],
+                        "negative": []
+                        },
+                        {
+                        "toPoint": "M3_D5",
+                        "exitType": "M3_PP3",
+                        "positive": ["Option1"],
+                        "negative": ["P53_D7"]
+                        },
+                        {
+                        "positive": ["Option1","P53_D7"],
+                        "negative": [],
+                        "toPoint": "M3_D5",
+                        "exitType": "M3_PP3",
+                        },
+                        {
+                        "toPoint": "M3_D5",
+                        "exitType": "M3_PP3",
+                        "positive": ["Option1","P53_OC1_OPTIONE"],
+                        "negative": []
+                        }]
+        },
+
     }
 }
