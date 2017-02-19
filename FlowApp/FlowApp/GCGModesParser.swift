@@ -360,6 +360,13 @@ struct GCGModesParser {
                 removeValueForPPKey()
                 saveState(key: exitType, value: modeValue.yes.rawValue)
             }
+          
+            if let checkContains = option["contains"] as? [String] {
+                if isArrStateSavedFor(keys: checkContains) {
+                    toPoint = option[GCGModesParser.toPoint] as? String
+                    return toPoint
+                }
+            }
             
             if arrPositiveValues.count > 0 && arrNegativeValues.count > 0 {
                 
@@ -388,12 +395,6 @@ struct GCGModesParser {
             } else {
                 
                 toPoint = option[GCGModesParser.toPoint] as? String
-            }
-            
-            if let checkContains = option["contains"] as? [String] {
-                if isArrStateSavedFor(keys: checkContains) {
-                    toPoint = option[GCGModesParser.toPoint] as? String
-                }
             }
             
         }
