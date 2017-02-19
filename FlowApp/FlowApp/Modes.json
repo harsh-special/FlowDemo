@@ -183,7 +183,7 @@
                         "toPoint": "OV8"
                         }],
             "optionB": {
-                "toPoint": "F1 Page 5-2"
+                "toPoint": "P52_H12"
             }
         },
         "D9": {
@@ -297,7 +297,7 @@
                         ],
             
             "optionB": {
-                "toPoint": "F2B"
+                "toPoint": "P52_H11"
             }
         },
         "D10": {
@@ -1761,7 +1761,7 @@
                 "toPoint": "M3_OV1"
             },
             "optionB": {
-                "toPoint": "M3_PAGE_5_3"
+                "toPoint": "P53_H11"
             }
         },
         
@@ -1797,7 +1797,7 @@
                 "toPoint": "M3_OV2"
             },
             "optionB": {
-                "toPoint": "M3_PAGE_5_3"
+                "toPoint": "P53_H10"
             }
         },
         
