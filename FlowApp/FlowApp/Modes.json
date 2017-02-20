@@ -230,7 +230,7 @@
                         {
                         "positive": ["PP1"],
                         "negative": ["Option2"],
-                        "toPoint": "Page 5-2"
+                        "toPoint": "P52_D1"
                         }, {
                         "positive": ["Option3","PP2"],
                         "negative": [],
@@ -238,7 +238,7 @@
                         }, {
                         "positive": ["PP2"],
                         "negative": ["Option3"],
-                        "toPoint": "Page 5-2"
+                        "toPoint": "P52_D1"
                         }, {
                         "positive": ["Option4","PP3"],
                         "negative": [],
@@ -1836,7 +1836,7 @@
                         {
                         "positive": ["M3_PP1"],
                         "negative": ["Option2"],
-                        "toPoint": "M3_Page_5_2"
+                        "toPoint": "P53_D1"
                         }, {
                         "positive": ["Option3","M3_PP2"],
                         "negative": [],
@@ -1844,7 +1844,7 @@
                         }, {
                         "positive": ["M3_PP2"],
                         "negative": ["Option3"],
-                        "toPoint": "M3_Page_5_2"
+                        "toPoint": "P53_D1"
                         }, {
                         "positive": ["Option4","M3_PP3"],
                         "negative": [],
