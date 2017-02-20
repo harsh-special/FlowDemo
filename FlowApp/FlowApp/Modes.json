@@ -1344,14 +1344,14 @@
                         "exitType": "M1_PP1"
                         },
                         {
-                        "fromPoint": "M1_OC2",
-                        "toPoint": "M1_D10",
-                        "exitType": "M1_PP2"
-                        },
-                        {
                         "fromPoint": "M1_H1",
                         "toPoint": "M1_D10",
                         "exitType": "M1_PP1"
+                        },
+                        {
+                        "fromPoint": "M1_OC2",
+                        "toPoint": "M1_D10",
+                        "exitType": "M1_PP2"
                         },
                         {
                         "fromPoint": "M1_D5",
@@ -4376,6 +4376,5 @@
                         "negative": []
                         }]
         },
-
     }
 }
