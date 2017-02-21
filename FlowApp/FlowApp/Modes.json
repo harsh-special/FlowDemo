@@ -2971,22 +2971,16 @@
                          "exitType":"M1_PP3",
                          "toPoint": "M1_D10"
                          },
-                         
-                         {
-                         "positive": ["P51_D7"],
-                         "negative": [],
-                         "exitType":"M1_PP3",
-                         "toPoint": "M1_D10"
-                         },
-                         {
-                         "positive": [],
-                         "negative": ["P51_D7"],
-                         "exitType":"M1_PP3",
-                         "toPoint": "M1_D10"
-                         },
                          {
                          "positive": [],
                          "negative": [],
+                         "exitType":"M1_PP3",
+                         "toPoint": "M1_D10",
+                         "contains": ["P51_D7"]
+                         },
+                         {
+                         "positive": [],
+                         "negative": ["P51_OC1_OPTIONE"],
                          "toPoint": "P51_D14"
                          }
                          ]
@@ -3448,7 +3442,28 @@
             }
         },
         "P52_D6": {
+            "id": "P52_D6",
+            "title": "P52_D6_TITLE",
+            "type": "diamond",
+            "options": [{
+                        "optionA": "yes"
+                        }, {
+                        "optionB": "no"
+                        }],
             
+            "optionB": {
+                "toPoint": "P52_H11"
+            },
+            "optionA": [{
+                        "positive": ["D2"],
+                        "negative": [],
+                        "toPoint": "P52_OV4"
+                        },
+                        {
+                        "positive": [],
+                        "negative": ["D2"],
+                        "toPoint": "P52_OV5"
+                        }]
         },
         "P52_D7": {
             "id": "P52_D7",
@@ -3524,22 +3539,16 @@
                          "exitType":"PP3",
                          "toPoint": "D12"
                          },
-                         
-                         {
-                         "positive": ["P52_D7"],
-                         "negative": [],
-                         "exitType":"PP3",
-                         "toPoint": "D12"
-                         },
-                         {
-                         "positive": [],
-                         "negative": ["P52_D7"],
-                         "exitType":"PP3",
-                         "toPoint": "D12"
-                         },
                          {
                          "positive": [],
                          "negative": [],
+                         "exitType":"PP3",
+                         "toPoint": "D12",
+                         "contains": ["P52_D7"]
+                         },
+                         {
+                         "positive": [],
+                         "negative": ["P52_OC1_OPTIONE"],
                          "toPoint": "P52_D11"
                          }
                          ]
@@ -4106,25 +4115,20 @@
             "optionB":[{
                        "positive": [],
                        "negative": [],
-                       "toPoint": "P53_D11"
-                       },
-                       {
-                       "positive": ["P53_D7"],
-                       "negative": [],
                        "exitType":"M3_PP3",
-                       "toPoint": "M3_D5"
-                       },
-                       {
-                       "positive": [],
-                       "negative": ["P53_D7"],
-                       "exitType":"M3_PP3",
-                       "toPoint": "M3_D5"
+                       "toPoint": "M3_D5",
+                       "contains": ["P51_D7"]
                        },
                        {
                        "positive": ["P53_OC1_OPTIONE"],
                        "negative": [],
                        "exitType":"M3_PP3",
                        "toPoint": "M3_D5"
+                       },
+                       {
+                       "positive": [],
+                       "negative": ["P53_OC1_OPTIONE"],
+                       "toPoint": "P53_D11"
                        }
                        ]
         },
