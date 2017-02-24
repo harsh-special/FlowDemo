@@ -109,7 +109,19 @@ struct GCGModesParser {
     
     // MARK: - When yes button is tapped on diamond
     
-    mutating func moveToStepYes() {
+    mutating func moveToStepYes() -> (success:Bool, title:String?, optionID:String?) {
+        
+        if let currenNode = dicCurrentState[GCGModesParser.id] as? String {
+            if currenNode == "P51_D12" {
+                if isStateSavedFor(key: "M1_D7") {
+                    let value = getNodeState(id: "M1_D7")
+                    if !value {
+                        return (false, "It's not possible to select No previously at M1_D7 and now select Yes at P51_D12.  Please try again and select No.", nil)
+                    }
+                }
+            }
+        }
+        
         
         // IF direct dictionary of toPoint
         if let safeDicCurrentState = dicCurrentState[GCGModesParser.optionA] as? [String:String] {
@@ -135,6 +147,8 @@ struct GCGModesParser {
             }
         }
         checkForStepEnd()
+        
+        return (true,nil,nil)
     }
     
     // MARK: - When OK button is tapped on OVAL, HEXAGON

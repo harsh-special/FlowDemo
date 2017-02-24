@@ -49,7 +49,11 @@ class ViewController: UIViewController {
     // MARK: - Decision Methods -
     
     @IBAction func IBbtnYesTap(_ sender: UIButton) {
-        troubleShootParser.moveToStepYes()
+        let result = troubleShootParser.moveToStepYes()
+        if !result.success {
+            showAlert(title: "", message: result.title!)
+            return
+        }
         setDataToView()
     }
     
