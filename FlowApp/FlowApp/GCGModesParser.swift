@@ -295,7 +295,7 @@ struct GCGModesParser {
         if arrQuestionaireSelected.contains("Option3") {
             if let currentNode = dicCurrentState[GCGModesParser.id] as? String {
                 if currentNode == "M1_OC2" || currentNode == "OC2" || currentNode == "M3_OC2" {
-                    if optionSelected != "optionA" {
+                    if optionSelected == "optionA" {
                         return (false, "Since you've selected option 3, it's not possible to have A option.  Please try again.", nil)
                     }
                 }
