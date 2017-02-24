@@ -71,7 +71,12 @@ class ViewController: UIViewController {
             }
         } else {
             if let optionSelected = troubleShootParser.arrOctagonSelected.first {
-                troubleShootParser.moveToStepChoice(choiceText: optionSelected)
+                let result = troubleShootParser.validateOptionsForOctagon(optionSelected: optionSelected)
+                if result.success {
+                    troubleShootParser.moveToStepChoice(choiceText: optionSelected)
+                } else {
+                    showAlert(title: "Sorry", message: result.title!)
+                }
                 setDataToView()
             }
         }
