@@ -607,6 +607,11 @@
                         "fromPoint": "D8",
                         "toPoint": "D12",
                         "exitType": "PP3"
+                        },
+                        {
+                        "fromPoint": "OC3",
+                        "toPoint": "D12",
+                        "exitType": "PP3"
                         }
                         ]
         },
