@@ -4052,7 +4052,7 @@
         "P53_D7": {
             "id": "P53_D7",
             "type": "diamond",
-            "title": "P57_D5_TITLE",
+            "title": "P53_D7_TITLE",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -4068,7 +4068,7 @@
         "P53_D8": {
             "id": "P53_D8",
             "type": "diamond",
-            "title": "P58_D5_TITLE",
+            "title": "P53_D8_TITLE",
             "options": [{
                         "optionA": "yes"
                         }, {
