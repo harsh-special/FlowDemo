@@ -4036,7 +4036,7 @@
         "P53_D6": {
             "id": "P53_D6",
             "type": "diamond",
-            "title": "P56_D5_TITLE",
+            "title": "P53_D6_TITLE",
             "options": [{
                         "optionA": "yes"
                         }, {
@@ -4313,9 +4313,9 @@
                         }]
         },
         "P53_H11": {
-            "id": "P53_H9",
+            "id": "P53_H11",
             "type": "yellowHexa",
-            "title": "P53_H9_TITLE",
+            "title": "P53_H11_TITLE",
             "hasChoice": "no",
             "options": [{
                         "toPoint": "P53_OV3"
