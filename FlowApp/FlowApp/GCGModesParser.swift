@@ -24,6 +24,7 @@ struct GCGModesParser {
     var dicCurrentState : [String : Any] = [:]
     var arrQuestionaireSelected : [String] = []
     var arrOctagonSelected : [String] = []
+    var constantsDict : [String: String] = [:]
     
     var isStepWithOption : Bool {
         return (dicCurrentState[GCGModesParser.options] != nil) ? true : false
@@ -301,7 +302,7 @@ struct GCGModesParser {
         } else if arrQuestionaireSelected.contains("Option3") && arrQuestionaireSelected.contains("Option2") && arrQuestionaireSelected.contains("Option4") && arrQuestionaireSelected.count == 3 {
             return (true, nil, "Option2")
         } else {
-            return (false, "Something went wrong", nil)
+            return (false, "Sorry, You must choose at least one option", nil)
         }
     }
     

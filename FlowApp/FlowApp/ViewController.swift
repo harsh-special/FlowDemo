@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBviewInformative: UIView!
     @IBOutlet weak var IBtxtInfoTitle: UITextView!
     
-
     var troubleShootParser = GCGModesParser()
     var arrPreviousOptionSelected: [String] = []
     lazy var dicMode = [String:Any]()
@@ -29,6 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SideMenuManager.menuFadeStatusBar = false
+        getConstantsValueFromJsonFile()
         getContentsFromJsonFile()
         troubleShootParser.onSuccessfulEnd = { [unowned self] in
             self.showSendMailErrorAlert()
@@ -95,8 +95,6 @@ class ViewController: UIViewController {
     }
 }
 
-
-
 extension ViewController {
 
     //Read Json File and Parse
@@ -109,6 +107,13 @@ extension ViewController {
         setDataToView()
     }
     
+    func getConstantsValueFromJsonFile() {
+        let path = Bundle.main.path(forResource: "ConstantsFile", ofType: "json")
+        let jsonData = try! Data(contentsOf: URL(fileURLWithPath: path!), options: Data.ReadingOptions.dataReadingMapped)
+        let constantsDic = try! JSONSerialization.jsonObject(with: jsonData, options: []) as! [String: String]
+         troubleShootParser.constantsDict = constantsDic
+    }
+    
     //Initialize Parser with data
     func loadParser() {
         troubleShootParser.SetData(data: (dicMode["Mode2"] as! [String : Any]))
@@ -119,7 +124,7 @@ extension ViewController {
     
     //Set Json Data to View and save data
     func getActualTextForJson(title: String) -> String {
-        var actualString = ConstantsDict[title] ?? title
+        var actualString = troubleShootParser.constantsDict[title] ?? title
         if actualString == "" {
             actualString = title
         }
@@ -251,7 +256,7 @@ extension ViewController {
         let pdf = SimplePDF(pageSize: A4paperSize)
         for text in dataArr {
             for (key,value) in text {
-                let question = ConstantsDict[key]
+                let question = troubleShootParser.constantsDict[key]
                 let answer = value
                 pdf.addText("\(question)")
                 pdf.addText(" \(answer)")

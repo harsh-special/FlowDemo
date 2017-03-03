@@ -3129,7 +3129,12 @@
             "hasChoice": "no",
             "options": [{
                         "positive": ["P51_OC1_OPTIONA"],
-                        "negative": [],
+                        "negative": ["Option1","P51_D2A"],
+                        "toPoint": "P51_H9"
+                        },
+                        {
+                        "positive": ["P51_OC1_OPTIONA"],
+                        "negative": ["Option1","P51_D2B"],
                         "toPoint": "P51_H9"
                         },
                         {
@@ -3697,7 +3702,12 @@
             "hasChoice": "no",
             "options": [{
                         "positive": ["P52_OC1_OPTIONA"],
-                        "negative": [],
+                        "negative": ["Option1","P52_D2A"],
+                        "toPoint": "P52_H10"
+                        },
+                        {
+                        "positive": ["P52_OC1_OPTIONA"],
+                        "negative": ["Option1","P52_D2B"],
                         "toPoint": "P52_H10"
                         },
                         {
@@ -4276,7 +4286,12 @@
             "hasChoice": "no",
             "options": [{
                         "positive": ["P53_OC1_OPTIONA"],
-                        "negative": [],
+                        "negative": ["Option1","P53_D2A"],
+                        "toPoint": "P53_H9"
+                        },
+                        {
+                        "positive": ["P53_OC1_OPTIONA"],
+                        "negative": ["Option1","P53_D2B"],
                         "toPoint": "P53_H9"
                         },
                         {
