@@ -3141,6 +3141,21 @@
                         "positive": [],
                         "negative": ["P51_OC1_OPTIONA"],
                         "toPoint": "P51_D6"
+                        },
+                        {
+                        "positive": ["Option1"],
+                        "negative": [],
+                        "toPoint": "P51_D6"
+                        },
+                        {
+                        "positive": ["P51_D2A"],
+                        "negative": [],
+                        "toPoint": "P51_D6"
+                        },
+                        {
+                        "positive": ["P51_D2B"],
+                        "negative": [],
+                        "toPoint": "P51_D6"
                         }]
         },
         "P51_H8": {
@@ -3716,8 +3731,38 @@
                         "toPoint": "P52_OV7"
                         },
                         {
+                        "positive": ["P52_D2A"],
+                        "negative": ["D2"],
+                        "toPoint": "P52_OV7"
+                        },
+                        {
+                        "positive": ["P52_D2B"],
+                        "negative": ["D2"],
+                        "toPoint": "P52_OV7"
+                        },
+                        {
+                        "positive": ["Option1"],
+                        "negative": ["D2"],
+                        "toPoint": "P52_OV7"
+                        },
+                        {
                         "positive": ["D2"],
                         "negative": ["P52_OC1_OPTIONA"],
+                        "toPoint": "P52_OV6"
+                        },
+                        {
+                        "positive": ["D2","Option1"],
+                        "negative": [],
+                        "toPoint": "P52_OV6"
+                        },
+                        {
+                        "positive": ["D2","P52_D2A"],
+                        "negative": [],
+                        "toPoint": "P52_OV6"
+                        },
+                        {
+                        "positive": ["D2","P52_D2B"],
+                        "negative": [],
                         "toPoint": "P52_OV6"
                         }]
         },
@@ -4298,7 +4343,23 @@
                         "positive": [],
                         "negative": ["P53_OC1_OPTIONA"],
                         "toPoint": "P53_OV3"
-                        }]
+                        },
+                        {
+                        "positive": ["Option1"],
+                        "negative": [],
+                        "toPoint": "P53_OV3"
+                        },
+                        {
+                        "positive": ["P53_D2A"],
+                        "negative": [],
+                        "toPoint": "P53_OV3"
+                        },
+                        {
+                        "positive": ["P53_D2B"],
+                        "negative": [],
+                        "toPoint": "P53_OV3"
+                        }
+                        ]
         },
         "P53_H8": {
             "id": "P53_H8",
