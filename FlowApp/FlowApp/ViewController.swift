@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBviewOptionsContainer:UIView!
     @IBOutlet weak var IBtxtQuestTitle: UITextView!
     @IBOutlet weak var IBconstraintOptionsHeight: NSLayoutConstraint!
+    @IBOutlet weak var IBconstraintNoteTextHeight: NSLayoutConstraint!
+    @IBOutlet weak var IBtxtQuestNote: UITextView!
     
     @IBOutlet weak var IBviewInformative: UIView!
     @IBOutlet weak var IBtxtInfoTitle: UITextView!
@@ -145,22 +147,42 @@ extension ViewController {
         }
     }
     
+    func setAttributedTextWithoutBody(textView: UITextView, currentTitle: String) {
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .center
+        let titleAtts = [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0),NSParagraphStyleAttributeName: paragraph]
+        let title = NSMutableAttributedString(string: currentTitle, attributes: titleAtts)
+        textView.attributedText = title
+    }
+    
+    func setAttributedNoteText(textView: UITextView, noteText: String) {
+        if let note = noteText.htmlAttributedString() {
+            IBconstraintNoteTextHeight.constant = 60.0
+            textView.attributedText = note
+        }
+    }
+    
     // Every time we go to next flow we call to set the data from new toPoint
     func setDataToView() {
+        IBconstraintNoteTextHeight.constant = 0.0
         if troubleShootParser.currentStepType == "diamond" {
             showHideViews(showViews: [IBviewDecision], hideViews: [IBviewQuestionaire, IBviewInformative])
             IBtxtQuestions.text = getActualTextForJson(title: troubleShootParser.currentStepText)
             if let body = troubleShootParser.dicCurrentState["body"] as? String {
                 setAttributedText(textView: IBtxtQuestions, body: body, currentTitle: IBtxtQuestions.text)
+            } else {
+                setAttributedTextWithoutBody(textView: IBtxtQuestions, currentTitle: IBtxtQuestions.text)
             }
         } else if troubleShootParser.currentStepType == "redRectangle" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+            setAttributedTextWithoutBody(textView: IBtxtQuestTitle, currentTitle: IBtxtQuestTitle.text)
             IBconstraintOptionsHeight.constant = 275.0
             setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         } else if troubleShootParser.currentStepType == "oval" {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
             IBtxtInfoTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+            setAttributedTextWithoutBody(textView: IBtxtInfoTitle, currentTitle: IBtxtInfoTitle.text)
         } else if troubleShootParser.currentStepType == "yellowHexa" {
             if troubleShootParser.dicCurrentState["hasChoice"] as! String == "yes" {
                 showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
@@ -168,6 +190,8 @@ extension ViewController {
                 IBconstraintOptionsHeight.constant = 275.0
                 if let body = troubleShootParser.dicCurrentState["body"] as? String {
                     setAttributedText(textView: IBtxtQuestTitle, body: body, currentTitle: IBtxtQuestTitle.text)
+                } else {
+                    setAttributedTextWithoutBody(textView: IBtxtQuestTitle, currentTitle: IBtxtQuestTitle.text)
                 }
                 setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
             } else {
@@ -176,6 +200,8 @@ extension ViewController {
                 IBconstraintOptionsHeight.constant = 0.0
                 if let body = troubleShootParser.dicCurrentState["body"] as? String {
                     setAttributedText(textView: IBtxtInfoTitle, body: body, currentTitle: IBtxtInfoTitle.text)
+                } else {
+                    setAttributedTextWithoutBody(textView: IBtxtInfoTitle, currentTitle: IBtxtInfoTitle.text)
                 }
             }
         } else if troubleShootParser.currentStepType == "octagon" {
@@ -184,6 +210,12 @@ extension ViewController {
             IBconstraintOptionsHeight.constant = 275.0
             if let body = troubleShootParser.dicCurrentState["body"] as? String {
                 setAttributedText(textView: IBtxtQuestTitle, body: body, currentTitle: IBtxtQuestTitle.text)
+            } else {
+                setAttributedTextWithoutBody(textView: IBtxtQuestTitle, currentTitle: IBtxtQuestTitle.text)
+            }
+            
+            if let note = troubleShootParser.dicCurrentState["note"] as? String {
+                setAttributedNoteText(textView: IBtxtQuestNote, noteText: note)
             }
             setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         }

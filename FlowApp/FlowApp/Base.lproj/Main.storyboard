@@ -185,11 +185,18 @@ Cg
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-q2-yTf" userLabel="DecisionView">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkV-4I-QOg">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkV-4I-QOg">
                                         <rect key="frame" x="0.0" y="8" width="375" height="517"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <mutableString key="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</mutableString>
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogF-fZ-cHw">
@@ -290,19 +297,22 @@ Cg
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTo-4y-XLK">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="242"/>
+                                        <rect key="frame" x="0.0" y="8" width="375" height="192"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXm-tG-9w2" userLabel="Options View">
-                                        <rect key="frame" x="0.0" y="250" width="375" height="275"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDY-CO-TRv">
+                                        <rect key="frame" x="0.0" y="485" width="375" height="60"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="275" id="x3a-0p-KTF"/>
+                                            <constraint firstAttribute="height" constant="60" id="r2J-C8-69s"/>
                                         </constraints>
-                                    </view>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fV-2f-My4">
                                         <rect key="frame" x="122" y="545" width="130" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -323,34 +333,43 @@ Cg
                                             <action selector="IBbtnNextTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPW-8X-keF"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXm-tG-9w2" userLabel="Options View">
+                                        <rect key="frame" x="0.0" y="208" width="375" height="275"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="275" id="pfb-XY-ZOw"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="2fV-2f-My4" secondAttribute="bottom" constant="8" id="9dl-Eg-nTa"/>
-                                    <constraint firstItem="LXm-tG-9w2" firstAttribute="top" secondItem="oTo-4y-XLK" secondAttribute="bottom" id="Dlq-hu-09m"/>
-                                    <constraint firstItem="oTo-4y-XLK" firstAttribute="top" secondItem="A0w-g6-PoZ" secondAttribute="top" constant="8" id="Ex7-o1-LJy"/>
-                                    <constraint firstAttribute="trailing" secondItem="oTo-4y-XLK" secondAttribute="trailing" id="PRR-8z-VDn"/>
-                                    <constraint firstAttribute="trailing" secondItem="LXm-tG-9w2" secondAttribute="trailing" id="Q3x-f0-7no"/>
-                                    <constraint firstItem="LXm-tG-9w2" firstAttribute="leading" secondItem="A0w-g6-PoZ" secondAttribute="leading" id="ShU-o8-WMD"/>
-                                    <constraint firstItem="2fV-2f-My4" firstAttribute="top" secondItem="LXm-tG-9w2" secondAttribute="bottom" constant="20" id="lA4-d3-YR4"/>
-                                    <constraint firstItem="2fV-2f-My4" firstAttribute="centerX" secondItem="A0w-g6-PoZ" secondAttribute="centerX" id="nQ6-ud-6N5"/>
-                                    <constraint firstItem="oTo-4y-XLK" firstAttribute="leading" secondItem="A0w-g6-PoZ" secondAttribute="leading" id="tcc-AH-Fwh"/>
+                                    <constraint firstItem="2fV-2f-My4" firstAttribute="top" secondItem="gDY-CO-TRv" secondAttribute="bottom" id="DER-Hq-gCh"/>
+                                    <constraint firstAttribute="trailing" secondItem="LXm-tG-9w2" secondAttribute="trailing" id="Fea-QX-l3h"/>
+                                    <constraint firstAttribute="trailing" secondItem="gDY-CO-TRv" secondAttribute="trailing" id="HJX-aQ-ahd"/>
+                                    <constraint firstAttribute="trailing" secondItem="oTo-4y-XLK" secondAttribute="trailing" id="JNd-4Q-6Sx"/>
+                                    <constraint firstAttribute="bottom" secondItem="2fV-2f-My4" secondAttribute="bottom" constant="8" id="M1c-Pc-Mqm"/>
+                                    <constraint firstItem="LXm-tG-9w2" firstAttribute="top" secondItem="oTo-4y-XLK" secondAttribute="bottom" constant="8" id="SSP-4m-TjU"/>
+                                    <constraint firstItem="oTo-4y-XLK" firstAttribute="leading" secondItem="A0w-g6-PoZ" secondAttribute="leading" id="a8M-cj-zag"/>
+                                    <constraint firstItem="gDY-CO-TRv" firstAttribute="leading" secondItem="A0w-g6-PoZ" secondAttribute="leading" id="cah-nE-GCb"/>
+                                    <constraint firstItem="LXm-tG-9w2" firstAttribute="leading" secondItem="A0w-g6-PoZ" secondAttribute="leading" id="fLW-KR-nZ2"/>
+                                    <constraint firstItem="oTo-4y-XLK" firstAttribute="top" secondItem="A0w-g6-PoZ" secondAttribute="top" constant="8" id="ky9-Ra-Tk7"/>
+                                    <constraint firstItem="gDY-CO-TRv" firstAttribute="top" secondItem="LXm-tG-9w2" secondAttribute="bottom" constant="2" id="mao-EQ-5Dv"/>
+                                    <constraint firstItem="2fV-2f-My4" firstAttribute="centerX" secondItem="A0w-g6-PoZ" secondAttribute="centerX" id="wMp-lb-u55"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="A0w-g6-PoZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1jD-61-NPw"/>
                             <constraint firstItem="oyK-Ac-hvt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EKH-iY-80K"/>
+                            <constraint firstItem="A0w-g6-PoZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Gaa-dC-YEV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gW6-q2-yTf" secondAttribute="bottom" id="MQI-fc-io1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oyK-Ac-hvt" secondAttribute="bottom" id="Riv-4R-c8V"/>
                             <constraint firstItem="gW6-q2-yTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VUX-Ug-FRv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A0w-g6-PoZ" secondAttribute="bottom" id="aNy-v0-HE5"/>
-                            <constraint firstAttribute="trailing" secondItem="A0w-g6-PoZ" secondAttribute="trailing" id="eV8-QB-D7j"/>
+                            <constraint firstAttribute="trailing" secondItem="A0w-g6-PoZ" secondAttribute="trailing" id="d2Y-1Z-cZn"/>
                             <constraint firstAttribute="trailing" secondItem="gW6-q2-yTf" secondAttribute="trailing" id="iIg-bG-MGz"/>
                             <constraint firstItem="oyK-Ac-hvt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lFA-Ti-hnq"/>
                             <constraint firstAttribute="trailing" secondItem="oyK-Ac-hvt" secondAttribute="trailing" id="oMo-rP-kPp"/>
                             <constraint firstItem="gW6-q2-yTf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pp8-cM-DiI"/>
-                            <constraint firstItem="A0w-g6-PoZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="x6q-pU-f6B"/>
+                            <constraint firstItem="A0w-g6-PoZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rbj-kt-am8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A0w-g6-PoZ" secondAttribute="bottom" id="xMa-eN-hmw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GreenCard GO" id="yE1-Iz-LRX">
@@ -379,8 +398,10 @@ Cg
                     <connections>
                         <outlet property="IBbtnNo" destination="hKu-Dh-izb" id="MRz-yX-wQJ"/>
                         <outlet property="IBbtnYes" destination="ogF-fZ-cHw" id="XzM-m6-FW1"/>
-                        <outlet property="IBconstraintOptionsHeight" destination="x3a-0p-KTF" id="9qz-zs-TVr"/>
+                        <outlet property="IBconstraintNoteTextHeight" destination="r2J-C8-69s" id="Z27-KJ-hiL"/>
+                        <outlet property="IBconstraintOptionsHeight" destination="pfb-XY-ZOw" id="c1J-fA-qXw"/>
                         <outlet property="IBtxtInfoTitle" destination="bV8-3a-Mj4" id="f0S-EY-yJD"/>
+                        <outlet property="IBtxtQuestNote" destination="gDY-CO-TRv" id="2Fo-Nl-2Ef"/>
                         <outlet property="IBtxtQuestTitle" destination="oTo-4y-XLK" id="f13-az-OIe"/>
                         <outlet property="IBtxtQuestions" destination="WkV-4I-QOg" id="UKN-20-eea"/>
                         <outlet property="IBviewDecision" destination="gW6-q2-yTf" id="CRa-Uz-Yud"/>
@@ -424,11 +445,11 @@ Cg
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FUi-rl-mBe" id="BNb-JM-6A1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ziA-Cg-aYl">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
