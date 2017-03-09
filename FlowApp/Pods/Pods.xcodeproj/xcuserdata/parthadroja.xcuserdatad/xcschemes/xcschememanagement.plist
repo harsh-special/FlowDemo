@@ -6,98 +6,63 @@
 	<dict>
 		<key>DLRadioButton.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>M13Checkbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-FlowApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>SideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>SimplePDF.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10A835CC95D7444F9946C9F946DD89DE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>20A9DD9ABBF08BC57372A26C35327BF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>27D3D2F74C06F0FCE5EAE5BEEFC71608</key>
+		<key>44200C780FE780174A11092BE8A111AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39A204FCB78FFA83E996C40FF3B4AC11</key>
+		<key>67A0961AA49AFF693B0733A68B3A44BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A623508EBF209AD87AE4EB69C5E93E4</key>
+		<key>7257B17BACB94C9D9D47A6E678456228</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DAB6F11296EEF666B1B34AE06D7E14C</key>
+		<key>DD2F4E730E37D2833F86142A464F719A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9AE7F405B4E23559C24A5CEDBB00AD86</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B924990E7DBC9E140EB4955A1179B2F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C1D99A341DAD2502CAAA44453F43CB76</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D9DD9DDA2057295D9CDD7D2CAEF27630</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F3990E3EAC160D4E4F89177D966FC1E9</key>
+		<key>F6A77E2753C279F67F70C5C21D6FAE15</key>
 		<dict>
 			<key>primary</key>
 			<true/>

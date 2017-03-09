@@ -7,89 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09DCE6E2EBAB895EBA1C764B6FCD60A9 /* SimplePDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E5A5DFE83FF811105DC1A3B357EBA /* SimplePDF.swift */; };
-		0A4AF3451A4172A1E50ABDAA0AE691BD /* SimplePDF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4008BDD42AEF65599DF8D5ACC9F1A0 /* SimplePDF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A5FDC3F75DF8625C30839D4467A289F /* SimplePDF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B7F58843C86EFC59F29775B5A3DC3 /* SimplePDF-dummy.m */; };
-		1A485F8D5894396022E0AD1FFA160FFB /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD517E57F45C76346B8AAE494D83172 /* M13CheckboxRadioPathGenerator.swift */; };
-		1B24FB74A38BA77EE5C735BA999ABE17 /* M13CheckboxBounceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB523E6ABBBE66C3E4BB358B2206BB /* M13CheckboxBounceController.swift */; };
-		1FA6F55238D2BC35915AECD626884F1D /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A094D3BC64DBC5CD06DF389E4257923 /* DLRadioButton.m */; };
-		201EF9AD549CACB83DCA32CB122E85BF /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604D121ADCE73EB6CD11062BB86285F /* M13CheckboxAddRemovePathGenerator.swift */; };
-		2A4B5DCBF10063A015D15537CF98FDDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */; };
-		2F94AE6F64BBB0A04FF4F884E3128E8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */; };
-		31B827A0CCF2884D4497490335806F72 /* M13CheckboxFlatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792E5BB2A96441A7D459E468EC4A40B /* M13CheckboxFlatController.swift */; };
-		3E9E7D7CEE0E57E134398AE44F9D26A1 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2EE54825B9815577F5A4C4B415CDAF /* UISideMenuNavigationController.swift */; };
-		3FF43EAC13685FDD2AE6E7598311CA5B /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BE64908F55313C715F0D050CCB0F4D /* SideMenuTransition.swift */; };
-		40CBAC8C47792C8A2560EEB55E42346F /* M13CheckboxDotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C20940917D52C2E2FE1F7000623046 /* M13CheckboxDotController.swift */; };
-		410B1E02F0CBB05A7A2BDE10B2C91DDB /* Pods-FlowApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC21021828A0A49B1BE9905223FB86E /* Pods-FlowApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43D7D08ED8AAD7C89D3CE4ECA0BE6D99 /* M13CheckboxStrokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA3103F6EC023C0549655B9249F0DA /* M13CheckboxStrokeController.swift */; };
-		5D592141011A18F1F9D0923E80EC4B49 /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FAB0DF8AC681F5527AFE8B0A4EC91 /* M13CheckboxCheckPathGenerator.swift */; };
-		5DA55CEAC1D7A613CD15FA06E68861F4 /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8935E70840E341AA1772C4195FF54DD /* M13Checkbox.swift */; };
-		5F5B910D306CC0849640D0372E2ADB43 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A9AD751AF35FD7C3A0A35F6D261D82B1 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		651F6E710C5927140514A594CC27AD86 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412AB8DDF208BF83FAF7378E8752D33 /* UITableViewVibrantCell.swift */; };
-		686B47BC992D7EB759964954E7871A5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
-		6BD3C5F3E5B1A0B5481420A6B7F8CB2D /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7631876C846AE2B8539182E37540D /* M13CheckboxPathGenerator.swift */; };
-		70289579A4A6356BA26E7869B5BC6049 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4EA1C62FB8A2AACBB5F8115CD632FB /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		785801E59735E740B66F08EFEB312107 /* M13CheckboxSpiralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD3CB1367A764EA7B8AFDC1783D82 /* M13CheckboxSpiralController.swift */; };
-		804C7201854744A61E37A7C3346A0D10 /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17367BAC9735B5DDBFB2DAD146012557 /* M13Checkbox-dummy.m */; };
-		865DD7E304009B0DE3EC281C239E707D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4460998EB385D8376744F319970CA /* SwiftyJSON.swift */; };
-		882CF934DB114DC8ED597D20A2120C1C /* SimplePDF.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EF8A15CAC5EAD77F81476611629FCB /* SimplePDF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C5C969F6C60256780EBDD8DB7EEAB34 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED98A74B6CB3BAFCA85D2C917C4E0DB /* SwiftyJSON-dummy.m */; };
-		9224E8A3C6C76CBA476853249200C572 /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00080845EEA5C3256BBEA80472E3D37 /* M13CheckboxGestureRecognizer.swift */; };
-		9304A4A89351F83EF22F028F37E5ECB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
-		96D1C9FA3286DC574702AAE884A8B3F0 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA30B77304A9226038BE1AF5CAE2CF3 /* M13Checkbox+IB.swift */; };
-		9DFB68718B029555D1A1625EE82ACEB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
-		A028112A4C3A43DAA9BFB281C6AC8ACB /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 562E15CEA21D4321C4015C1A9B3C5000 /* DLRadioButton-dummy.m */; };
-		AC91F25226272C593CFD5642DE7A3050 /* M13CheckboxFadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A662B050495F430004EACE5EF2FD3 /* M13CheckboxFadeController.swift */; };
-		ACB39611A5F3ACD0CBB5577E9C03121C /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E85B87A59C7378D75CB5CACD6126D6 /* SideMenu-dummy.m */; };
-		BBE873F13386FE755D92087FA00F298F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
-		BE6738C0C0FD368B7299C7037B773694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
-		C789A69CF95BD3DF60E8F15CAD5F13C4 /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4CA8DA5D9111591AD942B2E959F18 /* M13CheckboxFillController.swift */; };
-		C7AB837F3200D41BF676DC49D222EBAC /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D90808E49368503387A9E58FF5CD747 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDC529F72C9CE32AD31CC0560BBB017D /* M13CheckboxExpandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C46A0CE8D2344F0A98345EF1287D6 /* M13CheckboxExpandController.swift */; };
-		D09F95680F0713A22C82A6D0EB527CD9 /* M13Checkbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1914F6949BECD8C89F030DE458B64046 /* M13Checkbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D126CD1ED6B374FDFD73E7E624AF6D6A /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132D36D5C2BF39B3C302C84A20164E1 /* SideMenuManager.swift */; };
-		D457D7791128D2FD3952E2506764C5BB /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 248B90914ECAD1E647B1739D0F76FDA5 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D96E3A40893AA4A1D4BFFCD9BAB2EFFE /* M13CheckboxAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053232A8373DE1A144CD419CF49D1244 /* M13CheckboxAnimationGenerator.swift */; };
-		DBBF40E01D11B3D668BEEDF1DA01F277 /* Pods-FlowApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F6CC5FD749CEE24556E1AE1881EAE4 /* Pods-FlowApp-dummy.m */; };
-		DC29F96A006DEB0559EADB5F27D2DCEE /* M13CheckboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD342CE2F5675348DE73CF1DCDCC9309 /* M13CheckboxController.swift */; };
-		DD0E13BC0EE0F6A39607E26E52EE8D09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9854452B704969D40D932335DEE0FF /* Foundation.framework */; };
-		FF1AFB7E29980A77C576C36804757091 /* M13CheckboxDisclosurePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACE1FFA25F32C2B6D2785BEF836013 /* M13CheckboxDisclosurePathGenerator.swift */; };
+		09BBA25BA354324604D44C0540140FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		0AFABFCBCF0A2B201632C950C640BA89 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 248B90914ECAD1E647B1739D0F76FDA5 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A862AD1BEA82D809653FF79ED3BE94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		2EE03E9DB14DB4876DA00856B6A32BDD /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2EE54825B9815577F5A4C4B415CDAF /* UISideMenuNavigationController.swift */; };
+		3AFA54C6DC0961AD0F4CC8A4F1AF915E /* M13CheckboxDisclosurePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ACE1FFA25F32C2B6D2785BEF836013 /* M13CheckboxDisclosurePathGenerator.swift */; };
+		3D976DD35C822B9B6971ED06121B4A44 /* M13CheckboxFlatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792E5BB2A96441A7D459E468EC4A40B /* M13CheckboxFlatController.swift */; };
+		3E2FFD3C073383B859F71C2B1411FA89 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA30B77304A9226038BE1AF5CAE2CF3 /* M13Checkbox+IB.swift */; };
+		3FFA6EC1F9D0E14932E475A161F48A40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		40897730B01BE8C60FB61A02DD7A1F6A /* M13CheckboxStrokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA3103F6EC023C0549655B9249F0DA /* M13CheckboxStrokeController.swift */; };
+		444F0BBC6D729E3471669AF8F7E1F2F6 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED98A74B6CB3BAFCA85D2C917C4E0DB /* SwiftyJSON-dummy.m */; };
+		445378EF15B25DB3370FF77B2F6F42D7 /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8935E70840E341AA1772C4195FF54DD /* M13Checkbox.swift */; };
+		54C227E723BB3833846D2A7F1DBB843D /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132D36D5C2BF39B3C302C84A20164E1 /* SideMenuManager.swift */; };
+		5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 562E15CEA21D4321C4015C1A9B3C5000 /* DLRadioButton-dummy.m */; };
+		65A6433687A7F21C040672DC388F467C /* SimplePDF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B7F58843C86EFC59F29775B5A3DC3 /* SimplePDF-dummy.m */; };
+		6B7F6283CE6F6418FD195E43D2216FBF /* M13Checkbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1914F6949BECD8C89F030DE458B64046 /* M13Checkbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DEA8071C9E59E48A85E78D43695C300 /* SimplePDF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4008BDD42AEF65599DF8D5ACC9F1A0 /* SimplePDF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		725798AA9F18504C949D0872ABD42748 /* SimplePDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6E5A5DFE83FF811105DC1A3B357EBA /* SimplePDF.swift */; };
+		76D3E2602CFAE6474D2DFA89F5328A24 /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7631876C846AE2B8539182E37540D /* M13CheckboxPathGenerator.swift */; };
+		80CD994ABA1A2B01AD1838A4D4BB794C /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4CA8DA5D9111591AD942B2E959F18 /* M13CheckboxFillController.swift */; };
+		80E34254247C5B1984E2FB9EC58774E4 /* M13CheckboxDotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C20940917D52C2E2FE1F7000623046 /* M13CheckboxDotController.swift */; };
+		84116DD709725E60919846D7B1AF714B /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D90808E49368503387A9E58FF5CD747 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85CB53B9E438E280DA1690CCFD778689 /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD517E57F45C76346B8AAE494D83172 /* M13CheckboxRadioPathGenerator.swift */; };
+		86C713C329C0814CB0ECCC0FFD4EF091 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */; };
+		87CC35CE2F1B45678F095253D1FF2F19 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BE64908F55313C715F0D050CCB0F4D /* SideMenuTransition.swift */; };
+		8ED3FB14D1852DD05FDF6E23E94A4657 /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604D121ADCE73EB6CD11062BB86285F /* M13CheckboxAddRemovePathGenerator.swift */; };
+		8F2D8EC348F59816CFDEA65538E3E532 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A9AD751AF35FD7C3A0A35F6D261D82B1 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F5F331FE1FCE98CADFDD30166D6EE22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		A9E2C081CEFD4DF6AB6C443ECF8BDFBA /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4EA1C62FB8A2AACBB5F8115CD632FB /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE54CDA46FD620F4BC54BC583EA255C /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17367BAC9735B5DDBFB2DAD146012557 /* M13Checkbox-dummy.m */; };
+		AC3809C0D72C84E9F1E59D6514CCE655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		B4687B99EF12A2CB78B3A922CEF0C57B /* Pods-FlowApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F6CC5FD749CEE24556E1AE1881EAE4 /* Pods-FlowApp-dummy.m */; };
+		B93D6E407389158C2896BFB4B7FBE85F /* SimplePDF.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EF8A15CAC5EAD77F81476611629FCB /* SimplePDF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCB82BDDA7C30F0B0AFE479CC479B522 /* M13CheckboxExpandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C46A0CE8D2344F0A98345EF1287D6 /* M13CheckboxExpandController.swift */; };
+		C277B9EAC728D880FF1F15EE98C8B200 /* M13CheckboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD342CE2F5675348DE73CF1DCDCC9309 /* M13CheckboxController.swift */; };
+		C6D0B50C214C9E7CC815F2773D702779 /* M13CheckboxAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053232A8373DE1A144CD419CF49D1244 /* M13CheckboxAnimationGenerator.swift */; };
+		C85C1170ADDE3E04A0E9C9B6385BE5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */; };
+		C8D41C0D4E89BE8510BA40F04EFF4FA8 /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47FAB0DF8AC681F5527AFE8B0A4EC91 /* M13CheckboxCheckPathGenerator.swift */; };
+		D6039515F84B2167BBAC8D1CE12A5F4E /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00080845EEA5C3256BBEA80472E3D37 /* M13CheckboxGestureRecognizer.swift */; };
+		DE650EAB7AF937C3953802BA1D343D28 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E85B87A59C7378D75CB5CACD6126D6 /* SideMenu-dummy.m */; };
+		E42B4AE8D72F13316F8440C28852B73E /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412AB8DDF208BF83FAF7378E8752D33 /* UITableViewVibrantCell.swift */; };
+		E55D09847F6AD718C2BF9AAF62BE8E9C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4460998EB385D8376744F319970CA /* SwiftyJSON.swift */; };
+		E7BCA901E0363D78A03E68EAD79A3F40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792165F2CA033667D6F57205316D40A1 /* Foundation.framework */; };
+		EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A094D3BC64DBC5CD06DF389E4257923 /* DLRadioButton.m */; };
+		F0A286BAB33DE23A36C559824AD91109 /* Pods-FlowApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC21021828A0A49B1BE9905223FB86E /* Pods-FlowApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A5B0214108C732898DD2C00BA6FE56 /* M13CheckboxBounceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB523E6ABBBE66C3E4BB358B2206BB /* M13CheckboxBounceController.swift */; };
+		FA2B271AAF040F6C1B860C6C3DF0558F /* M13CheckboxSpiralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116CD3CB1367A764EA7B8AFDC1783D82 /* M13CheckboxSpiralController.swift */; };
+		FFF489DE367C237C0E8F7E4442DA06D7 /* M13CheckboxFadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A662B050495F430004EACE5EF2FD3 /* M13CheckboxFadeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		20DA4A8B1C984C528A25606E403D2BDE /* PBXContainerItemProxy */ = {
+		60A14C766AEF9B34B3A204CDA603B0C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B924990E7DBC9E140EB4955A1179B2F9;
-			remoteInfo = SideMenu;
-		};
-		25579B92EBAD5555A0F0E183BE24C79D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C1D99A341DAD2502CAAA44453F43CB76;
+			remoteGlobalIDString = DD2F4E730E37D2833F86142A464F719A;
 			remoteInfo = SimplePDF;
 		};
-		ACD2F6D90B8E17234D5C63F854CC1830 /* PBXContainerItemProxy */ = {
+		802A82F985FCE6580161525B1A643F9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 39A204FCB78FFA83E996C40FF3B4AC11;
-			remoteInfo = M13Checkbox;
-		};
-		D003D89ECFA654D518907104FC5B2B6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3990E3EAC160D4E4F89177D966FC1E9;
+			remoteGlobalIDString = F6A77E2753C279F67F70C5C21D6FAE15;
 			remoteInfo = DLRadioButton;
 		};
-		D8BDED9D42F17316FA7A331D66F519C3 /* PBXContainerItemProxy */ = {
+		D2505B8D8AE1943F5135D6A30AB5C594 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D9DD9DDA2057295D9CDD7D2CAEF27630;
+			remoteGlobalIDString = 44200C780FE780174A11092BE8A111AA;
+			remoteInfo = SideMenu;
+		};
+		D4BC0B11ABFBC18352F6272EC6F37339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20A9DD9ABBF08BC57372A26C35327BF1;
+			remoteInfo = M13Checkbox;
+		};
+		E48D3597D0ED1E18EC690CD37E68BE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67A0961AA49AFF693B0733A68B3A44BE;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
@@ -98,51 +98,52 @@
 		03C24DD6876E75604D9432C1C7B5B1F3 /* SimplePDF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimplePDF.xcconfig; sourceTree = "<group>"; };
 		053232A8373DE1A144CD419CF49D1244 /* M13CheckboxAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAnimationGenerator.swift; path = Sources/M13CheckboxAnimationGenerator.swift; sourceTree = "<group>"; };
 		0EF4CA8DA5D9111591AD942B2E959F18 /* M13CheckboxFillController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFillController.swift; path = Sources/Managers/M13CheckboxFillController.swift; sourceTree = "<group>"; };
-		0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1132D36D5C2BF39B3C302C84A20164E1 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
 		116CD3CB1367A764EA7B8AFDC1783D82 /* M13CheckboxSpiralController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxSpiralController.swift; path = Sources/Managers/M13CheckboxSpiralController.swift; sourceTree = "<group>"; };
 		17367BAC9735B5DDBFB2DAD146012557 /* M13Checkbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13Checkbox-dummy.m"; sourceTree = "<group>"; };
 		17ACE1FFA25F32C2B6D2785BEF836013 /* M13CheckboxDisclosurePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDisclosurePathGenerator.swift; path = Sources/Paths/M13CheckboxDisclosurePathGenerator.swift; sourceTree = "<group>"; };
 		1914F6949BECD8C89F030DE458B64046 /* M13Checkbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-umbrella.h"; sourceTree = "<group>"; };
 		1939C4FB62A9C20AEFBB6198BB816CAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		213388B6E0BEB648AD36F27B394CBDE8 /* SimplePDF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimplePDF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		213388B6E0BEB648AD36F27B394CBDE8 /* SimplePDF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimplePDF.framework; path = SimplePDF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		230DFCAE833482D633BA3D5A189CB3D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		242BB5BA67E970B8B9F7E36B3B029531 /* Pods-FlowApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2487AD297BEF03366A85BC0F5A2731CB /* Pods-FlowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowApp.release.xcconfig"; sourceTree = "<group>"; };
 		248B90914ECAD1E647B1739D0F76FDA5 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		25EF8A15CAC5EAD77F81476611629FCB /* SimplePDF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimplePDF.h; path = SimplePDF/SimplePDF.h; sourceTree = "<group>"; };
 		267B7CF8509F5DF8249EEFCC53EB2D45 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		28F199E2666A2798E11400A6232FBCD8 /* SimplePDF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimplePDF.modulemap; sourceTree = "<group>"; };
+		28F199E2666A2798E11400A6232FBCD8 /* SimplePDF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimplePDF.modulemap; sourceTree = "<group>"; };
 		2F43C52F6BF352CB8A2F5A2E5E459F80 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
 		3792E5BB2A96441A7D459E468EC4A40B /* M13CheckboxFlatController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFlatController.swift; path = Sources/Managers/M13CheckboxFlatController.swift; sourceTree = "<group>"; };
 		37BE64908F55313C715F0D050CCB0F4D /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
 		38F6CC5FD749CEE24556E1AE1881EAE4 /* Pods-FlowApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowApp-dummy.m"; sourceTree = "<group>"; };
-		3C9854452B704969D40D932335DEE0FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4018FACE36AEFA499DE34BC034F8C45D /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		467485812AE49358F778BBD75A7B2C61 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4018FACE36AEFA499DE34BC034F8C45D /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467485812AE49358F778BBD75A7B2C61 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A094D3BC64DBC5CD06DF389E4257923 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		4F4EA1C62FB8A2AACBB5F8115CD632FB /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		5412AB8DDF208BF83FAF7378E8752D33 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		562E15CEA21D4321C4015C1A9B3C5000 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
 		5B55A99B4770BCC3E22FEBD0DDAD8EB7 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		60DDAF0A8DCA1D693EC3780B703EC024 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
+		60DDAF0A8DCA1D693EC3780B703EC024 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
 		632B10DBC855842F132793F20DDF7DCA /* Pods-FlowApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		675A662B050495F430004EACE5EF2FD3 /* M13CheckboxFadeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFadeController.swift; path = Sources/Managers/M13CheckboxFadeController.swift; sourceTree = "<group>"; };
 		691534C480E1FD667AB7C03550C96E70 /* M13Checkbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13Checkbox.xcconfig; sourceTree = "<group>"; };
+		695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6D90808E49368503387A9E58FF5CD747 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
-		79AA116C500D0AA3C3F5F1BEFD9FFEF8 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		792165F2CA033667D6F57205316D40A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		79AA116C500D0AA3C3F5F1BEFD9FFEF8 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		79CA3103F6EC023C0549655B9249F0DA /* M13CheckboxStrokeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxStrokeController.swift; path = Sources/Managers/M13CheckboxStrokeController.swift; sourceTree = "<group>"; };
 		7C83F15821BE4A640E78110D20CF852E /* Pods-FlowApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowApp-frameworks.sh"; sourceTree = "<group>"; };
 		7E3C46A0CE8D2344F0A98345EF1287D6 /* M13CheckboxExpandController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxExpandController.swift; path = Sources/Managers/M13CheckboxExpandController.swift; sourceTree = "<group>"; };
 		7ED98A74B6CB3BAFCA85D2C917C4E0DB /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		8232867E3FB17B2F75D95C1976F826A9 /* Pods-FlowApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowApp-resources.sh"; sourceTree = "<group>"; };
 		82C20940917D52C2E2FE1F7000623046 /* M13CheckboxDotController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDotController.swift; path = Sources/Managers/M13CheckboxDotController.swift; sourceTree = "<group>"; };
-		83CD71FAA293BA737FC8C250944B1E1C /* Pods_FlowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CD71FAA293BA737FC8C250944B1E1C /* Pods_FlowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowApp.framework; path = "Pods-FlowApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		869CF5316C91FBB8B077F2E5EAF6DC84 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
 		8C3A95099889829B6799E50B6DC9FE89 /* M13Checkbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-prefix.pch"; sourceTree = "<group>"; };
 		8E0B7F58843C86EFC59F29775B5A3DC3 /* SimplePDF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimplePDF-dummy.m"; sourceTree = "<group>"; };
 		8FEB523E6ABBBE66C3E4BB358B2206BB /* M13CheckboxBounceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxBounceController.swift; path = Sources/Managers/M13CheckboxBounceController.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		945A1E7EB4BF7FBD549DA40761B3A9B3 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		9AA4460998EB385D8376744F319970CA /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		A69F9950CD59DDCD91111AE965B77DB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,76 +153,75 @@
 		ABC21021828A0A49B1BE9905223FB86E /* Pods-FlowApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowApp-umbrella.h"; sourceTree = "<group>"; };
 		AFA30B77304A9226038BE1AF5CAE2CF3 /* M13Checkbox+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "M13Checkbox+IB.swift"; path = "Sources/M13Checkbox+IB.swift"; sourceTree = "<group>"; };
 		B44853639E2EE78283AA49A93784251B /* SimplePDF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimplePDF-prefix.pch"; sourceTree = "<group>"; };
-		B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		B604D121ADCE73EB6CD11062BB86285F /* M13CheckboxAddRemovePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAddRemovePathGenerator.swift; path = Sources/Paths/M13CheckboxAddRemovePathGenerator.swift; sourceTree = "<group>"; };
 		BD922E7871C663B7393EA7C33615EF09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C30115969DB332F5D290371416AD3D67 /* M13Checkbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = M13Checkbox.modulemap; sourceTree = "<group>"; };
+		C30115969DB332F5D290371416AD3D67 /* M13Checkbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = M13Checkbox.modulemap; sourceTree = "<group>"; };
 		C6E85B87A59C7378D75CB5CACD6126D6 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
 		CA2EE54825B9815577F5A4C4B415CDAF /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		D00080845EEA5C3256BBEA80472E3D37 /* M13CheckboxGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxGestureRecognizer.swift; path = Sources/M13CheckboxGestureRecognizer.swift; sourceTree = "<group>"; };
 		D8A7631876C846AE2B8539182E37540D /* M13CheckboxPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxPathGenerator.swift; path = Sources/Paths/M13CheckboxPathGenerator.swift; sourceTree = "<group>"; };
 		DFD517E57F45C76346B8AAE494D83172 /* M13CheckboxRadioPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxRadioPathGenerator.swift; path = Sources/Paths/M13CheckboxRadioPathGenerator.swift; sourceTree = "<group>"; };
 		E53949F175F5616DA3F14933F9A621BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5D0159B94FFCE453F9CA096BC37EDDE /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9747C13A724436BD6BB814A0A8FEB8C /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		E5D0159B94FFCE453F9CA096BC37EDDE /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = M13Checkbox.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9747C13A724436BD6BB814A0A8FEB8C /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		EA4008BDD42AEF65599DF8D5ACC9F1A0 /* SimplePDF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimplePDF-umbrella.h"; sourceTree = "<group>"; };
-		EBD0335BA4D61B33966DC6CC843009C1 /* Pods-FlowApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlowApp.modulemap"; sourceTree = "<group>"; };
+		EBD0335BA4D61B33966DC6CC843009C1 /* Pods-FlowApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FlowApp.modulemap"; sourceTree = "<group>"; };
 		ECB0DA783A1B168E628B0FA035461D3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF38D4E1DD423DFBC5AA19EA7E031E5A /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
 		F24FC8B2D84933B99EAF24D8D45B0275 /* Pods-FlowApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F47FAB0DF8AC681F5527AFE8B0A4EC91 /* M13CheckboxCheckPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxCheckPathGenerator.swift; path = Sources/Paths/M13CheckboxCheckPathGenerator.swift; sourceTree = "<group>"; };
 		FD342CE2F5675348DE73CF1DCDCC9309 /* M13CheckboxController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxController.swift; path = Sources/M13CheckboxController.swift; sourceTree = "<group>"; };
-		FF25C2AD823457DB1F64E555D44019BE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25C2AD823457DB1F64E555D44019BE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19FBA5C521CBA02DBACDE21E48D00CB3 /* Frameworks */ = {
+		4F4BA660D0B769213C7D9970006060CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6738C0C0FD368B7299C7037B773694 /* Foundation.framework in Frameworks */,
+				25A862AD1BEA82D809653FF79ED3BE94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E0F145402060BC2B52B2DB06EBC31F3 /* Frameworks */ = {
+		53797C5F84C3B718634123945FF8378E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0E13BC0EE0F6A39607E26E52EE8D09 /* Foundation.framework in Frameworks */,
+				C85C1170ADDE3E04A0E9C9B6385BE5BF /* CoreGraphics.framework in Frameworks */,
+				AC3809C0D72C84E9F1E59D6514CCE655 /* Foundation.framework in Frameworks */,
+				86C713C329C0814CB0ECCC0FFD4EF091 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4EA09D1F4F535020346FAC6590CEA2D /* Frameworks */ = {
+		7D80A940A3926F2D53CD81757222611D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				686B47BC992D7EB759964954E7871A5D /* Foundation.framework in Frameworks */,
+				3FFA6EC1F9D0E14932E475A161F48A40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAB41FC172418755E36B3C5A651E42D0 /* Frameworks */ = {
+		8268583CC32D22AD689335C8F69A5CB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F94AE6F64BBB0A04FF4F884E3128E8E /* CoreGraphics.framework in Frameworks */,
-				9DFB68718B029555D1A1625EE82ACEB8 /* Foundation.framework in Frameworks */,
-				2A4B5DCBF10063A015D15537CF98FDDD /* UIKit.framework in Frameworks */,
+				09BBA25BA354324604D44C0540140FE8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDEA28AB9FEAAF6770BD43D99C624039 /* Frameworks */ = {
+		A2A324E81F33CA8363E22E0C427CBC97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE873F13386FE755D92087FA00F298F /* Foundation.framework in Frameworks */,
+				9F5F331FE1FCE98CADFDD30166D6EE22 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBF0E9645AA7DB3E0E54424FA315CDD8 /* Frameworks */ = {
+		D00A67F382D1EC35D8923AC0EE677479 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9304A4A89351F83EF22F028F37E5ECB3 /* Foundation.framework in Frameworks */,
+				E7BCA901E0363D78A03E68EAD79A3F40 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,16 +240,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/M13Checkbox";
-			sourceTree = "<group>";
-		};
-		0A68FE8A6158D395EC4CB10F8472F165 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B4CCDF0ACEE37ED4308724E62FCDE939 /* CoreGraphics.framework */,
-				3C9854452B704969D40D932335DEE0FF /* Foundation.framework */,
-				0F2331BAF78D4EDDCD400CF6388C7978 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		0C2901F59B9A42ABA8A7C1AF4E43AA9A /* Pods */ = {
@@ -281,7 +271,7 @@
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A68FE8A6158D395EC4CB10F8472F165 /* iOS */,
+				2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,7 +282,18 @@
 				9AA4460998EB385D8376744F319970CA /* SwiftyJSON.swift */,
 				EE839023203ADC7E84778069AC6B9EAC /* Support Files */,
 			);
+			name = SwiftyJSON;
 			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2D185E38271E1279D6AC3E7A00CAF9BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4D9AD02E9CEE9B012A246B3874CF4587 /* CoreGraphics.framework */,
+				792165F2CA033667D6F57205316D40A1 /* Foundation.framework */,
+				695DA86B20FEA7BF7EA40FA7DB65A479 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		2D30C30F6E89D6ABCB293FFAB35677EB /* M13Checkbox */ = {
@@ -318,6 +319,7 @@
 				79CA3103F6EC023C0549655B9249F0DA /* M13CheckboxStrokeController.swift */,
 				0242E7AD396DCF21FE0014609FFE9198 /* Support Files */,
 			);
+			name = M13Checkbox;
 			path = M13Checkbox;
 			sourceTree = "<group>";
 		};
@@ -368,6 +370,7 @@
 				5412AB8DDF208BF83FAF7378E8752D33 /* UITableViewVibrantCell.swift */,
 				0E45073B2F29DFC09CDFC29CE00AEFE5 /* Support Files */,
 			);
+			name = SideMenu;
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
@@ -418,6 +421,7 @@
 				4A094D3BC64DBC5CD06DF389E4257923 /* DLRadioButton.m */,
 				E2A316BCA997FCCD74D3739C10CD1F48 /* Support Files */,
 			);
+			name = DLRadioButton;
 			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
@@ -442,72 +446,73 @@
 				AA6E5A5DFE83FF811105DC1A3B357EBA /* SimplePDF.swift */,
 				7A232230A7C2AECA6BF6FD2F50192D9E /* Support Files */,
 			);
+			name = SimplePDF;
 			path = SimplePDF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F31569AED19160E198D0D6452ACAB3E /* Headers */ = {
+		220E61F93FBE49E9C3EBBEE5E9331C18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70289579A4A6356BA26E7869B5BC6049 /* SwiftyJSON-umbrella.h in Headers */,
+				84116DD709725E60919846D7B1AF714B /* DLRadioButton-umbrella.h in Headers */,
+				8F2D8EC348F59816CFDEA65538E3E532 /* DLRadioButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F702BB665B25A8452C12B805AC342CB /* Headers */ = {
+		6AE6B835128B295DE5332D93483AFE77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09F95680F0713A22C82A6D0EB527CD9 /* M13Checkbox-umbrella.h in Headers */,
+				6DEA8071C9E59E48A85E78D43695C300 /* SimplePDF-umbrella.h in Headers */,
+				B93D6E407389158C2896BFB4B7FBE85F /* SimplePDF.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51FE3DBC70919C3B31C5FEEF707F97DE /* Headers */ = {
+		714DC262BF2FB332E82AC2E7CD6D73D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7AB837F3200D41BF676DC49D222EBAC /* DLRadioButton-umbrella.h in Headers */,
-				5F5B910D306CC0849640D0372E2ADB43 /* DLRadioButton.h in Headers */,
+				6B7F6283CE6F6418FD195E43D2216FBF /* M13Checkbox-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97D1457255A6BDCE3BF0A0A819815D62 /* Headers */ = {
+		BC03B2F914A455F907691D5BF0956DCD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D457D7791128D2FD3952E2506764C5BB /* SideMenu-umbrella.h in Headers */,
+				A9E2C081CEFD4DF6AB6C443ECF8BDFBA /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAE25F00E451A8297A4453D06072BB55 /* Headers */ = {
+		E418BEC348B56DF80D68FBC99FF476F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410B1E02F0CBB05A7A2BDE10B2C91DDB /* Pods-FlowApp-umbrella.h in Headers */,
+				0AFABFCBCF0A2B201632C950C640BA89 /* SideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D99823F620A47E955233F5B806BA58D5 /* Headers */ = {
+		E8E085FEE2E2151BF27AF9705271F90C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4AF3451A4172A1E50ABDAA0AE691BD /* SimplePDF-umbrella.h in Headers */,
-				882CF934DB114DC8ED597D20A2120C1C /* SimplePDF.h in Headers */,
+				F0A286BAB33DE23A36C559824AD91109 /* Pods-FlowApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		39A204FCB78FFA83E996C40FF3B4AC11 /* M13Checkbox */ = {
+		20A9DD9ABBF08BC57372A26C35327BF1 /* M13Checkbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3BF7F4DE56B5994C5B620209929752B /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
+			buildConfigurationList = 08913436C5D3DFB2C8CEA353ED9FF003 /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
 			buildPhases = (
-				C940B65E25426FCB26DE3776C74EBBD5 /* Sources */,
-				DAB41FC172418755E36B3C5A651E42D0 /* Frameworks */,
-				4F702BB665B25A8452C12B805AC342CB /* Headers */,
+				923F4E7F3A2B8E74326EFD309DCEEE04 /* Sources */,
+				53797C5F84C3B718634123945FF8378E /* Frameworks */,
+				714DC262BF2FB332E82AC2E7CD6D73D1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -518,35 +523,13 @@
 			productReference = E5D0159B94FFCE453F9CA096BC37EDDE /* M13Checkbox.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8DAB6F11296EEF666B1B34AE06D7E14C /* Pods-FlowApp */ = {
+		44200C780FE780174A11092BE8A111AA /* SideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D0E7DD40A2E9DDCF88B772A0B0614C4 /* Build configuration list for PBXNativeTarget "Pods-FlowApp" */;
+			buildConfigurationList = AC204D9CC88A6DA481925D30E8824009 /* Build configuration list for PBXNativeTarget "SideMenu" */;
 			buildPhases = (
-				89526CBADF8AA74ECA8A8AAFD23899D1 /* Sources */,
-				A4EA09D1F4F535020346FAC6590CEA2D /* Frameworks */,
-				AAE25F00E451A8297A4453D06072BB55 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7FC892EEB4F59EDCFB0F70423F5C5E36 /* PBXTargetDependency */,
-				7F0538262290920B853E1ACF3DAE5DEA /* PBXTargetDependency */,
-				2D544E92CC48A12375614EFD60C5DA7D /* PBXTargetDependency */,
-				A49C26DE5804F1F98AEC5F84D029D062 /* PBXTargetDependency */,
-				A828871D66C075871BF443520EB93D02 /* PBXTargetDependency */,
-			);
-			name = "Pods-FlowApp";
-			productName = "Pods-FlowApp";
-			productReference = 83CD71FAA293BA737FC8C250944B1E1C /* Pods_FlowApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B924990E7DBC9E140EB4955A1179B2F9 /* SideMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CDD9CF7316F6B1BA3C91A1DDA0E5565 /* Build configuration list for PBXNativeTarget "SideMenu" */;
-			buildPhases = (
-				84B671F5FB94472ABF11A2E107ADB259 /* Sources */,
-				FBF0E9645AA7DB3E0E54424FA315CDD8 /* Frameworks */,
-				97D1457255A6BDCE3BF0A0A819815D62 /* Headers */,
+				C0E457965A78E6F8185EAC79BC18429B /* Sources */,
+				4F4BA660D0B769213C7D9970006060CD /* Frameworks */,
+				E418BEC348B56DF80D68FBC99FF476F8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -557,30 +540,13 @@
 			productReference = 4018FACE36AEFA499DE34BC034F8C45D /* SideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C1D99A341DAD2502CAAA44453F43CB76 /* SimplePDF */ = {
+		67A0961AA49AFF693B0733A68B3A44BE /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0DE9EE2748EE996039D20C827DF6F01 /* Build configuration list for PBXNativeTarget "SimplePDF" */;
+			buildConfigurationList = F3F8681F9726AE51692889156E2ABAE9 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				47D1AB5E7C52A94E19DA9714A9A9BFBA /* Sources */,
-				9E0F145402060BC2B52B2DB06EBC31F3 /* Frameworks */,
-				D99823F620A47E955233F5B806BA58D5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SimplePDF;
-			productName = SimplePDF;
-			productReference = 213388B6E0BEB648AD36F27B394CBDE8 /* SimplePDF.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D9DD9DDA2057295D9CDD7D2CAEF27630 /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D618EE660FEC8B7754E43E64BA3616CC /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				39C5232CB05B0AE580B734FC84E5EF60 /* Sources */,
-				EDEA28AB9FEAAF6770BD43D99C624039 /* Frameworks */,
-				2F31569AED19160E198D0D6452ACAB3E /* Headers */,
+				1DA1A571F8DABE0B87972D6616010A0C /* Sources */,
+				8268583CC32D22AD689335C8F69A5CB6 /* Frameworks */,
+				BC03B2F914A455F907691D5BF0956DCD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -591,13 +557,52 @@
 			productReference = FF25C2AD823457DB1F64E555D44019BE /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3990E3EAC160D4E4F89177D966FC1E9 /* DLRadioButton */ = {
+		7257B17BACB94C9D9D47A6E678456228 /* Pods-FlowApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 640D1DE3DAFB56E14FADAB35766A3F70 /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildConfigurationList = 56F4F6EDFA98F701227D273D31041F54 /* Build configuration list for PBXNativeTarget "Pods-FlowApp" */;
 			buildPhases = (
-				20D63686573496E9282895D377C9ECE3 /* Sources */,
-				19FBA5C521CBA02DBACDE21E48D00CB3 /* Frameworks */,
-				51FE3DBC70919C3B31C5FEEF707F97DE /* Headers */,
+				D581A65F16E7D7DD92EF8A03B25546FF /* Sources */,
+				7D80A940A3926F2D53CD81757222611D /* Frameworks */,
+				E8E085FEE2E2151BF27AF9705271F90C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D405BB7ECB62DD6BE58F4974DD6693 /* PBXTargetDependency */,
+				47629550EB0ABA044EB079B435C9457D /* PBXTargetDependency */,
+				2D27E534FCECB66A4EED5D49D0E1664E /* PBXTargetDependency */,
+				F4EE4E8F85BB20A8A3B35D911BB26B96 /* PBXTargetDependency */,
+				172E54921DA4A339FA068A26F2B0F83A /* PBXTargetDependency */,
+			);
+			name = "Pods-FlowApp";
+			productName = "Pods-FlowApp";
+			productReference = 83CD71FAA293BA737FC8C250944B1E1C /* Pods_FlowApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD2F4E730E37D2833F86142A464F719A /* SimplePDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4B3796C86CBBAB813749D56E0C001B6 /* Build configuration list for PBXNativeTarget "SimplePDF" */;
+			buildPhases = (
+				2A0CD1A695E2F39EF81CC385DCDC3A1D /* Sources */,
+				D00A67F382D1EC35D8923AC0EE677479 /* Frameworks */,
+				6AE6B835128B295DE5332D93483AFE77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePDF;
+			productName = SimplePDF;
+			productReference = 213388B6E0BEB648AD36F27B394CBDE8 /* SimplePDF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118FCC60066EF1D7DD17E50B82C12AA4 /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildPhases = (
+				8F67A4B4F56469850BF8A099A6E12AE8 /* Sources */,
+				A2A324E81F33CA8363E22E0C427CBC97 /* Frameworks */,
+				220E61F93FBE49E9C3EBBEE5E9331C18 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -629,129 +634,129 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3990E3EAC160D4E4F89177D966FC1E9 /* DLRadioButton */,
-				39A204FCB78FFA83E996C40FF3B4AC11 /* M13Checkbox */,
-				8DAB6F11296EEF666B1B34AE06D7E14C /* Pods-FlowApp */,
-				B924990E7DBC9E140EB4955A1179B2F9 /* SideMenu */,
-				C1D99A341DAD2502CAAA44453F43CB76 /* SimplePDF */,
-				D9DD9DDA2057295D9CDD7D2CAEF27630 /* SwiftyJSON */,
+				F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */,
+				20A9DD9ABBF08BC57372A26C35327BF1 /* M13Checkbox */,
+				7257B17BACB94C9D9D47A6E678456228 /* Pods-FlowApp */,
+				44200C780FE780174A11092BE8A111AA /* SideMenu */,
+				DD2F4E730E37D2833F86142A464F719A /* SimplePDF */,
+				67A0961AA49AFF693B0733A68B3A44BE /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		20D63686573496E9282895D377C9ECE3 /* Sources */ = {
+		1DA1A571F8DABE0B87972D6616010A0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A028112A4C3A43DAA9BFB281C6AC8ACB /* DLRadioButton-dummy.m in Sources */,
-				1FA6F55238D2BC35915AECD626884F1D /* DLRadioButton.m in Sources */,
+				444F0BBC6D729E3471669AF8F7E1F2F6 /* SwiftyJSON-dummy.m in Sources */,
+				E55D09847F6AD718C2BF9AAF62BE8E9C /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39C5232CB05B0AE580B734FC84E5EF60 /* Sources */ = {
+		2A0CD1A695E2F39EF81CC385DCDC3A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5C969F6C60256780EBDD8DB7EEAB34 /* SwiftyJSON-dummy.m in Sources */,
-				865DD7E304009B0DE3EC281C239E707D /* SwiftyJSON.swift in Sources */,
+				65A6433687A7F21C040672DC388F467C /* SimplePDF-dummy.m in Sources */,
+				725798AA9F18504C949D0872ABD42748 /* SimplePDF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47D1AB5E7C52A94E19DA9714A9A9BFBA /* Sources */ = {
+		8F67A4B4F56469850BF8A099A6E12AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5FDC3F75DF8625C30839D4467A289F /* SimplePDF-dummy.m in Sources */,
-				09DCE6E2EBAB895EBA1C764B6FCD60A9 /* SimplePDF.swift in Sources */,
+				5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */,
+				EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B671F5FB94472ABF11A2E107ADB259 /* Sources */ = {
+		923F4E7F3A2B8E74326EFD309DCEEE04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB39611A5F3ACD0CBB5577E9C03121C /* SideMenu-dummy.m in Sources */,
-				D126CD1ED6B374FDFD73E7E624AF6D6A /* SideMenuManager.swift in Sources */,
-				3FF43EAC13685FDD2AE6E7598311CA5B /* SideMenuTransition.swift in Sources */,
-				3E9E7D7CEE0E57E134398AE44F9D26A1 /* UISideMenuNavigationController.swift in Sources */,
-				651F6E710C5927140514A594CC27AD86 /* UITableViewVibrantCell.swift in Sources */,
+				3E2FFD3C073383B859F71C2B1411FA89 /* M13Checkbox+IB.swift in Sources */,
+				AAE54CDA46FD620F4BC54BC583EA255C /* M13Checkbox-dummy.m in Sources */,
+				445378EF15B25DB3370FF77B2F6F42D7 /* M13Checkbox.swift in Sources */,
+				8ED3FB14D1852DD05FDF6E23E94A4657 /* M13CheckboxAddRemovePathGenerator.swift in Sources */,
+				C6D0B50C214C9E7CC815F2773D702779 /* M13CheckboxAnimationGenerator.swift in Sources */,
+				F7A5B0214108C732898DD2C00BA6FE56 /* M13CheckboxBounceController.swift in Sources */,
+				C8D41C0D4E89BE8510BA40F04EFF4FA8 /* M13CheckboxCheckPathGenerator.swift in Sources */,
+				C277B9EAC728D880FF1F15EE98C8B200 /* M13CheckboxController.swift in Sources */,
+				3AFA54C6DC0961AD0F4CC8A4F1AF915E /* M13CheckboxDisclosurePathGenerator.swift in Sources */,
+				80E34254247C5B1984E2FB9EC58774E4 /* M13CheckboxDotController.swift in Sources */,
+				BCB82BDDA7C30F0B0AFE479CC479B522 /* M13CheckboxExpandController.swift in Sources */,
+				FFF489DE367C237C0E8F7E4442DA06D7 /* M13CheckboxFadeController.swift in Sources */,
+				80CD994ABA1A2B01AD1838A4D4BB794C /* M13CheckboxFillController.swift in Sources */,
+				3D976DD35C822B9B6971ED06121B4A44 /* M13CheckboxFlatController.swift in Sources */,
+				D6039515F84B2167BBAC8D1CE12A5F4E /* M13CheckboxGestureRecognizer.swift in Sources */,
+				76D3E2602CFAE6474D2DFA89F5328A24 /* M13CheckboxPathGenerator.swift in Sources */,
+				85CB53B9E438E280DA1690CCFD778689 /* M13CheckboxRadioPathGenerator.swift in Sources */,
+				FA2B271AAF040F6C1B860C6C3DF0558F /* M13CheckboxSpiralController.swift in Sources */,
+				40897730B01BE8C60FB61A02DD7A1F6A /* M13CheckboxStrokeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89526CBADF8AA74ECA8A8AAFD23899D1 /* Sources */ = {
+		C0E457965A78E6F8185EAC79BC18429B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBF40E01D11B3D668BEEDF1DA01F277 /* Pods-FlowApp-dummy.m in Sources */,
+				DE650EAB7AF937C3953802BA1D343D28 /* SideMenu-dummy.m in Sources */,
+				54C227E723BB3833846D2A7F1DBB843D /* SideMenuManager.swift in Sources */,
+				87CC35CE2F1B45678F095253D1FF2F19 /* SideMenuTransition.swift in Sources */,
+				2EE03E9DB14DB4876DA00856B6A32BDD /* UISideMenuNavigationController.swift in Sources */,
+				E42B4AE8D72F13316F8440C28852B73E /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C940B65E25426FCB26DE3776C74EBBD5 /* Sources */ = {
+		D581A65F16E7D7DD92EF8A03B25546FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D1C9FA3286DC574702AAE884A8B3F0 /* M13Checkbox+IB.swift in Sources */,
-				804C7201854744A61E37A7C3346A0D10 /* M13Checkbox-dummy.m in Sources */,
-				5DA55CEAC1D7A613CD15FA06E68861F4 /* M13Checkbox.swift in Sources */,
-				201EF9AD549CACB83DCA32CB122E85BF /* M13CheckboxAddRemovePathGenerator.swift in Sources */,
-				D96E3A40893AA4A1D4BFFCD9BAB2EFFE /* M13CheckboxAnimationGenerator.swift in Sources */,
-				1B24FB74A38BA77EE5C735BA999ABE17 /* M13CheckboxBounceController.swift in Sources */,
-				5D592141011A18F1F9D0923E80EC4B49 /* M13CheckboxCheckPathGenerator.swift in Sources */,
-				DC29F96A006DEB0559EADB5F27D2DCEE /* M13CheckboxController.swift in Sources */,
-				FF1AFB7E29980A77C576C36804757091 /* M13CheckboxDisclosurePathGenerator.swift in Sources */,
-				40CBAC8C47792C8A2560EEB55E42346F /* M13CheckboxDotController.swift in Sources */,
-				CDC529F72C9CE32AD31CC0560BBB017D /* M13CheckboxExpandController.swift in Sources */,
-				AC91F25226272C593CFD5642DE7A3050 /* M13CheckboxFadeController.swift in Sources */,
-				C789A69CF95BD3DF60E8F15CAD5F13C4 /* M13CheckboxFillController.swift in Sources */,
-				31B827A0CCF2884D4497490335806F72 /* M13CheckboxFlatController.swift in Sources */,
-				9224E8A3C6C76CBA476853249200C572 /* M13CheckboxGestureRecognizer.swift in Sources */,
-				6BD3C5F3E5B1A0B5481420A6B7F8CB2D /* M13CheckboxPathGenerator.swift in Sources */,
-				1A485F8D5894396022E0AD1FFA160FFB /* M13CheckboxRadioPathGenerator.swift in Sources */,
-				785801E59735E740B66F08EFEB312107 /* M13CheckboxSpiralController.swift in Sources */,
-				43D7D08ED8AAD7C89D3CE4ECA0BE6D99 /* M13CheckboxStrokeController.swift in Sources */,
+				B4687B99EF12A2CB78B3A922CEF0C57B /* Pods-FlowApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D544E92CC48A12375614EFD60C5DA7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SideMenu;
-			target = B924990E7DBC9E140EB4955A1179B2F9 /* SideMenu */;
-			targetProxy = 20DA4A8B1C984C528A25606E403D2BDE /* PBXContainerItemProxy */;
-		};
-		7F0538262290920B853E1ACF3DAE5DEA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = M13Checkbox;
-			target = 39A204FCB78FFA83E996C40FF3B4AC11 /* M13Checkbox */;
-			targetProxy = ACD2F6D90B8E17234D5C63F854CC1830 /* PBXContainerItemProxy */;
-		};
-		7FC892EEB4F59EDCFB0F70423F5C5E36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DLRadioButton;
-			target = F3990E3EAC160D4E4F89177D966FC1E9 /* DLRadioButton */;
-			targetProxy = D003D89ECFA654D518907104FC5B2B6B /* PBXContainerItemProxy */;
-		};
-		A49C26DE5804F1F98AEC5F84D029D062 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SimplePDF;
-			target = C1D99A341DAD2502CAAA44453F43CB76 /* SimplePDF */;
-			targetProxy = 25579B92EBAD5555A0F0E183BE24C79D /* PBXContainerItemProxy */;
-		};
-		A828871D66C075871BF443520EB93D02 /* PBXTargetDependency */ = {
+		172E54921DA4A339FA068A26F2B0F83A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = D9DD9DDA2057295D9CDD7D2CAEF27630 /* SwiftyJSON */;
-			targetProxy = D8BDED9D42F17316FA7A331D66F519C3 /* PBXContainerItemProxy */;
+			target = 67A0961AA49AFF693B0733A68B3A44BE /* SwiftyJSON */;
+			targetProxy = E48D3597D0ED1E18EC690CD37E68BE8A /* PBXContainerItemProxy */;
+		};
+		2D27E534FCECB66A4EED5D49D0E1664E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = 44200C780FE780174A11092BE8A111AA /* SideMenu */;
+			targetProxy = D2505B8D8AE1943F5135D6A30AB5C594 /* PBXContainerItemProxy */;
+		};
+		47629550EB0ABA044EB079B435C9457D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = 20A9DD9ABBF08BC57372A26C35327BF1 /* M13Checkbox */;
+			targetProxy = D4BC0B11ABFBC18352F6272EC6F37339 /* PBXContainerItemProxy */;
+		};
+		49D405BB7ECB62DD6BE58F4974DD6693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLRadioButton;
+			target = F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */;
+			targetProxy = 802A82F985FCE6580161525B1A643F9A /* PBXContainerItemProxy */;
+		};
+		F4EE4E8F85BB20A8A3B35D911BB26B96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimplePDF;
+			target = DD2F4E730E37D2833F86142A464F719A /* SimplePDF */;
+			targetProxy = 60A14C766AEF9B34B3A204CDA603B0C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02551D8BD7075FA0E62139C6500F5677 /* Debug */ = {
+		0241C69DB86CFE9C95F781C0F7848B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF38D4E1DD423DFBC5AA19EA7E031E5A /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = 691534C480E1FD667AB7C03550C96E70 /* M13Checkbox.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -764,16 +769,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DLRadioButton;
+				PRODUCT_NAME = M13Checkbox;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -781,9 +787,9 @@
 			};
 			name = Debug;
 		};
-		128DBF8D5C08CCF305C4BB088A0A78CB /* Release */ = {
+		0933A988D3A57462D93CF085FC14FDD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 869CF5316C91FBB8B077F2E5EAF6DC84 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 2487AD297BEF03366A85BC0F5A2731CB /* Pods-FlowApp.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -796,57 +802,27 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowApp/Pods-FlowApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SideMenu;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlowApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		1330DB9D54DB6AEA0CD148166D61EABD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C24DD6876E75604D9432C1C7B5B1F3 /* SimplePDF.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SimplePDF/SimplePDF-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SimplePDF/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SimplePDF/SimplePDF.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SimplePDF;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		394760F72C779EFAF29424943997F803 /* Release */ = {
+		1A90F734C1D04EB6EEE243DECD5D6F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 945A1E7EB4BF7FBD549DA40761B3A9B3 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
@@ -878,40 +854,7 @@
 			};
 			name = Release;
 		};
-		4D53B876827BA6902F4DA16A2E585CF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 691534C480E1FD667AB7C03550C96E70 /* M13Checkbox.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/M13Checkbox/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = M13Checkbox;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A69A0E3FDDC3006970CBDCF295E9420 /* Release */ = {
+		3BCE0805F247CD432444A5A7155C5686 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF38D4E1DD423DFBC5AA19EA7E031E5A /* DLRadioButton.xcconfig */;
 			buildSettings = {
@@ -943,9 +886,9 @@
 			};
 			name = Release;
 		};
-		90DED53221CFBF8D0F2DC063708C9B38 /* Debug */ = {
+		408B5A10F429228D2E804F517C705788 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F24FC8B2D84933B99EAF24D8D45B0275 /* Pods-FlowApp.debug.xcconfig */;
+			baseConfigurationReference = 03C24DD6876E75604D9432C1C7B5B1F3 /* SimplePDF.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -958,50 +901,113 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FlowApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlowApp/Pods-FlowApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FlowApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9DA084AEF1A4F9C0C21BEC125A1A75B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C24DD6876E75604D9432C1C7B5B1F3 /* SimplePDF.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SimplePDF/SimplePDF-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SimplePDF/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SimplePDF/SimplePDF.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SimplePDF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E680A4D6F02FDEC014358E5FA6D3C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945A1E7EB4BF7FBD549DA40761B3A9B3 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B007EFD54970933C9B62A7C8AEBB25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869CF5316C91FBB8B077F2E5EAF6DC84 /* SideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AAA9E77A095DA5CEB8AEEB6C49DF400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF38D4E1DD423DFBC5AA19EA7E031E5A /* DLRadioButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DLRadioButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1009,9 +1015,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		CA2EDC6C685706A492028F2B5C37FC8E /* Release */ = {
+		B99F646D4B2652928D787694A7A909CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 691534C480E1FD667AB7C03550C96E70 /* M13Checkbox.xcconfig */;
 			buildSettings = {
@@ -1034,6 +1040,38 @@
 				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1DA1CE93CF4E3CC62B402A33305BD07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869CF5316C91FBB8B077F2E5EAF6DC84 /* SideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SideMenu;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1087,42 +1125,9 @@
 			};
 			name = Debug;
 		};
-		E40C8170DAC3E63E14A47915C31BEBBC /* Debug */ = {
+		DB965661B5BE0642A04CCBC32930FAE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 869CF5316C91FBB8B077F2E5EAF6DC84 /* SideMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E5710D4F1DF9993AE57501B366704BF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2487AD297BEF03366A85BC0F5A2731CB /* Pods-FlowApp.release.xcconfig */;
+			baseConfigurationReference = 03C24DD6876E75604D9432C1C7B5B1F3 /* SimplePDF.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1135,58 +1140,22 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FlowApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlowApp/Pods-FlowApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FlowApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E95B93043D19EEAB0CF85DACC636550E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 945A1E7EB4BF7FBD549DA40761B3A9B3 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SimplePDF/SimplePDF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimplePDF/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				MODULEMAP_FILE = "Target Support Files/SimplePDF/SimplePDF.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SimplePDF;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1228,9 +1197,63 @@
 			};
 			name = Release;
 		};
+		F07F9D977A064FEDFB198F991EA66FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F24FC8B2D84933B99EAF24D8D45B0275 /* Pods-FlowApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowApp/Pods-FlowApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlowApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08913436C5D3DFB2C8CEA353ED9FF003 /* Build configuration list for PBXNativeTarget "M13Checkbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0241C69DB86CFE9C95F781C0F7848B9E /* Debug */,
+				B99F646D4B2652928D787694A7A909CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118FCC60066EF1D7DD17E50B82C12AA4 /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AAA9E77A095DA5CEB8AEEB6C49DF400 /* Debug */,
+				3BCE0805F247CD432444A5A7155C5686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1240,56 +1263,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		640D1DE3DAFB56E14FADAB35766A3F70 /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+		56F4F6EDFA98F701227D273D31041F54 /* Build configuration list for PBXNativeTarget "Pods-FlowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02551D8BD7075FA0E62139C6500F5677 /* Debug */,
-				8A69A0E3FDDC3006970CBDCF295E9420 /* Release */,
+				F07F9D977A064FEDFB198F991EA66FE3 /* Debug */,
+				0933A988D3A57462D93CF085FC14FDD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D0E7DD40A2E9DDCF88B772A0B0614C4 /* Build configuration list for PBXNativeTarget "Pods-FlowApp" */ = {
+		AC204D9CC88A6DA481925D30E8824009 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90DED53221CFBF8D0F2DC063708C9B38 /* Debug */,
-				E5710D4F1DF9993AE57501B366704BF1 /* Release */,
+				7B007EFD54970933C9B62A7C8AEBB25A /* Debug */,
+				C1DA1CE93CF4E3CC62B402A33305BD07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CDD9CF7316F6B1BA3C91A1DDA0E5565 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+		B4B3796C86CBBAB813749D56E0C001B6 /* Build configuration list for PBXNativeTarget "SimplePDF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E40C8170DAC3E63E14A47915C31BEBBC /* Debug */,
-				128DBF8D5C08CCF305C4BB088A0A78CB /* Release */,
+				408B5A10F429228D2E804F517C705788 /* Debug */,
+				DB965661B5BE0642A04CCBC32930FAE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3BF7F4DE56B5994C5B620209929752B /* Build configuration list for PBXNativeTarget "M13Checkbox" */ = {
+		F3F8681F9726AE51692889156E2ABAE9 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D53B876827BA6902F4DA16A2E585CF2 /* Debug */,
-				CA2EDC6C685706A492028F2B5C37FC8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D618EE660FEC8B7754E43E64BA3616CC /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E95B93043D19EEAB0CF85DACC636550E /* Debug */,
-				394760F72C779EFAF29424943997F803 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0DE9EE2748EE996039D20C827DF6F01 /* Build configuration list for PBXNativeTarget "SimplePDF" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1330DB9D54DB6AEA0CD148166D61EABD /* Debug */,
-				9DA084AEF1A4F9C0C21BEC125A1A75B7 /* Release */,
+				5E680A4D6F02FDEC014358E5FA6D3C3E /* Debug */,
+				1A90F734C1D04EB6EEE243DECD5D6F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

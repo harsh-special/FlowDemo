@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var IBviewQuestionaire: UIView!
     @IBOutlet weak var IBviewOptionsContainer:UIView!
     @IBOutlet weak var IBtxtQuestTitle: UITextView!
+    @IBOutlet weak var IBconstraintOptionsHeight: NSLayoutConstraint!
     
     @IBOutlet weak var IBviewInformative: UIView!
     @IBOutlet weak var IBtxtInfoTitle: UITextView!
@@ -131,14 +132,31 @@ extension ViewController {
         return actualString
     }
     
+    func setAttributedText(textView: UITextView, body: String, currentTitle: String) {
+        if let attributedText = body.htmlAttributedString() {
+            let paragraph = NSMutableParagraphStyle()
+            paragraph.alignment = .center
+            let titleAtts = [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0),NSParagraphStyleAttributeName: paragraph]
+            let title = NSMutableAttributedString(string: currentTitle, attributes: titleAtts)
+            let combination = NSMutableAttributedString()
+            combination.append(title)
+            combination.append(attributedText)
+            textView.attributedText = combination
+        }
+    }
+    
     // Every time we go to next flow we call to set the data from new toPoint
     func setDataToView() {
         if troubleShootParser.currentStepType == "diamond" {
             showHideViews(showViews: [IBviewDecision], hideViews: [IBviewQuestionaire, IBviewInformative])
             IBtxtQuestions.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+            if let body = troubleShootParser.dicCurrentState["body"] as? String {
+                setAttributedText(textView: IBtxtQuestions, body: body, currentTitle: IBtxtQuestions.text)
+            }
         } else if troubleShootParser.currentStepType == "redRectangle" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+            IBconstraintOptionsHeight.constant = 275.0
             setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         } else if troubleShootParser.currentStepType == "oval" {
             showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
@@ -147,14 +165,26 @@ extension ViewController {
             if troubleShootParser.dicCurrentState["hasChoice"] as! String == "yes" {
                 showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
                 IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+                IBconstraintOptionsHeight.constant = 275.0
+                if let body = troubleShootParser.dicCurrentState["body"] as? String {
+                    setAttributedText(textView: IBtxtQuestTitle, body: body, currentTitle: IBtxtQuestTitle.text)
+                }
                 setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
             } else {
                 showHideViews(showViews: [IBviewInformative], hideViews: [IBviewDecision, IBviewQuestionaire])
                 IBtxtInfoTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+                IBconstraintOptionsHeight.constant = 0.0
+                if let body = troubleShootParser.dicCurrentState["body"] as? String {
+                    setAttributedText(textView: IBtxtInfoTitle, body: body, currentTitle: IBtxtInfoTitle.text)
+                }
             }
         } else if troubleShootParser.currentStepType == "octagon" {
             showHideViews(showViews: [IBviewQuestionaire], hideViews: [IBviewDecision, IBviewInformative])
             IBtxtQuestTitle.text = getActualTextForJson(title: troubleShootParser.currentStepText)
+            IBconstraintOptionsHeight.constant = 275.0
+            if let body = troubleShootParser.dicCurrentState["body"] as? String {
+                setAttributedText(textView: IBtxtQuestTitle, body: body, currentTitle: IBtxtQuestTitle.text)
+            }
             setupOptionsInQuestionaireView(type: troubleShootParser.currentStepType)
         }
     }
@@ -308,5 +338,16 @@ extension ViewController: MFMailComposeViewControllerDelegate {
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension String {
+    func htmlAttributedString() -> NSAttributedString? {
+        guard let data = self.data(using: String.Encoding.utf16, allowLossyConversion: false) else { return nil }
+        guard let html = try? NSMutableAttributedString(
+            data: data,
+            options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSFontAttributeName: UIFont.systemFont(ofSize: 12.0)],
+            documentAttributes: nil) else { return nil }
+        return html
     }
 }

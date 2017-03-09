@@ -16,6 +16,7 @@ struct GCGModesParser {
     static let end			= "exit"
     static let id           = "id"
     static let exitType     = "exitType"
+    static let body         = "body"
     
     var arrDicForPdf : [[String : String]] = []
     var dicStateMode : [String : String] = [:]
