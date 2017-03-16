@@ -137,7 +137,7 @@ extension ViewController {
     func setAttributedText(textView: UITextView, body: String, currentTitle: String) {
         if let attributedText = body.htmlAttributedString() {
             let paragraph = NSMutableParagraphStyle()
-            paragraph.alignment = .center
+            paragraph.alignment = .justified
             let titleAtts = [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0),NSParagraphStyleAttributeName: paragraph]
             let title = NSMutableAttributedString(string: currentTitle, attributes: titleAtts)
             let combination = NSMutableAttributedString()
@@ -149,7 +149,7 @@ extension ViewController {
     
     func setAttributedTextWithoutBody(textView: UITextView, currentTitle: String) {
         let paragraph = NSMutableParagraphStyle()
-        paragraph.alignment = .center
+        paragraph.alignment = .justified
         let titleAtts = [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0),NSParagraphStyleAttributeName: paragraph]
         let title = NSMutableAttributedString(string: currentTitle, attributes: titleAtts)
         textView.attributedText = title
